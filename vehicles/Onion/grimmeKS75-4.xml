@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="fruitPreparer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>KS 75-4 for Onion</name>
+        <specs>
+            <neededPower>65</neededPower>
+            <workingWidth>3.2</workingWidth>
+        </specs>
+        <functions>
+            <function>$l10n_function_haulmTopperPotato</function>
+        </functions>
+        <image>$data/vehicles/grimme/grimmeKS75-4/store_grimmeKS75-4.png</image>
+        <price>10000</price>
+        <lifetime>600</lifetime>
+        <rotation>180</rotation>
+        <brand>GRIMME</brand>
+        <category>potatoHarvesting</category>
+        <shopRotationOffset>0 180 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>437960</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>67824</indexBufferMemoryUsage>
+        <textureMemoryUsage>5942072</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_haulmTopper</typeDesc>
+        <filename>$data/vehicles/grimme/grimmeKS75-4/grimmeKS75-4.i3d</filename>
+        <size width="3.8" length="2.5" lengthOffset="0.15" />
+        <speedLimit value="15" />
+        <components>
+            <component centerOfMass="0 0.75 0" solverIterationCount="10" mass="950" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel hasParticles="true" >
+                        <physics restLoad="0.6" repr="wheelLeft"  radius="0.313" width="0.18" mass="0.1" initialCompression="40" suspTravel="0.05" spring="23" damper="20" frictionScale="0.5" rotationDamping="0.002" />
+                    </wheel>
+                    <wheel hasParticles="true" >
+                        <physics restLoad="0.6" repr="wheelRight" radius="0.313" width="0.18" mass="0.1" initialCompression="40" suspTravel="0.05" spring="23" damper="20" frictionScale="0.5" rotationDamping="0.002" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode">
+                <distanceToGround lower="0.6" upper="1" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <brakeForce>0.07</brakeForce>
+        <support animationName="moveSupport" />
+    </attachable>
+
+    <powerConsumer ptoRpm="470" neededMinPtoPower="30" neededMaxPtoPower="30"/>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="pto" aboveAttacher="true" filename="$data/shared/assets/powerTakeOffs/walterscheidW.xml" />
+    </powerTakeOffs>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="grimmeKS75_4_main_component1" threshold="0.15" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="fruitPreparer" functionName="processFruitPreparerArea" disableBackwards="false" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+        </workArea>
+    </workAreas>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="support" startTime="0" duration="0.2" startTrans="0.293 0.44 -0.719" endTrans="0.2931 0.002 -0.71913" />
+        </animation>
+    </animations>
+
+    <fruitPreparer fruitType="onion">
+        <animationNodes>
+            <animationNode node="drum" rotAxis="1" rotSpeed="3000" turnOnFadeTime="2" turnOffFadeTime="5" />
+        </animationNodes>
+        <sounds>
+            <work template="DEFOLIATOR_01" linkNode="0>" />
+        </sounds>
+    </fruitPreparer>
+
+    <workParticles>
+        <particle>
+            <node node="soilHarvestingEmitter" refNodeIndex="1" particleType="SOIL_HARVESTING" fillType="onion" />
+        </particle>
+    </workParticles>
+
+    <ai>
+        <areaMarkers leftNode="aiAreaLeft" rightNode="aiAreaRight" backNode="aiAreaBack" />
+        <sizeMarkers leftNode="aiSizeLeft" rightNode="aiSizeRight" backNode="aiSizeBack" />
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.7" maxX="1.7" minZ="-0.8" maxZ="0.8" yOffset="0.5" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="grimmeKS75_4_mat" baseNode="grimmeKS75_4_vis">
+            <shaderParameter name="colorMat0" value="GRIMME_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="grimmeKS75_4_main_component1" node="0>" />
+        <i3dMapping id="grimmeKS75_4_vis" node="0>0" />
+        <i3dMapping id="wheelLeft" node="0>0|0|0" />
+        <i3dMapping id="wheelRight" node="0>0|0|1" />
+        <i3dMapping id="attacherJoint" node="0>0|1" />
+        <i3dMapping id="topReferenceNode" node="0>0|2" />
+        <i3dMapping id="pto" node="0>0|3" />
+        <i3dMapping id="support" node="0>0|4" />
+        <i3dMapping id="drum" node="0>0|5" />
+        <i3dMapping id="soilHarvestingEmitter" node="0>0|6|0" />
+        <i3dMapping id="workAreaStart" node="0>0|7|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|7|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|7|2" />
+        <i3dMapping id="aiAreaLeft" node="0>0|8|0|0" />
+        <i3dMapping id="aiAreaRight" node="0>0|8|0|1" />
+        <i3dMapping id="aiAreaBack" node="0>0|8|0|2" />
+        <i3dMapping id="aiSizeLeft" node="0>0|8|1|0" />
+        <i3dMapping id="aiSizeRight" node="0>0|8|1|1" />
+        <i3dMapping id="aiSizeBack" node="0>0|8|1|2" />
+    </i3dMappings>
+</vehicle>

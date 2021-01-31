@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fillPlane_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="55" filename="$data/fillPlanes/grass_diffuse.png"/>
+    <File fileId="43" filename="$data/fillPlanes/grass_normal.dds"/>
+    <File fileId="8" filename="$data/fillPlanes/grass_specular.dds"/>
+    <File fileId="57" filename="$data/fillPlanes/hay_diffuse.png"/>
+    <File fileId="2" filename="$data/fillPlanes/hay_normal.dds"/>
+    <File fileId="10" filename="$data/fillPlanes/hay_specular.dds"/>
+    <File fileId="37" filename="$data/fillPlanes/wheat_specular.dds"/>
+    <File fileId="36" filename="$data/maps/textures/shared/wheatBottom_normal.dds"/>
+    <File fileId="6" filename="$data/shaders/fillIconShader.xml"/>
+    <File fileId="4" filename="$data/shaders/fillPlaneShader.xml"/>
+    <File fileId="54" filename="$dataS2/menu/hud/fillTypes/hud_fill_grass.png"/>
+    <File fileId="39" filename="carrot_diffuse.png"/>
+    <File fileId="40" filename="carrot_normal.dds"/>
+    <File fileId="41" filename="carrot_specular.dds"/>
+    <File fileId="47" filename="cropWindrow_diffuse.dds"/>
+    <File fileId="46" filename="dryHorseGrass_diffuse.dds"/>
+    <File fileId="21" filename="field_grass_diffuse.png"/>
+    <File fileId="22" filename="field_grass_normal.png"/>
+    <File fileId="23" filename="field_grass_specular.png"/>
+    <File fileId="44" filename="horseGrass_diffuse.dds"/>
+    <File fileId="45" filename="horseGrass_fermented_diffuse.dds"/>
+    <File fileId="49" filename="miscanthus_diffuse.png"/>
+    <File fileId="50" filename="miscanthus_normal.png"/>
+    <File fileId="51" filename="miscanthus_specular.png"/>
+    <File fileId="24" filename="onion_diffuse.dds"/>
+    <File fileId="25" filename="onion_normal.dds"/>
+    <File fileId="26" filename="onion_specular.dds"/>
+    <File fileId="31" filename="rye_diffuse.png"/>
+    <File fileId="32" filename="rye_normal.png"/>
+    <File fileId="33" filename="rye_specular.png"/>
+    <File fileId="42" filename="semiDryHorseGrass_diffuse.dds"/>
+    <File fileId="35" filename="spelt_diffuse.png"/>
+    <File fileId="1" filename="tipOnGround/alfalfa_diffuse.png"/>
+    <File fileId="12" filename="tipOnGround/alfalfa_fermented_diffuse.dds"/>
+    <File fileId="3" filename="tipOnGround/alfalfa_specular.png"/>
+    <File fileId="13" filename="tipOnGround/clover_diffuse.png"/>
+    <File fileId="20" filename="tipOnGround/clover_fermented_diffuse.dds"/>
+    <File fileId="14" filename="tipOnGround/clover_normal.png"/>
+    <File fileId="15" filename="tipOnGround/clover_specular.png"/>
+    <File fileId="17" filename="tipOnGround/clover_windrow_diffuse.png"/>
+    <File fileId="11" filename="tipOnGround/dryAlfalfa_windrow_diffuse.png"/>
+    <File fileId="19" filename="tipOnGround/dryClover_windrow_diffuse.dds"/>
+    <File fileId="9" filename="tipOnGround/semiDryAlfalfa_windrow_diffuse.png"/>
+    <File fileId="18" filename="tipOnGround/semiDryClover_windrow_diffuse.dds"/>
+    <File fileId="56" filename="tipOnGround/semiDryGrass_windrow_diffuse.dds"/>
+    <File fileId="7" filename="tipOnGround/wetAlfalfa_diffuse.dds"/>
+    <File fileId="16" filename="tipOnGround/wetClover_diffuse.dds"/>
+    <File fileId="53" filename="tipOnGround/wetGrass_diffuse.dds"/>
+    <File fileId="27" filename="triticale_diffuse.png"/>
+    <File fileId="28" filename="triticale_normal.png"/>
+    <File fileId="29" filename="triticale_specular.png"/>
+    <File fileId="48" filename="wetHorseGrass_diffuse.dds"/>
+    <File fileId="52" filename="../huds/hud_fill_miscanthus.png"/>
+    <File fileId="34" filename="../huds/hud_fill_rye.png"/>
+    <File fileId="38" filename="../huds/hud_fill_spelt.png"/>
+    <File fileId="30" filename="../huds/hud_fill_triticale.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="alfalfa_mat" materialId="29" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="carrot_mat" materialId="8" customShaderId="4">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="clover_mat" materialId="33" customShaderId="4">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="clover_windrow_mat" materialId="16" customShaderId="4">
+      <Texture fileId="20"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="clover_windrow_mat" materialId="18" customShaderId="4">
+      <Texture fileId="19"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat" materialId="9" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_mat" materialId="21" customShaderId="4">
+      <Texture fileId="55"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_mat" materialId="12" customShaderId="4">
+      <Texture fileId="44"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_mat" materialId="31" customShaderId="4">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_mat" materialId="24" customShaderId="4">
+      <Texture fileId="53"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_mat" materialId="34" customShaderId="4">
+      <Texture fileId="48"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_seed_mat" materialId="6" customShaderId="4">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hay_mat" materialId="22" customShaderId="4">
+      <Texture fileId="57"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hay_mat" materialId="20" customShaderId="4">
+      <Texture fileId="46"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hay_mat" materialId="30" customShaderId="4">
+      <Texture fileId="56"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_clover_windrow_mat" materialId="11" diffuseColor="1 1 1 1" alphaBlending="true" customShaderId="6">
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_grass_mat" materialId="32" alphaBlending="true" customShaderId="6">
+      <Texture fileId="54"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_grass_seed_mat" materialId="10" alphaBlending="true" customShaderId="6">
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_miscanthus_mat" materialId="23" alphaBlending="true" customShaderId="6">
+      <Texture fileId="52"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_rye_mat" materialId="36" alphaBlending="true" customShaderId="6">
+      <Texture fileId="34"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_spelt_mat" materialId="28" alphaBlending="true" customShaderId="6">
+      <Texture fileId="38"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_triticale_mat" materialId="38" alphaBlending="true" customShaderId="6">
+      <Texture fileId="30"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="miscanthus_mat" materialId="37" customShaderId="4">
+      <Texture fileId="49"/>
+      <Normalmap fileId="50"/>
+      <Glossmap fileId="51"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="onion_mat" materialId="19" customShaderId="4">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="rye_mat" materialId="7" customShaderId="4">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="semiDryAlfalfa_windrow2_mat" materialId="13" customShaderId="4">
+      <Texture fileId="9"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="semiDryAlfalfa_windrow_mat" materialId="17" customShaderId="4">
+      <Texture fileId="12"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="semiDryClover_windrow_mat" materialId="14" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="spelt_mat" materialId="27" customShaderId="4">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="triticale_mat" materialId="25" customShaderId="4">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="wetAlfalfa_windrow_mat" materialId="26" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="wetClover_windrow_mat" materialId="15" customShaderId="4">
+      <Texture fileId="17"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="wetClover_windrow_mat" materialId="5" customShaderId="4">
+      <Texture fileId="16"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="wheat_mat" materialId="35" customShaderId="4">
+      <Texture fileId="47"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="wheat_mat" materialId="39" customShaderId="4">
+      <Texture fileId="45"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="uvScale" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fillPlane_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="alfalfa" clipDistance="10" nodeId="44">
+      <Shape shapeId="1" name="alfalfa_plane_materialHolder" clipDistance="10" nodeId="45" materialIds="29" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_icon_materialHolder" clipDistance="10" nodeId="46" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="wetAlfalfa_windrow" clipDistance="10" nodeId="47">
+      <Shape shapeId="1" name="wetAlfalfa_windrow_plane_materialHolder" clipDistance="10" nodeId="48" materialIds="26" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_windrow_icon_materialHolder" clipDistance="10" nodeId="49" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="alfalfa_windrow" clipDistance="10" nodeId="50">
+      <Shape shapeId="1" name="alfalfa_windrow_plane_materialHolder" clipDistance="10" nodeId="51" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_windrow_icon_materialHolder" clipDistance="10" nodeId="52" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="semiDryAlfalfa_windrow" clipDistance="10" nodeId="53">
+      <Shape shapeId="1" name="semiDryAlfalfa_windrow_plane_materialHolder" clipDistance="10" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="dryAlfalfa_windrow" clipDistance="10" nodeId="55">
+      <Shape shapeId="1" name="dryAlfalfa_windrow_plane_materialHolder" clipDistance="10" nodeId="56" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryAlfalfa_windrow_icon_materialHolder" clipDistance="10" nodeId="57" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="58">
+      <Shape shapeId="1" name="alfalfa_fermented_plane_materialHolder" clipDistance="10" nodeId="59" materialIds="17" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_fermented_icon_materialHolder" clipDistance="10" nodeId="60" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="clover" clipDistance="10" nodeId="61">
+      <Shape shapeId="1" name="clover_plane_materialHolder" clipDistance="10" nodeId="62" materialIds="33" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_icon_materialHolder" clipDistance="10" nodeId="63" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="wetClover_windrow" clipDistance="10" nodeId="64">
+      <Shape shapeId="1" name="wetClover_windrow_plane_materialHolder" clipDistance="10" nodeId="65" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_windrow_icon_materialHolder" clipDistance="10" nodeId="66" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="clover_windrow" clipDistance="10" nodeId="67">
+      <Shape shapeId="1" name="clover_windrow_plane_materialHolder" clipDistance="10" nodeId="68" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_windrow_icon_materialHolder" clipDistance="10" nodeId="69" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="semiDryClover_windrow" clipDistance="10" nodeId="70">
+      <Shape shapeId="1" name="semiDryClover_windrow_plane_materialHolder" clipDistance="10" nodeId="71" materialIds="14" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="dryClover_windrow" clipDistance="10" nodeId="72">
+      <Shape shapeId="1" name="dryClover_windrow_plane_materialHolder" clipDistance="10" nodeId="73" materialIds="18" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryClover_windrow_icon_materialHolder" clipDistance="10" nodeId="74" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="clover_fermented" clipDistance="10" nodeId="75">
+      <Shape shapeId="1" name="clover_fermented_plane_materialHolder" clipDistance="10" nodeId="76" materialIds="16" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_fermented_icon_materialHolder" clipDistance="10" nodeId="77" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="field_grass" clipDistance="10" nodeId="78">
+      <Shape shapeId="1" name="field_grass_materialHolder" clipDistance="10" nodeId="79" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="field_grass_icon_materialHolder" clipDistance="10" nodeId="80" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="onion" clipDistance="10" nodeId="81">
+      <Shape shapeId="1" name="onion_materialHolder" clipDistance="10" nodeId="82" materialIds="19" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="onion_icon_materialHolder" clipDistance="10" nodeId="83" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="triticale" clipDistance="10" nodeId="84">
+      <Shape shapeId="1" name="triticale_materialHolder" clipDistance="10" nodeId="85" materialIds="25" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="triticale_icon_materialHolder" clipDistance="10" nodeId="86" materialIds="38" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="rye" clipDistance="10" nodeId="87">
+      <Shape shapeId="1" name="rye_plane_materialHolder" clipDistance="10" nodeId="88" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="rye_icon_materialHolder" clipDistance="10" nodeId="89" materialIds="36" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="spelt" clipDistance="10" nodeId="90">
+      <Shape shapeId="1" name="spelt_plane_materialHolder" clipDistance="10" nodeId="91" materialIds="27" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="spelt_icon_materialHolder" clipDistance="10" nodeId="92" materialIds="28" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="carrot" clipDistance="10" nodeId="93">
+      <Shape shapeId="1" name="carrot_materialHolder" clipDistance="10" nodeId="94" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="carrot_icon_materialHolder" clipDistance="10" nodeId="95" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="onion" clipDistance="10" nodeId="96">
+      <Shape shapeId="1" name="onion_materialHolder" clipDistance="10" nodeId="97" materialIds="19" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="onion_icon_materialHolder" clipDistance="10" nodeId="98" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="field_grass" clipDistance="10" nodeId="99">
+      <Shape shapeId="1" name="field_grass_materialHolder" clipDistance="10" nodeId="100" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="field_grass_icon_materialHolder" clipDistance="10" nodeId="101" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="clover_fermented" clipDistance="10" nodeId="102">
+      <Shape shapeId="1" name="clover_fermented_plane_materialHolder" clipDistance="10" nodeId="103" materialIds="16" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_fermented_icon_materialHolder" clipDistance="10" nodeId="104" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="clover_windrow" clipDistance="10" nodeId="105">
+      <Shape shapeId="1" name="clover_windrow_plane_materialHolder" clipDistance="10" nodeId="106" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_windrow_icon_materialHolder" clipDistance="10" nodeId="107" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="dryClover_windrow" clipDistance="10" nodeId="108">
+      <Shape shapeId="1" name="dryClover_windrow_plane_materialHolder" clipDistance="10" nodeId="109" materialIds="18" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryClover_windrow_icon_materialHolder" clipDistance="10" nodeId="110" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="clover" clipDistance="10" nodeId="111">
+      <Shape shapeId="1" name="clover_plane_materialHolder" clipDistance="10" nodeId="112" materialIds="33" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="clover_icon_materialHolder" clipDistance="10" nodeId="113" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="114">
+      <Shape shapeId="1" name="alfalfa_fermented_plane_materialHolder" clipDistance="10" nodeId="115" materialIds="17" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_fermented_icon_materialHolder" clipDistance="10" nodeId="116" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="dryAlfalfa_windrow" clipDistance="10" nodeId="117">
+      <Shape shapeId="1" name="dryAlfalfa_windrow_plane_materialHolder" clipDistance="10" nodeId="118" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryAlfalfa_windrow_icon_materialHolder" clipDistance="10" nodeId="119" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="alfalfa_windrow" clipDistance="10" nodeId="120">
+      <Shape shapeId="1" name="alfalfa_windrow_plane_materialHolder" clipDistance="10" nodeId="121" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_windrow_icon_materialHolder" clipDistance="10" nodeId="122" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="alfalfa" clipDistance="10" nodeId="123">
+      <Shape shapeId="1" name="alfalfa_plane_materialHolder" clipDistance="10" nodeId="124" materialIds="29" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="alfalfa_icon_materialHolder" clipDistance="10" nodeId="125" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="semiDryHorseGrass_windrow" clipDistance="10" nodeId="126">
+      <Shape shapeId="1" name="semiDryGrass_materialHolder" clipDistance="10" nodeId="127" materialIds="31" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="semiDryHorseGrass_icon_materialHolder" clipDistance="10" nodeId="128" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="horseGrass_windrow" clipDistance="10" nodeId="129">
+      <Shape shapeId="1" name="horseGrass_materialHolder" clipDistance="10" nodeId="130" materialIds="12" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="horseGrass_icon_materialHolder" clipDistance="10" nodeId="131" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="horseGrass_fermented" clipDistance="10" nodeId="132">
+      <Shape shapeId="1" name="horseGrass_fermented_materialHolder" clipDistance="10" nodeId="133" materialIds="39" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="horseGrass_fermented_icon_materialHolder" clipDistance="10" nodeId="134" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="dryHorseGrass_windrow" clipDistance="10" nodeId="135">
+      <Shape shapeId="1" name="dryHorseGrass_materialHolder" clipDistance="10" nodeId="136" materialIds="20" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryHorseGrass_icon_materialHolder" clipDistance="10" nodeId="137" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="crop_windrow" clipDistance="10" nodeId="138">
+      <Shape shapeId="1" name="crop_windrow_materialHolder_wheat" clipDistance="10" nodeId="139" materialIds="35" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="crop_windrow_icon_materialHolder" clipDistance="10" nodeId="140" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="wetHorseGrass_windrow" clipDistance="10" nodeId="141">
+      <Shape shapeId="1" name="wetHorseGrass_materialHolder" clipDistance="10" nodeId="142" materialIds="34" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="wetHorseGrass_icon_materialHolder" clipDistance="10" nodeId="143" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="Miscanthus" clipDistance="10" nodeId="144">
+      <Shape shapeId="1" name="miscanthus_materialHolder" clipDistance="10" nodeId="145" materialIds="37" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="miscanthus_icon_materialHolder" clipDistance="10" nodeId="146" materialIds="23" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="carrot" clipDistance="10" nodeId="147">
+      <Shape shapeId="1" name="carrot_materialHolder" clipDistance="10" nodeId="148" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="carrot_icon_materialHolder" clipDistance="10" nodeId="149" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="wetGrass_windrow" clipDistance="10" nodeId="150">
+      <Shape shapeId="1" name="grass_materialHolder" clipDistance="10" nodeId="151" materialIds="24" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="grass_icon_materialHolder" clipDistance="10" nodeId="152" materialIds="32" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="grass_windrow" clipDistance="10" nodeId="153">
+      <Shape shapeId="1" name="grass_materialHolder" clipDistance="10" nodeId="154" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="grass_icon_materialHolder" clipDistance="10" nodeId="155" materialIds="32" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="semiDry_grass_windrow" clipDistance="10" nodeId="156">
+      <Shape shapeId="1" name="semiryGrass_materialHolder" clipDistance="10" nodeId="157" materialIds="30" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryGrass_icon_materialHolder" clipDistance="10" nodeId="158" materialIds="32" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="dryGrass_windrow" clipDistance="10" nodeId="162">
+      <Shape shapeId="1" name="dryGrass_materialHolder" clipDistance="10" nodeId="163" materialIds="22" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="dryGrass_icon_materialHolder" clipDistance="10" nodeId="164" materialIds="32" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="45">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="46">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="48">
+      <Attribute name="fillType" type="string" value="wetAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="49">
+      <Attribute name="fillType" type="string" value="wetAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="52">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="54">
+      <Attribute name="fillType" type="string" value="semiDryAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="56">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="57">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="59">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="60">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="62">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="63">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="65">
+      <Attribute name="fillType" type="string" value="wetClover_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="66">
+      <Attribute name="fillType" type="string" value="wetClover_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="68">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="69">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="71">
+      <Attribute name="fillType" type="string" value="semiDryClover_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="73">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="74">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="76">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="77">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="79">
+      <Attribute name="fillType" type="string" value="field_grass"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="80">
+      <Attribute name="fillType" type="string" value="field_grass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="82">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="83">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="85">
+      <Attribute name="fillType" type="string" value="triticale"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="86">
+      <Attribute name="fillType" type="string" value="triticale"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="88">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="89">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="91">
+      <Attribute name="fillType" type="string" value="spelt"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="92">
+      <Attribute name="fillType" type="string" value="spelt"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="94">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="95">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="97">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="98">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="100">
+      <Attribute name="fillType" type="string" value="field_grass"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="101">
+      <Attribute name="fillType" type="string" value="field_grass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="103">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="104">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="106">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="107">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="109">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="110">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="112">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="113">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="115">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="116">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="118">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="119">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="121">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="122">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="124">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="125">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="127">
+      <Attribute name="fillType" type="string" value="semiDryHorseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="128">
+      <Attribute name="fillType" type="string" value="semiDryHorseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="130">
+      <Attribute name="fillType" type="string" value="horseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="131">
+      <Attribute name="fillType" type="string" value="horseGrass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="133">
+      <Attribute name="fillType" type="string" value="horseGrass_fermented"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="134">
+      <Attribute name="fillType" type="string" value="horseGrass_fermented"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="136">
+      <Attribute name="fillType" type="string" value="dryHorseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="137">
+      <Attribute name="fillType" type="string" value="dryHorseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="139">
+      <Attribute name="fillType" type="string" value="crop_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="140">
+      <Attribute name="fillType" type="string" value="crop_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="142">
+      <Attribute name="fillType" type="string" value="wetHorseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="143">
+      <Attribute name="fillType" type="string" value="wetHorseGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="145">
+      <Attribute name="fillType" type="string" value="miscanthus"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="146">
+      <Attribute name="fillType" type="string" value="miscanthus"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="148">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="149">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="151">
+      <Attribute name="fillType" type="string" value="wetGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="152">
+      <Attribute name="fillType" type="string" value="grass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="154">
+      <Attribute name="fillType" type="string" value="grass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="155">
+      <Attribute name="fillType" type="string" value="grass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="157">
+      <Attribute name="fillType" type="string" value="semiDry_grass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="158">
+      <Attribute name="fillType" type="string" value="dryGrass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="163">
+      <Attribute name="fillType" type="string" value="dryGrass_windrow"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="164">
+      <Attribute name="fillType" type="string" value="dryGrass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

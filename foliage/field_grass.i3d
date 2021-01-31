@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="field_grass" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="4" filename="field_grass01LOD_diffuse_H.png"/>
+    <File fileId="5" filename="field_grass01LOD_normal_H.png"/>
+    <File fileId="6" filename="field_grass02LOD_diffuse_H.png"/>
+    <File fileId="7" filename="field_grass02LOD_normal_H.png"/>
+    <File fileId="8" filename="field_grass03LOD_diffuse_H.png"/>
+    <File fileId="9" filename="field_grass03LOD_normal_H.png"/>
+    <File fileId="10" filename="field_grass04LOD_diffuse_H.png"/>
+    <File fileId="11" filename="field_grass04LOD_normal_H.png"/>
+    <File fileId="12" filename="field_grass05LOD_diffuse_H.png"/>
+    <File fileId="13" filename="field_grass05LOD_normal_H.png"/>
+    <File fileId="1" filename="field_grass_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert2" materialId="4" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="field_grass04LOD_mat" materialId="5" customShaderId="2" customShaderVariation="BILLBOARD">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="field_grass03LOD_mat" materialId="6" customShaderId="2" customShaderVariation="BILLBOARD">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="field_grass01LOD_mat" materialId="9" customShaderId="2" customShaderVariation="BILLBOARD">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="field_grass02LOD_mat" materialId="8" customShaderId="2" customShaderVariation="BILLBOARD">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="field_grass05LOD_mat" materialId="7" customShaderId="2" customShaderVariation="BILLBOARD">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="field_grass.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="field_grass" nodeId="23">
+      <Shape shapeId="1" name="field_grass01" clipDistance="500" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="field_grass02" translation="0 0 1.01731" clipDistance="500" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="field_grass03" clipDistance="500" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="field_grass04" clipDistance="500" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="field_grass05" clipDistance="500" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="6" name="field_grass06" clipDistance="500" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="LOD" nodeId="30">
+      <Shape shapeId="7" name="_01_" clipDistance="500" nodeId="31" materialIds="9" receiveShadows="true"/>
+      <Shape shapeId="8" name="_02_" clipDistance="500" nodeId="32" materialIds="8" receiveShadows="true"/>
+      <Shape shapeId="9" name="_03_" clipDistance="500" nodeId="33" materialIds="6" receiveShadows="true"/>
+      <Shape shapeId="10" name="_04_" clipDistance="500" nodeId="34" materialIds="5" receiveShadows="true"/>
+      <Shape shapeId="11" name="_05_" clipDistance="500" nodeId="35" materialIds="7" receiveShadows="true"/>
+      <Shape shapeId="12" name="_06_" clipDistance="500" nodeId="36" materialIds="5" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

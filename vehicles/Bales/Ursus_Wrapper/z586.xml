@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="baleWrapper">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Z-586</name>
+        <specs>
+            <fillTypes>roundBale</fillTypes>
+        </specs>
+        <functions>
+            <function>$l10n_function_baleWrapper</function>
+        </functions>
+        <image>vehicles/Bales/Ursus_Wrapper/store_z586.png</image>
+        <price>8200</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>baling</category>
+        <shopTranslationOffset>0 -0.01 0</shopTranslationOffset>
+        <vertexBufferMemoryUsage>813632</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>113592</indexBufferMemoryUsage>
+        <textureMemoryUsage>4631360</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_baleWrapper</typeDesc>
+        <filename>vehicles/Bales/Ursus_Wrapper/z586.i3d</filename>
+        <size width="3" length="6.2"/>
+        <components>
+            <component centerOfMass="0 0.5 -1" solverIterationCount="10" mass="1216"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/trelleborg/AW305/360_70R16.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.7" repr="wheelLeft"  initialCompression="25" suspTravel="0.15" spring="15" damper="20" frictionScale="1.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/AW305/360_70R16.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.7" repr="wheelRight" initialCompression="25" suspTravel="0.15" spring="15" damper="20" frictionScale="1.5"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <color0>URSUS_RED1</color0>
+            <color0>SHARED_GREY5</color0>
+            <hub linkNode="wheelLeft"  filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.2 0.2 0.2" />
+            <hub linkNode="wheelRight" filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.2 0.2 0.2" />
+        </hubs>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" rootNode="z586_main_component1" jointType="trailer" attacherHeight="0.452"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+        <brakeForce>0.2</brakeForce>
+    </attachable>
+
+    <lights>
+        <sharedLight linkNode="rear2ChamberLight_03_rear2ChamberLight_0302"       filename="$data/shared/assets/lights/lizard/rear2ChamberLight_03_right.xml" />
+        <sharedLight linkNode="rear2ChamberLight_03_rear2ChamberLight_0301"       filename="$data/shared/assets/lights/lizard/rear2ChamberLight_03_left.xml" />
+        <sharedLight linkNode="redTriangle_02_redTriangle_0202"       filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml" />
+        <sharedLight linkNode="redTriangle_02_redTriangle_0201"       filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml" />
+        <realLights>
+            <high>
+                <light node="backLightsHigh" lightTypes="0" />
+                <turnLightLeft node="turnLightLeftBack1" />
+                <turnLightRight node="turnLightRightBack1" />
+                <brakeLight node="backLightsHigh" />
+            </high>
+        </realLights>
+        <defaultLights>
+            <defaultLight shaderNode="frontlightStatic"     lightTypes="0" intensity="20"/>
+            <defaultLight shaderNode="lightsStatic"     lightTypes="0" intensity="20"/>
+        </defaultLights>
+    </lights>
+
+    <foldable>
+        <foldingParts startAnimTime="1">
+            <foldingPart animationName="unfold" speedScale="1" />
+        </foldingParts>
+    </foldable>
+
+    <animations>
+        <animation name="moveBaleToWrapper">
+            <part node="claw" startTime="0" endTime="0.5" startRot="0 -42 0" endRot="0 0 0" />
+            <part node="frontLift" startTime="0.5" endTime="2" startRot="-45 0 0" endRot="-90 0 0"/>
+
+            <part node="baleGrabNode" startTime="0" endTime="0.5" startRot="0 0 0" endRot="0 0 -151"  startTrans="0 0 0" endTrans="0 0 0"/>
+            <part node="baleGrabNode" startTime="1.85" endTime="2.1" startRot="0 0 -151" endRot="0 0 -120"  startTrans="0 0 0" endTrans="-0.343 0 0"/>
+            <part node="baleGrabNode" startTime="2.1" endTime="2.4" startRot="0 0 -120" endRot="0 0 -90"   startTrans="-0.343 0 0" endTrans="-0.734 -0.214 0"/>
+        </animation>
+        <animation name="dropBaleFromWrapper">
+            <part node="backArmMechanism" startTime="0" endTime="1" startRot="0 0 0" endRot="60 0 0" />
+
+            <part node="backArmMechanism" startTime="1" endTime="2.8" startRot="60 0 0" endRot="20 0 0" />
+            <part node="mainPlattform" startTime="1" endTime="2.8" startRot="0 0 0" endRot="-50 0 0" />
+
+            <part node="wrapperBaleNode" startTime="2.5" endTime="2.9" startRot="0 0 0" endRot="0 0 -20" startTrans="0 0 0" endTrans="-0.151 0.184 0" />
+
+            <part node="backArmMechanism" startTime="2.9" endTime="3.5" startRot="20 0 0" endRot="0 0 0" />
+            <part node="wrapperBaleNode" startTime="2.9" endTime="3.5" startRot="0 0 -20" endRot="0 0 -57.658" startTrans="-0.151 0.184 0" endTrans="-0.34 0.6 0" />
+
+
+            <part node="wrapperBaleNode" startTime="3.5" endTime="3.6" startRot="0 0 -57.658" endRot="-3.705 -10.025 -63.343" startTrans="-0.34 0.6 0" endTrans="-0.446 0.671 -0.016" />
+
+            <part node="wrapperBaleNode" startTime="3.6" endTime="3.7" startRot="-3.705 -10.025 -63.343" endRot="-5.375 -21.242 -69.284" startTrans="-0.446 0.671 -0.016" endTrans="-0.56 0.769 0.075" />
+
+            <part node="wrapperBaleNode" startTime="3.7" endTime="3.8" startRot="-5.375 -21.242 -69.284" endRot="-13.504 -30.365 -57" startTrans="-0.56 0.769 0.075" endTrans="-0.661 0.960 0.176" />
+
+            <part node="wrapperBaleNode" startTime="3.8" endTime="3.9" startRot="-13.504 -30.365 -57" endRot="-27.2 -33.806 -49.565" startTrans="-0.661 0.960 0.176" endTrans="-0.74 1.178 0.481" />
+
+            <part node="wrapperBaleNode" startTime="3.9" endTime="4.1" startRot="-27.2 -33.806 -49.565" endRot="-61.142 -43.7 -44.015" startTrans="-0.74 1.178 0.481" endTrans="-0.80 1.57 0.81" />
+
+            <part node="unloadPlattform" startTime="3.5" endTime="3.8" startRot="0 0 0" endRot="0 35 0" />
+
+        </animation>
+        <animation name="resetWrapperAfterBaleDrop">
+            <part node="unloadPlattform" startTime="0" endTime="0.3" startRot="0 35 0" endRot="0 0 0" />
+            <part node="mainPlattform" startTime="0" endTime="2" startRot="0 0 0" endRot="0 0 0" />
+            <part node="wrapperBaleNode" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 0" startTrans="0 0 0" endTrans="0 0 0"/>
+
+            <part node="upperPart" startTime="2" endTime="3" startRot="0 0 0" endRot="0 0 0" />
+            <part node="frontLift" startTime="0.5" endTime="2" startRot="-45 0 0" endRot="0 0 0"/>
+        </animation>
+        <animation name="unfold">
+            <part node="transportArm" startTime="0" endTime="2" startRot="0 0 0" endRot="0 -33 0" />
+            <part node="claw" startTime="0" endTime="0.75" startRot="0 -42 0" endRot="0 0 0" />
+            <part node="frontLift" startTime="0.75" endTime="2" startRot="0 0 0" endRot="-90 0 0"/>
+            <part node="backArmMechanism" startTime="0.75" endTime="2" startRot="0 0 0" endRot="45 0 0"/>
+        </animation>
+        <animation name="moveSupport">
+            <part node="support" startTime="0" endTime="0.2" startRot="90 0 0" endRot="0 0 0"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="support" />
+
+            <movingTool node="transportArm" playSound="true" >
+                <inputAttacherJoint value="true"/>
+                <dependentPart node="transportHydraulics" />
+                <dependentPart node="transportConnection" />
+            </movingTool>
+
+            <movingTool node="frontLift" playSound="true" >
+                <dependentPart node="frontArmHydraulics" />
+            </movingTool>
+
+            <movingTool node="claw" playSound="true" >
+                <dependentPart node="hydraulicGrabber" />
+            </movingTool>
+
+            <movingTool node="backArmMechanism" playSound="true" >
+                <dependentPart node="backArmHydraulics" />
+            </movingTool>
+
+            <movingTool node="unloadPlattform" playSound="true" >
+                <dependentPart node="backArmHydraulics" />
+            </movingTool>
+
+            <movingTool node="mainPlattform" playSound="true" >
+                <dependentPart node="hydraulicWrapper" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <!-- transport arm hydraulic -->
+            <movingPart node="transportHydraulics" referencePoint="hydraulicsRef" referenceFrame="z586_main_component1" >
+                <translatingPart node="transportHydraulicsPunch" />
+            </movingPart>
+
+            <!-- transport connection -->
+            <movingPart node="transportConnection" referencePoint="transportHydraulicsRef" referenceFrame="z586_main_component1" />
+
+            <!-- back unload hydraulic -->
+            <movingPart node="backArmHydraulics" referencePoint="backHydraulicsRef" referenceFrame="z586_main_component1" >
+                <translatingPart node="backArmHydraulicsPunch" />
+            </movingPart>
+
+            <!-- wrapper plattform tilt hydraulic -->
+            <movingPart node="hydraulicWrapper" referencePoint="hydraulicWrapperRef" referenceFrame="z586_main_component1" >
+                <translatingPart node="hydraulicWrapperPunch" />
+            </movingPart>
+
+            <!-- front arm lift hydraulic -->
+            <movingPart node="frontArmHydraulics" referencePoint="frontArmRef" referenceFrame="z586_main_component1" >
+                <translatingPart node="frontArmHydraulicsPunch" />
+            </movingPart>
+
+            <!-- front claw hydraulic -->
+            <movingPart node="hydraulicGrabber" referencePoint="hydraulicGrabberRef" referenceFrame="z586_main_component1" >
+                <translatingPart node="hydraulicGrabberPunch" />
+            </movingPart>
+        </movingParts>
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND"/>
+        </sounds>
+    </cylindered>
+
+    <baleWrapper foldMinLimit="0.0" foldMaxLimit="0.0" >
+        <grabber node="baleGrabNode" nearestDistance="0.8" />
+        <roundBaleWrapper baleNode="wrapperBaleNode" wrapperNode="upperPart" wrapperRotAxis="2" wrappingTime="15" >
+            <animations>
+                <moveToWrapper animName="moveBaleToWrapper" animSpeed="1" reverseAfterMove="true" />
+                <dropFromWrapper animName="dropBaleFromWrapper" animSpeed="1" />
+                <resetAfterDrop animName="resetWrapperAfterBaleDrop" animSpeed="1" />
+            </animations>
+            <baleTypes>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+				<baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+            </baleTypes>
+            <wrapperAnimation>
+                <key time="0"       baleRot="0 0 0"     wrapperRot="0 0 0" />
+                <key time="0.1"     baleRot="0 0 0"     wrapperRot="0 378 0" />
+                <key time="0.38095" baleRot="0 0 150"   wrapperRot="0 1440 0" />
+                <key time="1"       baleRot="0 0 360"   wrapperRot="0 3780 0" />
+            </wrapperAnimation>
+            <wrapNodes>
+                <wrapNode index="baleWrap" wrapVisibility="true" emptyVisibility="false" />
+                <wrapNode index="baleWrapEmpty" wrapVisibility="false" emptyVisibility="true" />
+                <wrapNode index="baleWrapBack" wrapVisibility="true" emptyVisibility="false" maxWrapperRot="576"/>
+            </wrapNodes>
+            <wrapAnimNodes>
+                <wrapAnimNode index="baleWrapBack" repeatWrapperRot="false">
+                    <key wrapperRot="0" trans="-0.601 0.234 -0.859" rot="0 1.996 0" scale="0.96 1 1" />
+                    <key wrapperRot="192" trans="-0.601 0.234 -0.859" rot="-10.513 -9.522 -10.681" scale="0.92 1 1" />
+                    <key wrapperRot="576" trans="-0.601 0.234 -0.859" rot="-48.03 -39.998 -25.09" scale="0.8 1 1" />
+                </wrapAnimNode>
+                <wrapAnimNode index="topJoint" repeatWrapperRot="true">
+                    <key wrapperRot="0" trans="-0.319 0.289 -1.772" rot="0 0 0.681" />
+                    <key wrapperRot="7.7" trans="-0.41 0.29176 -1.89167" rot="0 3 0" />
+                    <key wrapperRot="15" trans="-0.219 0.315 -0.92274" rot="0 5 0" />
+                    <key wrapperRot="50" trans="-0.132 0.298 -1.304" rot="0 0 11" />
+                    <key wrapperRot="90" trans="-0.339 0.304 -1.788" rot="0 5 14" />
+                    <key wrapperRot="100" trans="-0.27 0.29577 -0.79305" rot="0 5 14" />
+                    <key wrapperRot="150" trans="-0.118 0.304 -1.446" rot="0 0 0" />
+                    <key wrapperRot="180" trans="-0.25741 0.315 -1.77852" rot="0 0 0" />
+                </wrapAnimNode>
+                <wrapAnimNode index="middle" repeatWrapperRot="true">
+                    <key wrapperRot="0" trans="-0.319 -0.01 -1.845" rot="0 0 0" />
+                    <key wrapperRot="7.7" trans="-0.41 -0.03837 -1.93009" rot="0 3 0" />
+                    <key wrapperRot="15" trans="-0.21 -0.02 -0.88165" rot="0 5 0" />
+                    <key wrapperRot="50" trans="-0.084 -0.02 -1.279" rot="0 0 0" />
+                    <key wrapperRot="90" trans="-0.274 -0.02 -1.788" rot="0 0 0" />
+                    <key wrapperRot="100" trans="-0.201 -0.02 -0.82803" rot="0 0 0" />
+                    <key wrapperRot="150" trans="-0.096 -0.02 -1.474" rot="0 0 0" />
+                    <key wrapperRot="180" trans="-0.26671 0 -1.81928" rot="0 0 0" />
+                </wrapAnimNode>
+                <wrapAnimNode index="bottom" repeatWrapperRot="true">
+                    <key wrapperRot="0" trans="-0.319 -0.304 -1.772" rot="0 0 -0.681" />
+                    <key wrapperRot="7.7" trans="-0.41 -0.315 -1.87738" rot="0 3 0" />
+                    <key wrapperRot="15" trans="-0.213 -0.315 -0.92337" rot="0 5 0" />
+                    <key wrapperRot="50" trans="-0.132 -0.312 -1.314" rot="0 0 -11" />
+                    <key wrapperRot="90" trans="-0.337 -0.303 -1.788" rot="0 5 -14" />
+                    <key wrapperRot="100" trans="-0.27 -0.30422 -0.81614" rot="0 5 -14" />
+                    <key wrapperRot="150" trans="-0.118 -0.315 -1.446" rot="0 0 0" />
+                    <key wrapperRot="180" trans="-0.26585 -0.315 -1.77187" rot="0 0 0" />
+                </wrapAnimNode>
+            </wrapAnimNodes>
+            <sounds wrappingEndTime="0.95">
+                <start template="BALER_WRAPPING_START" linkNode="z586_main_component1" />
+                <wrap template="BALE_WRAPPING_01" linkNode="z586_main_component1" />
+                <stop template="BALE_WRAPPING_STOP" linkNode="z586_main_component1" />
+            </sounds>
+        </roundBaleWrapper>
+    </baleWrapper>
+
+    <wrappingColorConfigurations>
+        <wrappingColorConfiguration color="0.995 0.995 0.995 1" price="0" />
+        <wrappingColorConfiguration color="0.05 0.05 0.05 1" price="0" />
+        <wrappingColorConfiguration color="0.6662 0.3839 0.5481 1" price="0" />
+        <wrappingColorConfiguration color="0.391 0.521 0.366 1" price="0" />
+
+        <colorNode node="baleWrapEmpty" />
+        <colorNode node="baleWrapBack" />
+        <colorNode node="baleWrap" />
+        <colorNode node="plasticRoll" />
+    </wrappingColorConfigurations>
+
+    <foliageBending>
+        <bendingNode minX="0" maxX="2.2" minZ="-0.25" maxZ="0.25" yOffset="-0.05" node="attacherJoint" />
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-2.65" maxZ="0.6" yOffset="0.45" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="z586_main_component1" node="0>" />
+        <i3dMapping id="rear2ChamberLight_03_rear2ChamberLight_0302" node="0>0|0|0|0" />
+        <i3dMapping id="rear2ChamberLight_03_rear2ChamberLight_0301" node="0>0|0|0|1" />
+        <i3dMapping id="redTriangle_02_redTriangle_0202" node="0>0|0|0|2" />
+        <i3dMapping id="redTriangle_02_redTriangle_0201" node="0>0|0|0|3" />
+        <i3dMapping id="backLightsHigh" node="0>0|0|1|0" />
+        <i3dMapping id="turnLightLeftBack1" node="0>0|0|2|0" />
+        <i3dMapping id="turnLightRightBack1" node="0>0|0|2|1" />
+        <i3dMapping id="frontlightStatic" node="0>0|0|3" />
+        <i3dMapping id="lightsStatic" node="0>0|0|4" />
+        <i3dMapping id="wheelLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelRight" node="0>0|1|1" />
+        <i3dMapping id="transportHydraulics" node="0>0|2|0" />
+        <i3dMapping id="transportHydraulicsPunch" node="0>0|2|0|0" />
+        <i3dMapping id="transportHydraulicsRef" node="0>0|2|1" />
+        <i3dMapping id="backArmHydraulics" node="0>0|2|2" />
+        <i3dMapping id="backArmHydraulicsPunch" node="0>0|2|2|0" />
+        <i3dMapping id="hydraulicWrapper" node="0>0|2|3" />
+        <i3dMapping id="hydraulicWrapperPunch" node="0>0|2|3|0" />
+        <i3dMapping id="frontArmHydraulics" node="0>0|2|4" />
+        <i3dMapping id="frontArmHydraulicsPunch" node="0>0|2|4|0" />
+        <i3dMapping id="transportArm" node="0>0|3|0" />
+        <i3dMapping id="attacherJoint" node="0>0|3|0|0" />
+        <i3dMapping id="support" node="0>0|3|0|2|0" />
+        <i3dMapping id="hydraulicsRef" node="0>0|3|0|3" />
+        <i3dMapping id="transportConnection" node="0>0|3|0|4" />
+        <i3dMapping id="frontLift" node="0>0|3|1" />
+        <i3dMapping id="claw" node="0>0|3|1|0" />
+        <i3dMapping id="hydraulicGrabberRef" node="0>0|3|1|0|0" />
+        <i3dMapping id="hydraulicGrabber" node="0>0|3|1|1" />
+        <i3dMapping id="hydraulicGrabberPunch" node="0>0|3|1|1|0" />
+        <i3dMapping id="frontArmRef" node="0>0|3|1|2" />
+        <i3dMapping id="baleGrabNode" node="0>0|3|1|3|0" />
+        <i3dMapping id="backArmMechanism" node="0>0|3|2" />
+        <i3dMapping id="unloadPlattform" node="0>0|3|2|0|0" />
+        <i3dMapping id="backHydraulicsRef" node="0>0|3|2|0|0|0" />
+        <i3dMapping id="mainPlattform" node="0>0|3|3" />
+        <i3dMapping id="upperPart" node="0>0|3|3|0" />
+        <i3dMapping id="wrapperBaleNode" node="0>0|3|3|0|0|0" />
+        <i3dMapping id="baleWrapBack" node="0>0|3|3|0|4" />
+        <i3dMapping id="hydraulicWrapperRef" node="0>0|3|3|1" />
+        <i3dMapping id="plasticRoll" node="0>0|4|0" />
+        <i3dMapping id="baleWrap" node="0>0|4|1" />
+        <i3dMapping id="baleWrapEmpty" node="0>0|4|2" />
+        <i3dMapping id="topJoint" node="0>0|5|0" />
+        <i3dMapping id="middle" node="0>0|5|1" />
+        <i3dMapping id="bottom" node="0>0|5|2" />
+    </i3dMappings>
+</vehicle>

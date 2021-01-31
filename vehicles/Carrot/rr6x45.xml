@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutterFruitPreparer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>RR 6x45 Carrot</name>
+        <specs>
+            <workingWidth>2.7</workingWidth>
+            <combination>Panther 2</combination>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>$data/vehicles/ropa/rr6x45/store_rr6x45.png</image>
+        <price>54000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>ROPA</brand>
+        <category>beetHarvesting</category>
+        <vertexBufferMemoryUsage>7627152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1455894</indexBufferMemoryUsage>
+        <textureMemoryUsage>23942792</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>$data/vehicles/ropa/rr6x45/rr6x45.i3d</filename>
+        <size width="3" length="6" lengthOffset="0.5"/>
+        <speedLimit value="12"/>
+        <components>
+            <component centerOfMass="0 0.5 -0.7" solverIterationCount="10" mass="2000"/>
+            <component                           solverIterationCount="10" mass="500"/>
+            <joint component1="1" component2="2" node="defoliatorUnitJoint"   rotLimit="0 0 0" transLimit="0 0 0"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel>
+                        <physics restLoad="0.4" repr="defoliatorUnitLeftWheelYRotPhysic"  driveNode="defoliatorUnitLeftWheelPhysic"  radius="0.31" width="0.2" forcePointRatio="0.3" initialCompression="22" suspTravel="0.12" spring="10" damper="20" versatileYRot="true"/>
+                    </wheel>
+                    <wheel>
+                        <physics restLoad="0.4" repr="defoliatorUnitRightWheelYRotPhysic" driveNode="defoliatorUnitRightWheelPhysic" radius="0.31" width="0.2" forcePointRatio="0.3" initialCompression="22" suspTravel="0.12" spring="10" damper="20" versatileYRot="true"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="defoliatorUnit01LeftWheel" filename="$data/shared/wheels/trelleborg/T510/165R15.xml"/>
+            <dynamicallyLoadedWheel linkNode="defoliatorUnit01RightWheel" filename="$data/shared/wheels/trelleborg/T510/165R15.xml"/>
+        </dynamicallyLoadedWheels>
+
+        <hubs>
+            <color0>ROPA_YELLOW</color0>
+            <hub linkNode="defoliatorUnit01LeftWheel"   filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.12 0.14 0.14" />
+            <hub linkNode="defoliatorUnit01RightWheel"  filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.12 0.14 0.14" />
+        </hubs>
+    </wheels>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="liftingUnitWheel" radius="0.421" groundReferenceNodeIndex="1" foldMinLimit="0" foldMaxLimit="0.1"/>
+        <speedRotatingPart node="defoliatorUnit01LeftWheelYRot" driveNode="defoliatorUnit01LeftWheel" radius="0.318" foldMinLimit="0" foldMaxLimit="0.001" versatileYRot="true" minYRot="-70" maxYRot="70" groundReferenceNodeIndex="2" stopIfNotActive="true"/>
+        <speedRotatingPart node="defoliatorUnit01RightWheelYRot" driveNode="defoliatorUnit01RightWheel" radius="0.318" foldMinLimit="0" foldMaxLimit="0.001" versatileYRot="true" minYRot="-70" maxYRot="70" groundReferenceNodeIndex="3" stopIfNotActive="true"/>
+    </speedRotatingParts>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="cutter" upperRotationOffset="0" forceSelectionOnAttach="false">
+                <distanceToGround lower="0.9" upper="1.1"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <lowerAnimation name="lowerAnimation"/>
+        <brakeForce>0.2</brakeForce>
+    </attachable>
+
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="150"/>
+
+    <lights>
+        <sharedLight linkNode="leftFrontLight" node="0" lightTypes="0 3" filename="$data/shared/assets/lights/lizard/frontLightOval_02_left.xml" />
+        <sharedLight linkNode="rightFrontLight" node="0" lightTypes="0 3" filename="$data/shared/assets/lights/lizard/frontLightOval_02_right.xml" />
+        <sharedLight linkNode="reflectorLeft" node="0" lightTypes="0 3" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml" />
+        <sharedLight linkNode="reflectorRight" node="0" lightTypes="0 3" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml" />
+
+        <realLights>
+            <high>
+                <light node="workLightFrontHigh" lightTypes="2"/>
+            </high>
+        </realLights>
+
+        <defaultLights>
+            <defaultLight shaderNode="workLightSelfIllum01" lightTypes="2" />
+            <defaultLight shaderNode="workLightSelfIllum02" lightTypes="2" />
+            <defaultLight shaderNode="workLightSelfIllum03" lightTypes="2" />
+            <defaultLight shaderNode="workLightSelfIllum04" lightTypes="2" />
+        </defaultLights>
+    </lights>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="rr6x45_main_component1" threshold="0.4"/>
+        <groundReferenceNode node="defoliatorUnit01LeftWheel" threshold="0.5"/>
+        <groundReferenceNode node="defoliatorUnit01RightWheel" threshold="0.5"/>
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="fruitPreparer" functionName="processFruitPreparerArea" disableBackwards="false" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <fruitPreparer dropWorkAreaIndex="3" />
+            <folding minLimit="0" maxLimit="0.1" />
+        </workArea>
+
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <folding minLimit="0" maxLimit="0.1" />
+        </workArea>
+
+        <workArea type="auxiliary" >
+            <area startNode="dropAreaStart" widthNode="dropAreaWidth" heightNode="dropAreaHeight" />
+        </workArea>
+    </workAreas>
+
+    <foldable>
+        <foldingParts turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.1" turnOnFoldDirection="-1">
+            <foldingPart animationName="folding" speedScale="1"/>
+        </foldingParts>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <part node="defoliatorUnit01RowDetectorArm" startTime="0" endTime="1.5" startRot="0 0 0" endRot="-90 0 0"/>
+            <part node="defoliatorUnit01RowDetectorLowerArm" startTime="0" endTime="1.5" startRot="0 0 0" endRot="-15 0 0"/>
+            <part node="defoliatorUnit01RowDetectorLock" startTime="0.75" endTime="0.9" startRot="0 0 0" endRot="-45 0 0"/>
+            <part node="defoliatorUnit01RowDetectorLock" startTime="1.5" endTime="1.6" startRot="-45 0 0" endRot="0 0 0"/>
+
+            <part node="defoliatorUnit01RightWheelArm01" startTime="0" endTime="1.5" startRot="0 0 0" endRot="0 75 0"/>
+            <part node="defoliatorUnit01LeftWheelYRot" startTime="0.5" endTime="1.5" endRot="0 0 0"/>
+            <part node="defoliatorUnit01LeftWheelArm01" startTime="0" endTime="1.5" startRot="0 0 0" endRot="0 -75 0"/>
+            <part node="defoliatorUnit01RightWheelYRot" startTime="0.5" endTime="1.5" endRot="0 0 0"/>
+
+            <part node="defoliatorUnit01DistributorArm" startTime="0" endTime="1.5" startRot="0 0 -179.99" endRot="0 0 0"/>
+            <part node="distributorCoverAnimBone01" startTime="0.0" endTime="1.5"  startTrans="-0.399 0.05 -0.417" endTrans="-0.382 0.207 -0.417" />
+
+            <part node="liftingUnit" startTime="1.5" endTime="5" startRot="0 0 0" endRot="-90 0 0"/>
+            <part node="liftingUnitWheelArm" startTime="1" endTime="3" startRot="0 0 0" endRot="24 0 0"/>
+
+            <part node="defoliatorUnit01AnimBone01" startTime="1.5" endTime="5.0"  startTrans="1.182 1.064 -0.876" endTrans="1.182 0.955 -1.375" startRot="0.0 0.0 0.0" endRot="-22.712 0.0 0.0" />
+            <part node="defoliatorUnit01AnimBone02" startTime="1.5" endTime="5.0"  startTrans="-1.182 1.064 -0.876" endTrans="-1.182 0.975 -1.274" startRot="0.0 0.0 0.0" endRot="-20.363 0.0 0.0" />
+
+            <part node="defoliatorUnitJoint" startTime="0" endTime="2" startTrans="0 -0.8 0.781" endTrans="0 -0.282 0.781"/>
+
+            <part startTime="0" endTime="1" requiredAnimation="lowerAnimation" requiredAnimationRange="1 1" componentJointIndex="1" startTransLimit="0 0.4 0" endTransLimit="0 0 0"/>
+        </animation>
+        <animation name="lowerAnimation">
+            <part startTime="0" endTime="1" requiredAnimation="folding" requiredAnimationRange="0 0" componentJointIndex="1" startTransLimit="0 0 0" endTransLimit="0 0.4 0"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="defoliatorUnitJoint" playSound="true">
+                <componentJoint index="1"/>
+            </movingTool>
+            <movingTool node="liftingUnit" playSound="true">
+                <dependentPart node="liftingUnitHydraulic"/>
+                <componentJoint index="1"/>
+            </movingTool>
+            <movingTool node="liftingUnitWheelArm" playSound="true">
+                <dependentPart node="liftingUnitWheelArmHydraulic"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit01RowDetectorLowerArm" playSound="true">
+                <dependentPart node="defoliatorUnit01RowDetectorUpperArm"/>
+                <dependentPart node="defoliatorUnit01RowDetector"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit01CutterArm01">
+                <dependentPart node="defoliatorUnit01BladeArm01"/>
+                <dependentPart node="defoliatorUnit01BladeArm01TopArm"/>
+                <dependentPart node="defoliatorUnit01SensorArm01"/>
+                <dependentPart node="defoliatorUnit01SensorArm01TopArm"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit01CutterArm02">
+                <dependentPart node="defoliatorUnit01BladeArm02"/>
+                <dependentPart node="defoliatorUnit01BladeArm02TopArm"/>
+                <dependentPart node="defoliatorUnit01SensorArm02"/>
+                <dependentPart node="defoliatorUnit01SensorArm02TopArm"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit01CutterArm03">
+                <dependentPart node="defoliatorUnit01BladeArm03"/>
+                <dependentPart node="defoliatorUnit01BladeArm03TopArm"/>
+                <dependentPart node="defoliatorUnit01SensorArm03"/>
+                <dependentPart node="defoliatorUnit01SensorArm03TopArm"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit02CutterArm01">
+                <dependentPart node="defoliatorUnit02BladeArm01"/>
+                <dependentPart node="defoliatorUnit02BladeArm01TopArm"/>
+                <dependentPart node="defoliatorUnit02SensorArm01"/>
+                <dependentPart node="defoliatorUnit02SensorArm01TopArm"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit02CutterArm02">
+                <dependentPart node="defoliatorUnit02BladeArm02"/>
+                <dependentPart node="defoliatorUnit02BladeArm02TopArm"/>
+                <dependentPart node="defoliatorUnit02SensorArm02"/>
+                <dependentPart node="defoliatorUnit02SensorArm02TopArm"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit02CutterArm03">
+                <dependentPart node="defoliatorUnit02BladeArm03"/>
+                <dependentPart node="defoliatorUnit02BladeArm03TopArm"/>
+                <dependentPart node="defoliatorUnit02SensorArm03"/>
+                <dependentPart node="defoliatorUnit02SensorArm03TopArm"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit01DistributorArm">
+                <dependentPart node="defoliatorUnit01DistributorRefArm01"/>
+            </movingTool>
+            <movingTool node="defoliatorUnit01RowDetectorLock">
+                <dependentPart node="defoliatorUnit01RowDetectorLockSpring"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="defoliatorBottomArm" referencePoint="defoliatorBottomArmRef" referenceFrame="defoliatorBottomArmRef" isActiveDirty="true"/>
+            <movingPart node="defoliatorUnits" referencePoint="defoliatorUnitsRef" referenceFrame="defoliatorUnitsRef" isActiveDirty="true"/>
+            <movingPart node="defoliatorTopArm" referencePoint="defoliatorTopArmRef" referenceFrame="defoliatorTopArmRef" isActiveDirty="true"/>
+            <movingPart node="defoliatorTopArmHydraulic" referencePoint="defoliatorTopArmHydraulicRef" referenceFrame="defoliatorTopArmHydraulicRef" isActiveDirty="true">
+                <translatingPart node="defoliatorTopArmHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="liftingUnitHydraulic" referencePoint="liftingUnitHydraulicRef" referenceFrame="liftingUnitHydraulicRef">
+                <translatingPart node="liftingUnitHydraulicPunch" />
+            </movingPart>
+            <movingPart node="liftingUnitWheelArm" referencePoint="liftingUnitWheelArmHydraulicRef" referenceFrame="liftingUnitWheelArmHydraulicRef">
+                <translatingPart node="liftingUnitWheelArmHydraulicPunch" />
+            </movingPart>
+
+            <!-- row detectors -->
+            <movingPart node="defoliatorUnit01RowDetectorUpperArm" referenceFrame="defoliatorUnit01RowDetectorLowerArm" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit01RowDetector" referenceFrame="defoliatorUnit01RowDetectorLowerArm" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+
+            <!-- lifting parts -->
+            <movingPart node="leftLiftingParts" referencePoint="leftLiftingPartsRef" localReferencePoint="leftLiftingPartsOriArm" referenceFrame="leftLiftingPartsRefFrame" isActiveDirty="true">
+                <dependentPart node="leftLiftingPartsOriArm"/>
+            </movingPart>
+            <movingPart node="leftLiftingPartsOriArm" referencePoint="leftLiftingPartsRef" referenceFrame="leftLiftingPartsOriArmRefFrame"/>
+
+            <movingPart node="rightLiftingParts" referencePoint="rightLiftingPartsRef" localReferencePoint="rightLiftingPartsOriArm" referenceFrame="rightLiftingPartsRefFrame" isActiveDirty="true">
+                <dependentPart node="rightLiftingPartsOriArm"/>
+            </movingPart>
+            <movingPart node="rightLiftingPartsOriArm" referencePoint="rightLiftingPartsRef" referenceFrame="rightLiftingPartsOriArmRefFrame"/>
+
+            <!-- blades -->
+            <movingPart node="defoliatorUnit01BladeArm01"        referenceFrame="defoliatorUnit01CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit01BladeArm01TopArm"  referenceFrame="defoliatorUnit01CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit01SensorArm01"       referenceFrame="defoliatorUnit01CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit01SensorArm01TopArm" referenceFrame="defoliatorUnit01CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+
+            <movingPart node="defoliatorUnit01BladeArm02"        referenceFrame="defoliatorUnit01CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit01BladeArm02TopArm"  referenceFrame="defoliatorUnit01CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit01SensorArm02"       referenceFrame="defoliatorUnit01CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit01SensorArm02TopArm" referenceFrame="defoliatorUnit01CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+
+            <movingPart node="defoliatorUnit01BladeArm03"        referenceFrame="defoliatorUnit01CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit01BladeArm03TopArm"  referenceFrame="defoliatorUnit01CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit01SensorArm03"       referenceFrame="defoliatorUnit01CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit01SensorArm03TopArm" referenceFrame="defoliatorUnit01CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+
+            <!-- blades unit 2 -->
+            <movingPart node="defoliatorUnit02BladeArm01"        referenceFrame="defoliatorUnit02CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit02BladeArm01TopArm"  referenceFrame="defoliatorUnit02CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit02SensorArm01"       referenceFrame="defoliatorUnit02CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit02SensorArm01TopArm" referenceFrame="defoliatorUnit02CutterArm01" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+
+            <movingPart node="defoliatorUnit02BladeArm02"        referenceFrame="defoliatorUnit02CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit02BladeArm02TopArm"  referenceFrame="defoliatorUnit02CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit02SensorArm02"       referenceFrame="defoliatorUnit02CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit02SensorArm02TopArm" referenceFrame="defoliatorUnit02CutterArm02" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+
+            <movingPart node="defoliatorUnit02BladeArm03"        referenceFrame="defoliatorUnit02CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit02BladeArm03TopArm"  referenceFrame="defoliatorUnit02CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+            <movingPart node="defoliatorUnit02SensorArm03"       referenceFrame="defoliatorUnit02CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="-1"/>
+            <movingPart node="defoliatorUnit02SensorArm03TopArm" referenceFrame="defoliatorUnit02CutterArm03" moveToReferenceFrame="false" doDirectionAlignment="false" doRotationAlignment="true" rotMultiplier="1"/>
+
+            <!-- distributor -->
+            <movingPart node="defoliatorUnit01DistributorRefArm01" referencePoint="defoliatorUnit01DistributorRefArmRef" localReferencePoint="defoliatorUnit01DistributorRefArm02" referenceFrame="defoliatorUnit01DistributorRefArm01RefFrame" isActiveDirty="true">
+                <dependentPart node="defoliatorUnit01DistributorRefArm02"/>
+                <dependentPart node="defoliatorUnit01DistributorRefArmHydraulic"/>
+            </movingPart>
+            <movingPart node="defoliatorUnit01DistributorRefArm02" referencePoint="defoliatorUnit01DistributorRefArmRef" referenceFrame="defoliatorUnit01DistributorRefArm02RefFrame"/>
+
+            <movingPart node="defoliatorUnit01DistributorRefArmHydraulic" referencePoint="defoliatorUnit01DistributorRefArmHydraulicRef" referenceFrame="defoliatorUnit01DistributorRefArmHydraulicRef">
+                <translatingPart node="defoliatorUnit01DistributorRefArmHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="defoliatorUnit01RowDetectorLockSpring" referencePoint="defoliatorUnit01RowDetectorLockSpringRef" referenceFrame="defoliatorUnit01RowDetectorLockSpringRef" scaleZ="true"/>
+            <movingPart node="defoliatorUnit01LeftWheelYRotSpring" referencePoint="defoliatorUnit01LeftWheelYRotSpringRef" referenceFrame="defoliatorUnit01LeftWheelYRotSpringRef" scaleZ="true" isActiveDirty="true"/>
+            <movingPart node="defoliatorUnit01RightWheelYRotSpring" referencePoint="defoliatorUnit01RightWheelYRotSpringRef" referenceFrame="defoliatorUnit01RightWheelYRotSpringRef" scaleZ="true" isActiveDirty="true"/>
+        </movingParts>
+
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="rr6x45_main_component1"/>
+        </sounds>
+    </cylindered>
+
+    <cutter fruitTypes="carrot">
+        <animationNodes>
+            <animationNode node="rotatingPart01"    rotSpeed="250"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart02"    rotSpeed="-1000"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart03"    rotSpeed="-1000"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart04"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart05"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart06"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart07"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart08"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart09"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="rotatingPart10"    rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="shakeRotatingPart" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="defoliatorUnit01Distributor" rotSpeed="-1300" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="defoliatorUnit01Auger" rotSpeed="700" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+        </animationNodes>
+
+        <fillEffect>
+            <effectNode effectNode="morphMesh"   effectClass="MorphPositionEffect"  materialType="belt" delay="0" fadeTime="2" scrollLength="2" scrollSpeed="0.8" />
+        </fillEffect>
+    </cutter>
+
+    <workParticles>
+        <particle>
+            <node node="prepareFruitEmitter"  refNodeIndex="1" particleType="PREPARE_FRUIT"   fillType="carrot" movingDirection="1" emitCountScale="4"/>
+            <node node="prepareFruitEmitter1" refNodeIndex="1" particleType="PREPARE_FRUIT"   fillType="carrot" movingDirection="1" emitCountScale="10" lifespan="0.4" speedThreshold="0.1" useEmitterVisibility="true"/>
+            <node node="prepareFruitEmitter2" refNodeIndex="1" particleType="PREPARE_FRUIT"   fillType="carrot" movingDirection="1" emitCountScale="10" lifespan="0.11" worldSpace="false" speedThreshold="0.1"/>
+            <node node="soilEmitter"          refNodeIndex="1" particleType="SOIL_HARVESTING" fillType="carrot" movingDirection="1" emitCountScale="4"/>
+        </particle>
+    </workParticles>
+
+    <fruitPreparer fruitType="carrot">
+        <animationNodes>
+            <animationNode node="defoliatorUnit01Chopper" rotSpeed="800" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2"/>
+        </animationNodes>
+    </fruitPreparer>
+
+    <designConfigurations>
+        <designConfiguration name="RIS-45" price="0">
+            <objectChange node="defoliatorUnit01" visibilityActive="false"/>
+            <objectChange node="defoliatorUnit01Hoses" visibilityActive="false"/>
+            <objectChange node="distributorCover" visibilityActive="false"/>
+
+            <objectChange node="defoliatorUnit02" visibilityActive="true"/>
+            <objectChange node="defoliatorUnit02Hoses" visibilityActive="true"/>
+
+            <objectChange node="dropAreaStart" translationActive="1.350 0 1.383"/>
+            <objectChange node="dropAreaWidth" translationActive="-1.350 0 1.383"/>
+            <objectChange node="dropAreaHeight" translationActive="1.350 0 -0.701"/>
+        </designConfiguration>
+        <designConfiguration name="RASW-45" price="1000">
+            <objectChange node="defoliatorUnit01" visibilityActive="true"/>
+            <objectChange node="defoliatorUnit01Hoses" visibilityActive="true"/>
+            <objectChange node="distributorCover" visibilityActive="true"/>
+
+            <objectChange node="defoliatorUnit02" visibilityActive="false"/>
+            <objectChange node="defoliatorUnit02Hoses" visibilityActive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+
+    <turnOnVehicle turnOffIfNotAllowed="true" turnedOnByAttacherVehicle="true"/>
+
+    <randomlyMovingParts>
+        <randomlyMovingPart node="defoliatorUnit01CutterArm01" rotAxis="1" rotMean="30 0" rotVariance="8 1" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" refNodeIndex="1" moveOnlyIfCutted="true"/>
+        <randomlyMovingPart node="defoliatorUnit01CutterArm02" rotAxis="1" rotMean="30 0" rotVariance="8 1" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" refNodeIndex="1" moveOnlyIfCutted="true"/>
+        <randomlyMovingPart node="defoliatorUnit01CutterArm03" rotAxis="1" rotMean="30 0" rotVariance="8 1" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" refNodeIndex="1" moveOnlyIfCutted="true"/>
+
+        <randomlyMovingPart node="defoliatorUnit02CutterArm01" rotAxis="1" rotMean="30 0" rotVariance="8 1" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" refNodeIndex="1" moveOnlyIfCutted="true"/>
+        <randomlyMovingPart node="defoliatorUnit02CutterArm02" rotAxis="1" rotMean="30 0" rotVariance="8 1" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" refNodeIndex="1" moveOnlyIfCutted="true"/>
+        <randomlyMovingPart node="defoliatorUnit02CutterArm03" rotAxis="1" rotMean="30 0" rotVariance="8 1" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" refNodeIndex="1" moveOnlyIfCutted="true"/>
+    </randomlyMovingParts>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack"/>
+        <collisionTrigger node="aiCollisionTrigger"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-1.9" maxZ="-0.6" yOffset="0.2" />
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-0.3" maxZ="1.8" yOffset="-1.0" node="liftingUnit" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="rr6x45_mat" baseNode="rr6x45_vis">
+            <shaderParameter name="colorMat0" value="ROPA_YELLOW"/>
+            <shaderParameter name="colorMat1" value="ROPA_GRAY1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="rr6x45_main_component1" node="0>" />
+        <i3dMapping id="rr6x45_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="workLightSelfIllum01" node="0>0|1|0|0" />
+        <i3dMapping id="workLightSelfIllum02" node="0>0|1|0|1" />
+        <i3dMapping id="reflectorLeft" node="0>0|1|1|0" />
+        <i3dMapping id="reflectorRight" node="0>0|1|1|1" />
+        <i3dMapping id="workLightFrontHigh" node="0>0|1|2|0" />
+        <i3dMapping id="liftingUnit" node="0>0|2|0" />
+        <i3dMapping id="defoliatorUnitJoint" node="0>0|2|0|0" />
+        <i3dMapping id="defoliatorBottomArm" node="0>0|2|0|1" />
+        <i3dMapping id="defoliatorUnits" node="0>0|2|0|1|0" />
+        <i3dMapping id="defoliatorUnit01" node="0>0|2|0|1|0|0" />
+        <i3dMapping id="defoliatorUnit01Auger" node="0>0|2|0|1|0|0|0" />
+        <i3dMapping id="defoliatorUnit01DistributorArm" node="0>0|2|0|1|0|0|1" />
+        <i3dMapping id="defoliatorUnit01Distributor" node="0>0|2|0|1|0|0|1|0|0" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArmRef" node="0>0|2|0|1|0|0|1|1" />
+        <i3dMapping id="prepareFruitEmitter1" node="0>0|2|0|1|0|0|1|2|0" />
+        <i3dMapping id="distributorCoverAnimBone01" node="0>0|2|0|1|0|0|1|7" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArm01" node="0>0|2|0|1|0|0|2" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArm02RefFrame" node="0>0|2|0|1|0|0|2|0" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArm02" node="0>0|2|0|1|0|0|2|0|0" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArmHydraulicRef" node="0>0|2|0|1|0|0|2|0|0|0" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArmHydraulic" node="0>0|2|0|1|0|0|3" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArmHydraulicPunch" node="0>0|2|0|1|0|0|3|0" />
+        <i3dMapping id="defoliatorUnit01DistributorRefArm01RefFrame" node="0>0|2|0|1|0|0|4" />
+        <i3dMapping id="defoliatorUnit01CutterArm01" node="0>0|2|0|1|0|0|5" />
+        <i3dMapping id="defoliatorUnit01BladeArm01" node="0>0|2|0|1|0|0|5|0" />
+        <i3dMapping id="defoliatorUnit01BladeArm01TopArm" node="0>0|2|0|1|0|0|5|0|0" />
+        <i3dMapping id="defoliatorUnit01SensorArm01" node="0>0|2|0|1|0|0|5|1" />
+        <i3dMapping id="defoliatorUnit01SensorArm01TopArm" node="0>0|2|0|1|0|0|5|1|0" />
+        <i3dMapping id="defoliatorUnit01CutterArm02" node="0>0|2|0|1|0|0|6" />
+        <i3dMapping id="defoliatorUnit01BladeArm02" node="0>0|2|0|1|0|0|6|0" />
+        <i3dMapping id="defoliatorUnit01BladeArm02TopArm" node="0>0|2|0|1|0|0|6|0|0" />
+        <i3dMapping id="defoliatorUnit01SensorArm02" node="0>0|2|0|1|0|0|6|0|1" />
+        <i3dMapping id="defoliatorUnit01SensorArm02TopArm" node="0>0|2|0|1|0|0|6|0|1|0" />
+        <i3dMapping id="defoliatorUnit01CutterArm03" node="0>0|2|0|1|0|0|7" />
+        <i3dMapping id="defoliatorUnit01BladeArm03" node="0>0|2|0|1|0|0|7|0" />
+        <i3dMapping id="defoliatorUnit01BladeArm03TopArm" node="0>0|2|0|1|0|0|7|0|0" />
+        <i3dMapping id="defoliatorUnit01SensorArm03" node="0>0|2|0|1|0|0|7|1" />
+        <i3dMapping id="defoliatorUnit01SensorArm03TopArm" node="0>0|2|0|1|0|0|7|1|0" />
+        <i3dMapping id="prepareFruitEmitter2" node="0>0|2|0|1|0|0|8|0" />
+        <i3dMapping id="defoliatorUnit02" node="0>0|2|0|1|0|1" />
+        <i3dMapping id="defoliatorUnit02CutterArm01" node="0>0|2|0|1|0|1|0" />
+        <i3dMapping id="defoliatorUnit02BladeArm01" node="0>0|2|0|1|0|1|0|0" />
+        <i3dMapping id="defoliatorUnit02BladeArm01TopArm" node="0>0|2|0|1|0|1|0|0|0" />
+        <i3dMapping id="defoliatorUnit02SensorArm01" node="0>0|2|0|1|0|1|0|1" />
+        <i3dMapping id="defoliatorUnit02SensorArm01TopArm" node="0>0|2|0|1|0|1|0|1|0" />
+        <i3dMapping id="defoliatorUnit02CutterArm02" node="0>0|2|0|1|0|1|1" />
+        <i3dMapping id="defoliatorUnit02BladeArm02" node="0>0|2|0|1|0|1|1|0" />
+        <i3dMapping id="defoliatorUnit02BladeArm02TopArm" node="0>0|2|0|1|0|1|1|0|0" />
+        <i3dMapping id="defoliatorUnit02SensorArm02" node="0>0|2|0|1|0|1|1|1" />
+        <i3dMapping id="defoliatorUnit02SensorArm02TopArm" node="0>0|2|0|1|0|1|1|1|0" />
+        <i3dMapping id="defoliatorUnit02CutterArm03" node="0>0|2|0|1|0|1|2" />
+        <i3dMapping id="defoliatorUnit02BladeArm03" node="0>0|2|0|1|0|1|2|0" />
+        <i3dMapping id="defoliatorUnit02BladeArm03TopArm" node="0>0|2|0|1|0|1|2|0|0" />
+        <i3dMapping id="defoliatorUnit02SensorArm03" node="0>0|2|0|1|0|1|2|1" />
+        <i3dMapping id="defoliatorUnit02SensorArm03TopArm" node="0>0|2|0|1|0|1|2|1|0" />
+        <i3dMapping id="defoliatorUnit01Chopper" node="0>0|2|0|1|0|2" />
+        <i3dMapping id="defoliatorUnit01LeftWheelArm01" node="0>0|2|0|1|0|3" />
+        <i3dMapping id="defoliatorUnit01LeftWheelYRot" node="0>0|2|0|1|0|3|0|0|0" />
+        <i3dMapping id="defoliatorUnit01LeftWheel" node="0>0|2|0|1|0|3|0|0|0|0" />
+        <i3dMapping id="defoliatorUnit01LeftWheelYRotSpringRef" node="0>0|2|0|1|0|3|0|0|0|1" />
+        <i3dMapping id="defoliatorUnit01LeftWheelYRotSpring" node="0>0|2|0|1|0|3|0|1" />
+        <i3dMapping id="defoliatorUnit01RightWheelArm01" node="0>0|2|0|1|0|4" />
+        <i3dMapping id="defoliatorUnit01RightWheelYRot" node="0>0|2|0|1|0|4|0|0|0" />
+        <i3dMapping id="defoliatorUnit01RightWheel" node="0>0|2|0|1|0|4|0|0|0|0" />
+        <i3dMapping id="defoliatorUnit01RightWheelYRotSpringRef" node="0>0|2|0|1|0|4|0|0|0|1" />
+        <i3dMapping id="defoliatorUnit01RightWheelYRotSpring" node="0>0|2|0|1|0|4|0|1" />
+        <i3dMapping id="defoliatorUnit01RowDetectorLock" node="0>0|2|0|1|0|5" />
+        <i3dMapping id="defoliatorUnit01RowDetectorLockSpringRef" node="0>0|2|0|1|0|5|0" />
+        <i3dMapping id="defoliatorUnit01RowDetectorLockSpring" node="0>0|2|0|1|0|6" />
+        <i3dMapping id="defoliatorUnit01RowDetectorArm" node="0>0|2|0|1|0|7" />
+        <i3dMapping id="defoliatorUnit01RowDetectorLowerArm" node="0>0|2|0|1|0|7|0" />
+        <i3dMapping id="defoliatorUnit01RowDetector" node="0>0|2|0|1|0|7|0|0" />
+        <i3dMapping id="defoliatorUnit01RowDetectorUpperArm" node="0>0|2|0|1|0|7|1" />
+        <i3dMapping id="leftFrontLight" node="0>0|2|0|1|0|8|0" />
+        <i3dMapping id="rightFrontLight" node="0>0|2|0|1|0|8|1" />
+        <i3dMapping id="prepareFruitEmitter" node="0>0|2|0|1|0|9|0" />
+        <i3dMapping id="defoliatorTopArm" node="0>0|2|0|2" />
+        <i3dMapping id="defoliatorTopArmHydraulicRef" node="0>0|2|0|2|0" />
+        <i3dMapping id="defoliatorTopArmHydraulic" node="0>0|2|0|3" />
+        <i3dMapping id="defoliatorTopArmHydraulicPunch" node="0>0|2|0|3|0" />
+        <i3dMapping id="liftingUnitWheelArm" node="0>0|2|0|4" />
+        <i3dMapping id="liftingUnitWheel" node="0>0|2|0|4|0" />
+        <i3dMapping id="liftingUnitWheelArmHydraulicRef" node="0>0|2|0|4|1" />
+        <i3dMapping id="liftingUnitWheelArmHydraulic" node="0>0|2|0|5" />
+        <i3dMapping id="liftingUnitWheelArmHydraulicPunch" node="0>0|2|0|5|0" />
+        <i3dMapping id="leftLiftingParts" node="0>0|2|0|6" />
+        <i3dMapping id="leftLiftingPartsOriArmRefFrame" node="0>0|2|0|6|0" />
+        <i3dMapping id="leftLiftingPartsOriArm" node="0>0|2|0|6|0|0" />
+        <i3dMapping id="rightLiftingParts" node="0>0|2|0|7" />
+        <i3dMapping id="rightLiftingPartsOriArmRefFrame" node="0>0|2|0|7|0" />
+        <i3dMapping id="rightLiftingPartsOriArm" node="0>0|2|0|7|0|0" />
+        <i3dMapping id="shakeRotatingPart" node="0>0|2|0|8" />
+        <i3dMapping id="leftLiftingPartsRef" node="0>0|2|0|8|0" />
+        <i3dMapping id="rightLiftingPartsRef" node="0>0|2|0|8|1" />
+        <i3dMapping id="rightLiftingPartsRefFrame" node="0>0|2|0|9" />
+        <i3dMapping id="leftLiftingPartsRefFrame" node="0>0|2|0|10" />
+        <i3dMapping id="liftingUnitHydraulicRef" node="0>0|2|0|11" />
+        <i3dMapping id="workLightSelfIllum03" node="0>0|2|0|12|0|0" />
+        <i3dMapping id="workLightSelfIllum04" node="0>0|2|0|12|0|1" />
+        <i3dMapping id="liftingUnitHydraulic" node="0>0|2|1" />
+        <i3dMapping id="liftingUnitHydraulicPunch" node="0>0|2|1|0" />
+        <i3dMapping id="rotatingPart01" node="0>0|2|2|0" />
+        <i3dMapping id="rotatingPart02" node="0>0|2|2|1" />
+        <i3dMapping id="rotatingPart03" node="0>0|2|2|2" />
+        <i3dMapping id="rotatingPart04" node="0>0|2|2|3" />
+        <i3dMapping id="rotatingPart05" node="0>0|2|2|4" />
+        <i3dMapping id="rotatingPart06" node="0>0|2|2|5" />
+        <i3dMapping id="rotatingPart07" node="0>0|2|2|6" />
+        <i3dMapping id="rotatingPart08" node="0>0|2|2|7" />
+        <i3dMapping id="rotatingPart09" node="0>0|2|2|8" />
+        <i3dMapping id="rotatingPart10" node="0>0|2|2|9" />
+        <i3dMapping id="defoliatorUnit01AnimBone01" node="0>0|2|3|0" />
+        <i3dMapping id="defoliatorUnit01AnimBone02" node="0>0|2|3|1" />
+        <i3dMapping id="workAreaStart" node="0>0|4|0|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|4|0|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|4|0|2" />
+        <i3dMapping id="dropAreaStart" node="0>0|4|1|0" />
+        <i3dMapping id="dropAreaWidth" node="0>0|4|1|1" />
+        <i3dMapping id="dropAreaHeight" node="0>0|4|1|2" />
+        <i3dMapping id="morphMesh" node="0>0|5|0" />
+        <i3dMapping id="soilEmitter" node="0>0|5|1" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|6|0|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|6|0|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|6|0|2" />
+        <i3dMapping id="sizeMarkerLeft" node="0>0|6|1|0" />
+        <i3dMapping id="sizeMarkerRight" node="0>0|6|1|1" />
+        <i3dMapping id="sizeMarkerBack" node="0>0|6|1|2" />
+        <i3dMapping id="aiCollisionTrigger" node="0>0|6|2" />
+        <i3dMapping id="distributorCover" node="0>1|1" />
+        <i3dMapping id="defoliatorUnit01Hoses" node="0>1|2" />
+        <i3dMapping id="defoliatorUnit02Hoses" node="0>1|3" />
+        <i3dMapping id="defoliatorBottomArmRef" node="1>0" />
+        <i3dMapping id="defoliatorTopArmRef" node="1>1" />
+        <i3dMapping id="defoliatorUnitsRef" node="1>2" />
+        <i3dMapping id="defoliatorUnitLeftWheelYRotPhysic" node="1>3" />
+        <i3dMapping id="defoliatorUnitLeftWheelPhysic" node="1>3|0" />
+        <i3dMapping id="defoliatorUnitRightWheelYRotPhysic" node="1>4" />
+        <i3dMapping id="defoliatorUnitRightWheelPhysic" node="1>4|0" />
+    </i3dMappings>
+</vehicle>

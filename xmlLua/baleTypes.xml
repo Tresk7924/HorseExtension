@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <baleTypes>
+    <!-- Bales Vanilla for ForageExtension -->
+        <baleType filename="$data/objects/squarebales/baleGrass240.i3d"                             fillType="WETGRASS_WINDROW"                     isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="$data/objects/squarebales/baleGrass240.i3d"                             fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleWetAlfalfa240.i3d"                           fillType="WETALFALFA_WINDROW"                   isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleAlfalfa240.i3d"                              fillType="ALFALFA_WINDROW"                      isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleAlfalfa240.i3d"                              fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleAlfalfaHay240.i3d"                           fillType="DRYALFALFA_WINDROW"                   isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleWetClover240.i3d"                            fillType="WETCLOVER_WINDROW"                    isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleClover240.i3d"                               fillType="CLOVER_WINDROW"                       isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleClover240.i3d"                               fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleCloverHay240.i3d"                            fillType="DRYCLOVER_WINDROW"                    isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleAlfalfaSilage240.i3d"                        fillType="ALFALFA_FERMENTED"                    isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleCloverSilage240.i3d"                         fillType="CLOVER_FERMENTED"                     isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+    <!-- Bales Vanilla for HorseExtension -->
+        <baleType filename="maps/bales/squarebales/baleWetHorseGrass240.i3d"                        fillType="WETHORSEGRASS_WINDROW"                isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleHorseGrass240.i3d"                           fillType="HORSEGRASS_WINDROW"                   isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleSemiDryHorseGrass240.i3d"                    fillType="SEMIDRYHORSEGRASS_WINDROW"            isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleDryHorseGrass240.i3d"                        fillType="DRYHORSEGRASS_WINDROW"                isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleHorseSilage240.i3d"                          fillType="HORSEGRASS_FERMENTED"                 isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleCropWindrow240.i3d"                          fillType="CROP_WINDROW"                         isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+        <baleType filename="maps/bales/squarebales/baleCropWindrowSilage240.i3d"                    fillType="SILAGE"                               isRoundbale="false" width="1.20" height="0.90" length="2.40"/>
+    <!-- Bales StrawHarvest for ForageExtension -->
+        <baleType filename="maps/bales/squarebales/squareBaleAlfalfa_8Knots.i3d"                    fillType="WETALFALFA_WINDROW"                   isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleAlfalfa_8Knots.i3d"                    fillType="ALFALFA_WINDROW"                      isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleAlfalfa_8Knots.i3d"                    fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleAlfalfaHay_8Knots.i3d"                 fillType="DRYALFALFA_WINDROW"                   isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleClover_8Knots.i3d"                     fillType="WETCLOVER_WINDROW"                    isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleClover_8Knots.i3d"                     fillType="CLOVER_WINDROW"                       isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleClover_8Knots.i3d"                     fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleCloverHay_8Knots.i3d"                  fillType="DRYCLOVER_WINDROW"                    isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d"           fillType="ALFALFA_FERMENTED"                    isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleCloverFermented_8Knots.i3d"            fillType="CLOVER_FERMENTED"                     isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+    <!-- Bales StrawHarvest for HorseExtension -->
+        <baleType filename="maps/bales/squarebales/squareBaleGrass_8Knots.i3d"                      fillType="WETGRASS_WINDROW"                     isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleGrass_8Knots.i3d"                      fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleWetHorseGrass_8Knots.i3d"              fillType="WETHORSEGRASS_WINDROW"                isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleHorseGrass_8Knots.i3d"                 fillType="HORSEGRASS_WINDROW"                   isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleSemiDryHorseGrass_8Knots.i3d"          fillType="SEMIDRYHORSEGRASS_WINDROW"            isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleDryHorseGrass_8Knots.i3d"              fillType="DRYHORSEGRASS_WINDROW"                isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleHorseSilage_8Knots.i3d"                fillType="HORSEGRASS_FERMENTED"                 isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleCropWindrow_8Knots.i3d"                fillType="CROP_WINDROW"                         isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+        <baleType filename="maps/bales/squarebales/squareBaleCropWindrowSilage_8Knots.i3d"          fillType="SILAGE"                               isRoundbale="false" width="1.20" height="0.85" length="2.39"/>
+    <!-- Bales Vanilla for ForageExtension -->
+        <baleType filename="$data/objects/roundbales/roundbaleGrass_w112_d130.i3d"                  fillType="WETGRASS_WINDROW"                     isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="$data/objects/roundbales/roundbaleGrass_w112_d130.i3d"                  fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleWetAlfalfa_w112_d130.i3d"                fillType="WETALFALFA_WINDROW"                   isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w112_d130.i3d"                   fillType="ALFALFA_WINDROW"                      isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w112_d130.i3d"                   fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfaHay_w112_d130.i3d"                fillType="DRYALFALFA_WINDROW"                   isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"             fillType="ALFALFA_FERMENTED"                    isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleWetClover_w112_d130.i3d"                 fillType="WETCLOVER_WINDROW"                    isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w112_d130.i3d"                    fillType="CLOVER_WINDROW"                       isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w112_d130.i3d"                    fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCloverHay_w112_d130.i3d"                 fillType="DRYCLOVER_WINDROW"                    isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"              fillType="CLOVER_FERMENTED"                     isRoundbale="true"  width="1.12" diameter="1.3"/>
+    <!-- Bales Vanilla for HorseExtension -->
+        <baleType filename="maps/bales/roundbales/roundbaleWetHorseGrass_w112_d130.i3d"             fillType="WETHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleHorseGrass_w112_d130.i3d"                fillType="HORSEGRASS_WINDROW"                   isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleSemiDryHorseGrass_w112_d130.i3d"         fillType="SEMIDRYHORSEGRASS_WINDROW"            isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleDryHorseGrass_w112_d130.i3d"             fillType="DRYHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d"               fillType="HORSEGRASS_FERMENTED"                 isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCropWindrow_w112_d130.i3d"               fillType="CROP_WINDROW"                         isRoundbale="true"  width="1.12" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d"         fillType="SILAGE"                               isRoundbale="true"  width="1.12" diameter="1.3"/>
+    <!-- Bales StrawHarvest for ForageExtension -->
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d110.i3d"                     fillType="WETGRASS_WINDROW"                     isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d130.i3d"                     fillType="WETGRASS_WINDROW"                     isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d155.i3d"                     fillType="WETGRASS_WINDROW"                     isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d180.i3d"                     fillType="WETGRASS_WINDROW"                     isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d110.i3d"                     fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d130.i3d"                     fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d155.i3d"                     fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleGrass_w120_d180.i3d"                     fillType="SEMIDRY_GRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d110.i3d"                   fillType="WETALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d130.i3d"                   fillType="WETALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d155.i3d"                   fillType="WETALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d180.i3d"                   fillType="WETALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d110.i3d"                   fillType="ALFALFA_WINDROW"                      isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d130.i3d"                   fillType="ALFALFA_WINDROW"                      isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d155.i3d"                   fillType="ALFALFA_WINDROW"                      isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d180.i3d"                   fillType="ALFALFA_WINDROW"                      isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d110.i3d"                   fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d130.i3d"                   fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d155.i3d"                   fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfa_w120_d180.i3d"                   fillType="SEMIDRYALFALFA_WINDROW"               isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfaHay_w120_d110.i3d"                fillType="DRYALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.1"/>  
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfaHay_w120_d130.i3d"                fillType="DRYALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.3"/>  
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfaHay_w120_d155.i3d"                fillType="DRYALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleAlfalfaHay_w120_d180.i3d"                fillType="DRYALFALFA_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.8"/>
+     <!-- Bales StrawHarvest for ForageExtension -->
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d110.i3d"                    fillType="WETCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d130.i3d"                    fillType="WETCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d155.i3d"                    fillType="WETCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d180.i3d"                    fillType="WETCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d110.i3d"                    fillType="CLOVER_WINDROW"                       isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d130.i3d"                    fillType="CLOVER_WINDROW"                       isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d155.i3d"                    fillType="CLOVER_WINDROW"                       isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d180.i3d"                    fillType="CLOVER_WINDROW"                       isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d110.i3d"                    fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d130.i3d"                    fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.3"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d155.i3d"                    fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleClover_w120_d180.i3d"                    fillType="SEMIDRYCLOVER_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCloverHay_w120_d110.i3d"                 fillType="DRYCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.1"/>  
+        <baleType filename="maps/bales/roundbales/roundbaleCloverHay_w120_d130.i3d"                 fillType="DRYCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.3"/>  
+        <baleType filename="maps/bales/roundbales/roundbaleCloverHay_w120_d155.i3d"                 fillType="DRYCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCloverHay_w120_d180.i3d"                 fillType="DRYCLOVER_WINDROW"                    isRoundbale="true"  width="1.20" diameter="1.8"/>
+    <!-- Bales StrawHarvest for HorseExtension 1,10-->
+        <baleType filename="maps/bales/roundbales/roundbaleWetHorseGrass_w120_d110.i3d"             fillType="WETHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleHorseGrass_w120_d110.i3d"                fillType="HORSEGRASS_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleSemiDryHorseGrass_w120_d110.i3d"         fillType="SEMIDRYHORSEGRASS_WINDROW"            isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleDryHorseGrass_w120_d110.i3d"             fillType="DRYHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.1"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCropWindrow_w120_d110.i3d"               fillType="CROP_WINDROW"                         isRoundbale="true"  width="1.20" diameter="1.1"/>
+    <!-- Bales StrawHarvest for HorseExtension 1,55-->
+        <baleType filename="maps/bales/roundbales/roundbaleWetHorseGrass_w120_d155.i3d"             fillType="WETHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleHorseGrass_w120_d155.i3d"                fillType="HORSEGRASS_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleSemiDryHorseGrass_w120_d155.i3d"         fillType="SEMIDRYHORSEGRASS_WINDROW"            isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleDryHorseGrass_w120_d155.i3d"             fillType="DRYHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.55"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCropWindrow_w120_d155.i3d"               fillType="CROP_WINDROW"                         isRoundbale="true"  width="1.20" diameter="1.55"/>
+    <!-- Bales StrawHarvest for HorseExtension 1,80-->
+        <baleType filename="maps/bales/roundbales/roundbaleWetHorseGrass_w120_d180.i3d"             fillType="WETHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleHorseGrass_w120_d180.i3d"                fillType="HORSEGRASS_WINDROW"                   isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleSemiDryHorseGrass_w120_d180.i3d"         fillType="SEMIDRYHORSEGRASS_WINDROW"            isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleDryHorseGrass_w120_d180.i3d"             fillType="DRYHORSEGRASS_WINDROW"                isRoundbale="true"  width="1.20" diameter="1.8"/>
+        <baleType filename="maps/bales/roundbales/roundbaleCropWindrow_w120_d180.i3d"               fillType="CROP_WINDROW"                         isRoundbale="true"  width="1.20" diameter="1.8"/>
+    </baleTypes>
+</map>

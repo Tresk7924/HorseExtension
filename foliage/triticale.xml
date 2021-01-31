@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType distanceTexturePath="distance">
+    <!-- triticale 
+    
+    5 6 7 8 
+    
+    1 0 0 0 - invisible
+    0 1 0 0 - green small
+    1 1 0 0 - green middle
+    0 0 1 0 - green big
+    1 0 1 0 - harvest ready
+    0 1 1 0 - harvest ready
+    1 1 1 0 - harvest ready
+    0 0 0 1 - dead
+    1 0 0 1 - harvested (cut)
+    
+    -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.5" shapeSource="triticale.i3d">
+        <foliageStateDefaults distanceMapLayer="1" widthVariance="0" heightVariance="0.2" horizontalPositionVariance="0.5" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <!-- 1 0 0 0 - invisible -->
+        <foliageState name="invisible" distanceMap="acre_fine_distance_diffuse.dds" />
+        <!-- 0 1 0 0 - green small -->
+        <foliageState name="green small" distanceMap="foliage_TriRye_distance2_diffuse.png" width="0.25" height="0.25" numBlocksPerUnit="1.5">
+            <foliageShape>
+                <foliageLod blockShape="0>0" />
+                <foliageLod blockShape="1>0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 0 0 - green middle -->
+        <foliageState name="green middle" distanceMap="foliage_TriRye_distance3_diffuse.png" width="0.5" height="0.5" numBlocksPerUnit="1.5">
+            <foliageShape>
+                <foliageLod blockShape="0>1" />
+                <foliageLod blockShape="1>1" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 1 0 - green big -->
+        <foliageState name="green big" distanceMap="foliage_TriRye_distance4_diffuse.png" width="0.9" height="0.9" numBlocksPerUnit="1.5">
+            <foliageShape>
+                <foliageLod blockShape="0>2" />
+                <foliageLod blockShape="1>2" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 1 0 - harvest ready -->
+        <foliageState name="harvest ready 1" distanceMap="foliage_TriRye_distance5_diffuse.png" width="1.9" height="1.3" numBlocksPerUnit="1.5">
+            <foliageShape>
+                <foliageLod blockShape="0>3" />
+                <foliageLod blockShape="1>3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 1 0 - harvest ready -->
+        <foliageState name="harvest ready 2" distanceMap="foliage_TriRye_distance5_diffuse.png" width="1.9" height="1.3" numBlocksPerUnit="1.5">
+            <foliageShape>
+                <foliageLod blockShape="0>3" />
+                <foliageLod blockShape="1>3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 1 0 - harvest ready -->
+        <foliageState name="harvest ready 3" distanceMap="foliage_TriRye_distance5_diffuse.png" width="1.9" height="1.3" numBlocksPerUnit="1.75">
+            <foliageShape>
+                <foliageLod blockShape="0>3" />
+                <foliageLod blockShape="1>3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 0 1 - dead -->
+        <foliageState name="dead" width="0.9" distanceMap="foliage_TriRye_distance6_diffuse.png" height="0.9">
+            <foliageShape>
+                <foliageLod blockShape="0>4" />
+                <foliageLod blockShape="1>4" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 0 1 - harvested (cut) -->
+        <foliageState name="harvested" distanceMap="foliage_TriRye_distance7_diffuse.png" width="1.6" height="1.0" numBlocksPerUnit="3.0">
+            <foliageShape>
+                <foliageLod blockShape="0>5" />
+                <foliageLod blockShape="1>5" />
+            </foliageShape>
+        </foliageState>
+        <!--  -->
+		<!-- 1 0 0 1 - harvested (cut) -->
+        <foliageState name="harvested" distanceMap="foliage_TriRye_distance7_diffuse.png" width="1.6" height="0.6" numBlocksPerUnit="2.0">
+            <foliageShape>
+                <foliageLod blockShape="0>5" />
+                <foliageLod blockShape="1>5" />
+            </foliageShape>
+        </foliageState>
+        <!--  -->
+    </foliageLayer>
+</foliageType>

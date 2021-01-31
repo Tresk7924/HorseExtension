@@ -1,0 +1,26 @@
+﻿<items>
+    <item mapBoundId="gasStation" className="BuyingStationPlaceable" filename="data/placeables/mapDE/gasStation/gasStation01.xml" position="243.5000 57.5000 713.5000" rotation="0.0000 0.0000 0.0000" />  
+    <item mapBoundId="gasStation" className="BuyingStationPlaceable" filename="data/placeables/mapDE/gasStation/gasStation02.xml" position="593.0000 70.0000 -195.0000" rotation="0.0000 270.0000 0.0000" /> 
+    <item mapBoundId="gasStation" className="BuyingStationPlaceable" filename="data/placeables/mapDE/gasStation/gasStation03.xml" position="-764.5000 56.0000 -762.0000" rotation="0.0000 135.0000 0.0000" />
+	
+	<item mapBoundId="bga" className="BgaPlaceable" filename="$mapdir$/SellPoints/bga.xml" position="-715.0000 56.0000 -675.0000" rotation="0.0000 0.0000 0.0000" />
+    
+	<item mapBoundId="limeStation" className="BuyingStationPlaceable" filename="data/placeables/limeStation/limeStation.xml" position="-890.0000 56.4000 -782.0000" rotation="0.0000 0.0000 0.0000" />  
+    <item mapBoundId="limeStation02" className="BuyingStationPlaceable" filename="data/placeables/limeStation/limeStation02.xml" position="806.0000 56.4000 786.0000" rotation="0.0000 0.0000 0.0000" /> 
+	
+	<item mapBoundId="sellingStationWood" className="WoodSellStationPlaceable" filename="data/placeables/mapDE/sellingStationWood/sellingStationWood.xml" position="-861.46 56.437 -427.406" rotation="-180 90 180" />
+	<item mapBoundId="sellingStationWoodChips" className="SellingStationPlaceable" filename="data/placeables/mapDE/sellingStationWoodChips/sellingStationWoodChips.xml" position="-849.649 56.374 -349.276" rotation="180 0.0000 180" />
+	
+    <item mapBoundId="sellingStationVehicles" className="Workshop" filename="data/placeables/mapDE/sellingStationVehicles/sellingStationVehicles.xml" position="307.0000 58.4270 424.0000" rotation="0.0000 0.0000 0.0000" />
+    
+	<item mapBoundId="sellingStationWool" className="SellingStationPlaceable" filename="data/placeables/mapDE/sellingStationWool/sellingStationWool.xml" position="355.0000 58.0000 736.0000" rotation="0.0000 0.0000 0.0000" />
+	<item mapBoundId="sellingStationBales" className="SellingStationPlaceable" filename="$mapdir$/SellPoints/sellingStationBales.xml" position="-570.701 84.951 439.802" rotation="0.0000 0.0000 0.0000" />
+
+    <item mapBoundId="sellingStationPortA" className="SellingStationPlaceable" filename="$mapdir$/SellPoints/sellingStationPortA.xml" position="-918.0000 56.161 -821.0000" rotation="0.0000 90.0000 0.0000" />
+	<item mapBoundId="sellingStationPortB" className="SellingStationPlaceable" filename="$mapdir$/SellPoints/sellingStationPortB.xml" position="722.0000 56.182 812.0000" rotation="0.0000 90.0000 0.0000" /> 
+
+    <item mapBoundId="sellingStationPortBStrg" className="SellingStationPlaceable" filename="$mapdir$/SellPoints/sellingStationPortBStrg.xml" position="879.684 68.862 558.138" rotation="0.0000 90.0000 0.0000" />
+    <item mapBoundId="sellingStationPortAStrg" className="SellingStationPlaceable" filename="$mapdir$/SellPoints/sellingStationPortAStrg.xml" position="-474.919 89.27 -717.234" rotation="0.0000 43.64 0.0000" /> 
+
+    <item className="BuyingStationPlaceable" filename="data/placeables/mapDE/waterFillTriggers/waterFillTriggers.xml" position="0.0000 3.0000 0.0000" rotation="0.0000 0.0000 0.0000" defaultFarmProperty="true" farmId="0" /> 
+</items>

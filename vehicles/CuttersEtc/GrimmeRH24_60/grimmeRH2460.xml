@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="receivingHopper">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>RH 24-60 Edit</name>
+        <specs>
+        </specs>
+        <functions>
+            <function>$l10n_function_palletPacker</function>
+        </functions>
+        <image>$data/vehicles/CuttersEtc/grimme/grimmeRH2460/store_grimmeRH2460.png</image>
+        <price>42000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>GRIMME</brand>
+        <category>belts</category>
+        <vertexBufferMemoryUsage>899752</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>131412</indexBufferMemoryUsage>
+        <textureMemoryUsage>10485944</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_belt</typeDesc>
+        <filename>$data/vehicles/grimme/grimmeRH2460/grimmeRH2460.i3d</filename>
+        <size width="3.5" length="10.0" />
+        <components>
+            <component centerOfMass="0 0.6 0" solverIterationCount="4" mass="1500" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" driveMode="0" restLoad="0.8" repr="wheelLeft"  radius="0.469" initialCompression="10" suspTravel="0.1" spring="54" damper="2" mass="0.2" width="0.35" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                    <wheel hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" driveMode="0" restLoad="0.8" repr="wheelRight" radius="0.469" initialCompression="10" suspTravel="0.1" spring="54" damper="2" mass="0.2" width="0.35" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" needsToolbar="true" needsLowering="false" lowerRotLimitScale="1 3 2" upperRotLimitScale="1 3 2" >
+                <distanceToGround lower="0.632" upper="1.2" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <brakeForce>0.25</brakeForce>
+    </attachable>
+
+    <enterable isTabbable="false" >
+        <enterReferenceNode node="exitPoint" />
+        <exitPoint node="exitPoint" />
+        <cameras>
+            <camera node="camera" rotatable="true" rotateNode="cameraRot" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="4" transMax="40" />
+        </cameras>
+         <forceSelectionOnEnter>true</forceSelectionOnEnter>
+    </enterable>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="potato sugarBeet carrot onion" capacity="13000">
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxDelta="1" fillUnitIndex="1"/>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+    </fillVolume>
+
+    <receivingHopper>
+        <boxes spawnPlaceNode="boxSpawnPlace">
+            <box fillType="carrot" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+		    <box fillType="onion" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+            <box fillType="potato" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+            <box fillType="sugarBeet" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </boxes>
+    </receivingHopper>
+
+    <dischargeable>
+        <dischargeNode node="dischargeNode" emptySpeed="100" fillUnitIndex="1" maxDistance="3" canDischargeToGround="false" canDischargeToObject="true" canStartDischargeAutomatically="true">
+            <activationTrigger node="dischargeActivationTrigger" />
+            <info width="0.4" length="0.4" />
+            <effects>
+                <effectNode effectClass="MorphPositionEffect" effectNode="unloadingEffect" materialType="belt" delay="0" fadeTime="3" speed="0.9" scrollLength="5" scrollSpeed="0.8"/>
+            </effects>
+        </dischargeNode>
+    </dischargeable>
+
+    <foliageBending>
+        <bendingNode minX="-1.6" maxX="1.6" minZ="-4.8" maxZ="3.4" yOffset="0.5" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="grimmeRH2460_mat" baseNode="grimme_vis">
+            <shaderParameter name="colorMat0" value="GRIMME_RED1"/>
+            <shaderParameter name="colorMat1" value="GRIMME_YELLOW1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="wheelLeft" node="0>0" />
+        <i3dMapping id="wheelRight" node="0>1" />
+        <i3dMapping id="attacherJoint" node="0>2" />
+        <i3dMapping id="fillVolume" node="0>3|0" />
+        <i3dMapping id="unloadNode" node="0>3|1" />
+        <i3dMapping id="boxSpawnPlace" node="0>5" />
+        <i3dMapping id="exactFillRootNode" node="0>7" />
+        <i3dMapping id="dischargeNode" node="0>8" />
+        <i3dMapping id="cameraRot" node="0>9|0" />
+        <i3dMapping id="camera" node="0>9|0|0" />
+        <i3dMapping id="exitPoint" node="0>9|1" />
+        <i3dMapping id="unloadingEffect" node="0>10|0" />
+        <i3dMapping id="dischargeActivationTrigger" node="0>11" />
+        <i3dMapping id="grimme_vis" node="0>12" />
+    </i3dMappings>
+</vehicle>

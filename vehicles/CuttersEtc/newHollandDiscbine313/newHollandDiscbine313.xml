@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="mower">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Discbine 313</name>
+        <specs>
+            <neededPower>90</neededPower>
+            <workingWidth>4</workingWidth>
+        </specs>
+        <functions>
+            <function>$l10n_function_mower</function>
+        </functions>
+        <image>vehicles/CuttersEtc/newHollandDiscbine313/store_newHollandDiscbine313.png</image>
+        <price>17000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>NEWHOLLAND</brand>
+        <category>mowers</category>
+        <shopTranslationOffset>0 -0.04 0</shopTranslationOffset>
+        <shopRotationOffset>4.405 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1265720</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>206112</indexBufferMemoryUsage>
+        <textureMemoryUsage>6116856</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_mower</typeDesc>
+        <filename>$data/vehicles/newHolland/newHollandDiscbine313/newHollandDiscbine313.i3d</filename>
+        <size width="4.5" length="9.5" />
+        <speedLimit value="22" />
+        <components>
+            <component centerOfMass="0 0.4 -2.5" solverIterationCount="10" mass="2000" />
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="400" />
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="420" />
+            <joint component1="1" component2="2" node="componentJoint" rotLimit="0 0 0" transLimit="0 0 0" />
+            <joint component1="1" component2="3" node="mowerJoint"     rotLimit="0 0 0" transLimit="0 0 0" />
+            <collisionPair component1="2" component2="3" enabled="false" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" rootNode="newHollandDiscbine313_attacher_component2" >
+                <distanceToGround lower="0.9" upper="0.9" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <lowerAnimation name="lowerAnimation" speed="1" />
+        <brakeForce>0.6</brakeForce>
+    </attachable>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" detachNode="ptoDetachNode" inputNode="ptoInputNode" aboveAttacher="true" />
+    </powerTakeOffs>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/trelleborg/AW305/300_80R15_3.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="1.1" repr="wheelLeft"  forcePointRatio="0.3"  color="0.8913 0.6121 0.0003 1" initialCompression="50" suspTravel="0.15" spring="14" damper="20" useReprDirection="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/AW305/300_80R15_3.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="1.1" repr="wheelRight" forcePointRatio="0.3"   color="0.8913 0.6121 0.0003 1" initialCompression="50" suspTravel="0.15" spring="14" damper="20" useReprDirection="true" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor>NEWHOLLAND_YELLOW1</rimColor>
+
+        <hubs>
+            <color0>NEWHOLLAND_RED1</color0>
+            <color1>NEWHOLLAND_RED1</color1>
+            <hub linkNode="wheelLeft"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.152 0.152 0.152" />
+            <hub linkNode="wheelRight" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.152 0.152 0.152" />
+        </hubs>
+    </wheels>
+
+    <lights>
+        <sharedLight linkNode="backlightLeft"       filename="$data/shared/assets/lights/lizard/rear3ChamberLight_01_left.xml" />
+        <sharedLight linkNode="backlightRight"       filename="$data/shared/assets/lights/lizard/rear3ChamberLight_01_right.xml" />
+        <sharedLight linkNode="worklight01"       filename="$data/shared/assets/lights/lizard/workingLightSquare_01.xml" />
+        <sharedLight linkNode="worklight02"       filename="$data/shared/assets/lights/lizard/workingLightSquare_01.xml" />
+        <sharedLight linkNode="bigTriangle"       filename="$data/shared/assets/reflectors/lizard/bigTriangle.xml" />
+        <realLights>
+            <low>
+                <light node="workLightBackLow" lightTypes="2"/>
+            </low>
+            <high>
+                <light node="backLightsHigh" lightTypes="0"/>
+                <light node="workLightBackHigh1" lightTypes="2"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="backLightsHigh"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <powerConsumer ptoRpm="470" neededMinPtoPower="35" neededMaxPtoPower="35" />
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="newHollandDiscbine313_mower_component3" threshold="0.4" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="mower" functionName="processMowerArea" disableBackwards="false" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <folding minLimit="0" maxLimit="0.13" />
+            <mower dropWindrow="true" dropAreaIndex="2" />
+        </workArea>
+
+        <workArea type="auxiliary" >
+            <area startNode="dropAreaStart" widthNode="dropAreaWidth" heightNode="dropAreaHeight" />
+        </workArea>
+    </workAreas>
+
+    <foldable>
+        <foldingParts startMoveDirection="1" turnOnFoldMaxLimit="0.13" turnOnFoldMinLimit="0">
+            <foldingPart animationName="folding" speedScale="1.3" />
+        </foldingParts>
+    </foldable>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="supportCol" startTime="0"    endTime="0.3" startTrans="0 0.6 0" endTrans="0 0 0" />
+            <part                   startTime="0"    endTime="0.3" componentJointIndex="1" startRotLimit="50 100 20" endRotLimit="0 0 0"/>
+            <part node="supportArm" startTime="0"    endTime="0.05" visibility="false" />
+            <part node="supportArm" startTime="0.05" endTime="0.1"  visibility="true" />
+        </animation>
+
+        <animation name="folding">
+            <part node="mowerFrame" startTime="0" endTime="3.0" startRot="0 40 0" endRot="0 0 0" />
+        </animation>
+        <animation name="lowerAnimation">
+            <part node="backAxis"      startTime="0" endTime="1" startRot="-30 0 0" endRot="0 0 0"/>
+            <part node="wheelLeftRot"  startTime="0" endTime="1" startRot="30 0 0"  endRot="0 0 0"/>
+            <part node="wheelRightRot" startTime="0" endTime="1" startRot="30 0 0"  endRot="0 0 0"/>
+            <part node="mowerJoint"    startTime="0" endTime="1" startRot="30 0 0"  endRot="0 0 0"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="mowerFrame" wheelIndices="1 2" foldMinLimit="0" foldMaxLimit="0.01">
+                <controls axis="AXIS_WHEEL_BASE" invertAxis="true" mouseSpeedFactor="0.3" iconName="TOP_DOOR_ROTATE" />
+                <rotation rotSpeed="40" rotAcceleration="120" rotationAxis="2" rotMax="40" rotMin="-40" />
+                <dependentPart node="hydraulicMowerFrame"/>
+                <dependentPart node="reverserDirectionNodeRot"/>
+                <componentJoint index="2"/>
+            </movingTool>
+            <movingTool node="backAxis" wheelIndices="1 2">
+                <componentJoint index="2"/>
+                <dependentPart node="hydraulicAxis"/>
+            </movingTool>
+            <movingTool node="wheelLeftRot" wheelIndices="1 2" />
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="mowerArm" referencePoint="mowerArmRef" referenceFrame="mowerArmRef" isActiveDirty="true" limitedAxis="1" >
+                <dependentPart node="mower" />
+            </movingPart>
+            <movingPart node="mower" referenceFrame="mowerArmRef" limitedAxis="1" >
+                <dependentPart node="hydraulicMowerTop" />
+                <dependentPart node="spring" />
+                <dependentPart node="mowerPto" />
+            </movingPart>
+
+            <movingPart node="hydraulicMowerTop" referencePoint="hydraulicMowerTopRef" referenceFrame="hydraulicMowerTopRef" >
+                <translatingPart node="hydraulicMowerTopPunch" />
+            </movingPart>
+            <movingPart node="spring" referencePoint="springRef" referenceFrame="springRef" >
+                <translatingPart node="springPunch" />
+            </movingPart>
+            <movingPart node="mowerPto" referencePoint="mowerPtoRef" referenceFrame="mowerPtoRef" />
+
+            <movingPart node="hydraulicAxis" referencePoint="hydraulicAxisRef" referenceFrame="hydraulicAxisRef" playSound="true" >
+                <translatingPart node="hydraulicAxisPunch" />
+            </movingPart>
+
+            <movingPart node="hydraulicMowerFrame" referencePoint="hydraulicMowerFrameRef" referenceFrame="hydraulicMowerFrameRef" playSound="true" >
+                <translatingPart node="hydraulicMowerFramePunch" />
+            </movingPart>
+            <movingPart node="attacherBlock" referenceFrame="newHolland_vis" referencePoint="attacherBlockRef" limitedAxis="2" isActiveDirty="true" />
+
+
+            <movingPart node="reverserDirectionNodeRot" referenceFrame="mowerFrame" doRotationAlignment="true" rotMultiplier="1" doDirectionAlignment="false"/>
+        </movingParts>
+
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="newHollandDiscbine313_main_component1"/>
+        </sounds>
+    </cylindered>
+
+    <mower fruitTypeConverter="MOWERCONDITIONER">
+        <animationNodes>
+            <!-- cutters -->
+            <animationNode node="disc1" rotSpeed="-3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc2" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc3" rotSpeed="-3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc4" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc5" rotSpeed="-3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc6" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc7" rotSpeed="-3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="disc8" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <!-- drum -->
+            <animationNode node="drum1" rotSpeed="2000"  rotAxis="1" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="drum2" rotSpeed="-2000" rotAxis="1" turnOnFadeTime="3" turnOffFadeTime="3"/>
+        </animationNodes>
+        <dropEffects>
+            <dropEffect dropAreaIndex="2">
+                <effectNode effectNode="effectMesh" materialType="mower" materialTypeId="1" delay="0" />
+            </dropEffect>
+        </dropEffects>
+    </mower>
+
+    <turnOnVehicle turnOffIfNotAllowed="true">
+        <sounds>
+            <start template="DEFAULT_MOWER_START" linkNode="newHollandDiscbine313_mower_component3" />
+            <stop template="DEFAULT_MOWER_STOP"   linkNode="newHollandDiscbine313_mower_component3" />
+            <work template="DEFAULT_MOWER_WORK"   linkNode="newHollandDiscbine313_mower_component3" />
+        </sounds>
+    </turnOnVehicle>
+
+    <ai>
+        <needsLowering value="true" />
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack" />
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack" />
+        <collisionTrigger node="aiCollisionTrigger" />
+        <allowTurnBackward value="false" />
+        <toolReverserDirectionNode node="reverserDirectionNode" />
+        <turningRadiusLimitation rotationJointNode="componentJoint" wheelIndices="1 2" />
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-2.15" maxX="2.15" minZ="-0.8" maxZ="1.3" yOffset="0.4" node="2>" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="newHollandDiscbine313_mat" baseNode="newHolland_vis">
+            <shaderParameter name="colorMat0" value="NEWHOLLAND_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="newHollandDiscbine313_main_component1" node="0>" />
+        <i3dMapping id="newHolland_vis" node="0>0" />
+        <i3dMapping id="componentJoint" node="0>0|0" />
+        <i3dMapping id="supportCol" node="0>0|1|0" />
+        <i3dMapping id="attacherBlock" node="0>0|2" />
+        <i3dMapping id="ptoInputNode" node="0>0|2|0" />
+        <i3dMapping id="supportArm" node="0>0|2|1" />
+        <i3dMapping id="ptoDetachNode" node="0>0|2|2" />
+        <i3dMapping id="mowerFrame" node="0>0|3" />
+        <i3dMapping id="backAxis" node="0>0|3|0" />
+        <i3dMapping id="wheelLeftRot" node="0>0|3|0|0" />
+        <i3dMapping id="wheelLeft" node="0>0|3|0|0|0" />
+        <i3dMapping id="wheelRightRot" node="0>0|3|0|1" />
+        <i3dMapping id="wheelRight" node="0>0|3|0|1|0" />
+        <i3dMapping id="hydraulicAxisRef" node="0>0|3|0|2" />
+        <i3dMapping id="mowerArm" node="0>0|3|0|3" />
+        <i3dMapping id="mower" node="0>0|3|0|3|0" />
+        <i3dMapping id="hydraulicMowerTopRef" node="0>0|3|0|3|0|0" />
+        <i3dMapping id="springRef" node="0>0|3|0|3|0|1" />
+        <i3dMapping id="mowerPtoRef" node="0>0|3|0|3|0|2" />
+        <i3dMapping id="disc1" node="0>0|3|0|3|0|3|0" />
+        <i3dMapping id="disc2" node="0>0|3|0|3|0|3|1" />
+        <i3dMapping id="disc3" node="0>0|3|0|3|0|3|2" />
+        <i3dMapping id="disc4" node="0>0|3|0|3|0|3|3" />
+        <i3dMapping id="disc5" node="0>0|3|0|3|0|3|4" />
+        <i3dMapping id="disc6" node="0>0|3|0|3|0|3|5" />
+        <i3dMapping id="disc7" node="0>0|3|0|3|0|3|6" />
+        <i3dMapping id="disc8" node="0>0|3|0|3|0|3|7" />
+        <i3dMapping id="drum1" node="0>0|3|0|3|0|3|8" />
+        <i3dMapping id="drum2" node="0>0|3|0|3|0|3|9" />
+        <i3dMapping id="workAreaStart" node="0>0|3|0|3|0|4|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|3|0|3|0|4|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|3|0|3|0|4|2" />
+        <i3dMapping id="dropAreaStart" node="0>0|3|0|3|0|5|0" />
+        <i3dMapping id="dropAreaWidth" node="0>0|3|0|3|0|5|1" />
+        <i3dMapping id="dropAreaHeight" node="0>0|3|0|3|0|5|2" />
+        <i3dMapping id="effectMesh" node="0>0|3|0|3|0|6|0" />
+        <i3dMapping id="mowerJoint" node="0>0|3|0|4" />
+        <i3dMapping id="hydraulicMowerFrame" node="0>0|3|1|0" />
+        <i3dMapping id="hydraulicMowerFramePunch" node="0>0|3|1|0|0" />
+        <i3dMapping id="hydraulicAxis" node="0>0|3|1|1" />
+        <i3dMapping id="hydraulicAxisPunch" node="0>0|3|1|1|0" />
+        <i3dMapping id="hydraulicMowerTop" node="0>0|3|1|2" />
+        <i3dMapping id="hydraulicMowerTopPunch" node="0>0|3|1|2|0" />
+        <i3dMapping id="spring" node="0>0|3|1|3" />
+        <i3dMapping id="springPunch" node="0>0|3|1|3|0" />
+        <i3dMapping id="mowerPto" node="0>0|3|1|4" />
+        <i3dMapping id="backLightsHigh" node="0>0|3|2|0" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|3|2|1" />
+        <i3dMapping id="turnLightRightBack" node="0>0|3|2|2" />
+        <i3dMapping id="backlightLeft" node="0>0|3|2|3" />
+        <i3dMapping id="backlightRight" node="0>0|3|2|4" />
+        <i3dMapping id="worklight01" node="0>0|3|2|5" />
+        <i3dMapping id="worklight02" node="0>0|3|2|6" />
+        <i3dMapping id="bigTriangle" node="0>0|3|2|7" />
+        <i3dMapping id="workLightBackHigh1" node="0>0|3|2|8" />
+        <i3dMapping id="workLightBackLow" node="0>0|3|2|9" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|3|3|0|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|3|3|0|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|3|3|0|2" />
+        <i3dMapping id="sizeMarkerLeft" node="0>0|3|3|1|0" />
+        <i3dMapping id="sizeMarkerRight" node="0>0|3|3|1|1" />
+        <i3dMapping id="sizeMarkerBack" node="0>0|3|3|1|2" />
+        <i3dMapping id="aiCollisionTrigger" node="0>0|3|3|2" />
+        <i3dMapping id="hydraulicMowerFrameRef" node="0>0|4" />
+        <i3dMapping id="reverserDirectionNodeRot" node="0>0|5" />
+        <i3dMapping id="reverserDirectionNode" node="0>0|5|0" />
+        <i3dMapping id="newHollandDiscbine313_attacher_component2" node="1>" />
+        <i3dMapping id="attacherJoint" node="1>0|0" />
+        <i3dMapping id="attacherBlockRef" node="1>0|1" />
+        <i3dMapping id="newHollandDiscbine313_mower_component3" node="2>" />
+        <i3dMapping id="mowerArmRef" node="2>0" />
+    </i3dMappings>
+</vehicle>

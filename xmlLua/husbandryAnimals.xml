@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animals>
+    <animal type="HORSE" class="Horse" statsBreeding="breedHorsesCount" supportsInstances="false" >
+        <subType name="$l10n_shopItem_horseGrey" fillTypeName="HORSE_TYPE_GREY" >
+            <store itemName="$l10n_shopItem_horseGrey" canBeBought="true" image="$data/store/animals/horses/store_horseGrey.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10"/>
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="0" tileVIndex="0" />
+        </subType>
+        <subType name="$l10n_shopItem_horseBrownWhite" fillTypeName="HORSE_TYPE_BROWN_WHITE" >
+            <store itemName="$l10n_shopItem_horseBrownWhite" canBeBought="true" image="$data/store/animals/horses/store_horseBrownWhite.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10"/>
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="1" tileVIndex="0" />
+        </subType>
+        <subType name="$l10n_shopItem_horseBeige" fillTypeName="HORSE_TYPE_BEIGE" >
+            <store itemName="$l10n_shopItem_horseBeige" canBeBought="true" image="$data/store/animals/horses/store_horseBeige.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10"/>
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="2" tileVIndex="0" />
+        </subType>
+        <subType name="$l10n_shopItem_horseRedBrown" fillTypeName="HORSE_TYPE_RED_BROWN" >
+            <store itemName="$l10n_shopItem_horseRedBrown" canBeBought="true" image="$data/store/animals/horses/store_horseRedBrown.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10" />
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="3" tileVIndex="0" />
+        </subType>
+        <subType name="$l10n_shopItem_horseBrown" fillTypeName="HORSE_TYPE_BROWN" >
+            <store itemName="$l10n_shopItem_horseBrown" canBeBought="true" image="$data/store/animals/horses/store_horseBrown.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10" />
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="0" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_horseBlack" fillTypeName="HORSE_TYPE_BLACK" >
+            <store itemName="$l10n_shopItem_horseBlack" canBeBought="true" image="$data/store/animals/horses/store_horseBlack.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10"/>
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_horseDarkBrown" fillTypeName="HORSE_TYPE_DARK_BROWN" >
+            <store itemName="$l10n_shopItem_horseDarkBrown" canBeBought="true" image="$data/store/animals/horses/store_horseDarkBrown.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10" />
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="2" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_horseLightBrown" fillTypeName="HORSE_TYPE_LIGHT_BROWN" >
+            <store itemName="$l10n_shopItem_horseLightBrown" canBeBought="true" image="$data/store/animals/horses/store_horseLightBrown.png" buyPrice="5000" sellPrice="50000" transportPrice="300"/>
+            <input strawPerDay="70" waterPerDay="35" foodPerDay="350" />
+            <output milkPerDay="0" manurePerDay="200" liquidManurePerDay="250" palletsPerDay="10" />
+            <breeding birthRatePerDay="0.0" />
+            <rideable filename="dataS/character/horse/horse.xml" />
+            <dummy filename="dataS2/character/horse/horseLoaded.i3d" meshNode="0|0" hairNode="0|1"/>
+            <texture tileUIndex="3" tileVIndex="1" />
+        </subType>
+    </animal>
+
+    <animal type="COW" class="Animal" statsBreeding="breedCowsCount">
+        <subType name="$l10n_shopItem_cowBrown" fillTypeName="COW_TYPE_BROWN" >
+            <store itemName="$l10n_shopItem_cowBrown" canBeBought="true" image="$data/store/animals/cows/store_cowBrown.png" buyPrice="1600" sellPrice="1500" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="60" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowLoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBrownWhite" fillTypeName="COW_TYPE_BROWN_WHITE">
+            <store itemName="$l10n_shopItem_cowBrownWhite" canBeBought="true" image="$data/store/animals/cows/store_cowBrownWhite.png" buyPrice="1600" sellPrice="1500" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="60" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowLoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBlack" fillTypeName="COW_TYPE_BLACK">
+            <store itemName="$l10n_shopItem_cowBlack" canBeBought="true" image="$data/store/animals/cows/store_cowBlack.png" buyPrice="1600" sellPrice="1500" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="60" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowLoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBlackWhite" fillTypeName="COW_TYPE_BLACK_WHITE">
+            <store itemName="$l10n_shopItem_cowBlackWhite" canBeBought="true" image="$data/store/animals/cows/store_cowBlackWhite.png" buyPrice="1600" sellPrice="1500" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="60" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowLoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBrahmanBrown" fillTypeName="COW_TYPE_BRAHMAN_BROWN" >
+            <store itemName="$l10n_shopItem_cowBrahmanBrown" canBeBought="true" image="$data/store/animals/cows/store_cowBrahmanBrown.png" buyPrice="2500" sellPrice="2000" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="50" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowSALoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBrahmanWhite" fillTypeName="COW_TYPE_BRAHMAN_WHITE">
+            <store itemName="$l10n_shopItem_cowBrahmanWhite" canBeBought="true" image="$data/store/animals/cows/store_cowBrahmanWhite.png" buyPrice="2500" sellPrice="2000" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="50" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowSALoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBrahmanLightBrown" fillTypeName="COW_TYPE_BRAHMAN_LIGHT_BROWN">
+            <store itemName="$l10n_shopItem_cowBrahmanLightBrown" canBeBought="true" image="$data/store/animals/cows/store_cowBrahmanLightBrown.png" buyPrice="2500" sellPrice="2000" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="50" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowSALoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_cowBrahmanGrey" fillTypeName="COW_TYPE_BRAHMAN_GREY">
+            <store itemName="$l10n_shopItem_cowBrahmanGrey" canBeBought="true" image="$data/store/animals/cows/store_cowBrahmanGrey.png" buyPrice="2500" sellPrice="2000" transportPrice="200"/>
+            <input strawPerDay="100" waterPerDay="85" foodPerDay="500" />
+            <output milkPerDay="50" manurePerDay="110" liquidManurePerDay="85" foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.02" />
+            <dummy filename="dataS2/character/cow/cowSALoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+    </animal>
+
+    <animal type="SHEEP" class="Animal" statsBreeding="breedSheepCount">
+        <subType name="$l10n_shopItem_sheepWhite" fillTypeName="SHEEP_TYPE_WHITE" >
+            <store itemName="$l10n_shopItem_sheepWhite" canBeBought="true" image="$data/store/animals/sheeps/store_sheepWhite.png" buyPrice="500" sellPrice="400" transportPrice="50"/>
+            <input strawPerDay="100" waterPerDay="20" foodPerDay="50" />
+            <output manurePerDay="50" liquidManurePerDay="0" palletsPerDay="1" foodSpillagePerDay="6"/>
+            <breeding birthRatePerDay="0.025" />
+            <dummy filename="dataS2/character/sheep/sheepLoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_sheepBrown" fillTypeName="SHEEP_TYPE_BROWN" >
+            <store itemName="$l10n_shopItem_sheepBrown" canBeBought="true" image="$data/store/animals/sheeps/store_sheepBrown.png" buyPrice="500" sellPrice="400" transportPrice="50"/>
+            <input strawPerDay="100" waterPerDay="20" foodPerDay="50" />
+            <output manurePerDay="50" liquidManurePerDay="0" palletsPerDay="1" foodSpillagePerDay="6"/>
+            <breeding birthRatePerDay="0.025" />
+            <dummy filename="dataS2/character/sheep/sheepLoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_sheepBlackWhite" fillTypeName="SHEEP_TYPE_BLACK_WHITE" >
+            <store itemName="$l10n_shopItem_sheepBlackWhite" canBeBought="true" image="$data/store/animals/sheeps/store_sheepBlackWhite.png" buyPrice="500" sellPrice="400" transportPrice="50"/>
+            <input strawPerDay="100" waterPerDay="20" foodPerDay="50" />
+            <output manurePerDay="50" liquidManurePerDay="0" palletsPerDay="1" foodSpillagePerDay="6"/>
+            <breeding birthRatePerDay="0.025" />
+            <dummy filename="dataS2/character/sheep/sheepLoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_sheepBlack" fillTypeName="SHEEP_TYPE_BLACK" >
+            <store itemName="$l10n_shopItem_sheepBlack" canBeBought="true" image="$data/store/animals/sheeps/store_sheepBlack.png" buyPrice="500" sellPrice="400" transportPrice="50"/>
+            <input strawPerDay="100" waterPerDay="20" foodPerDay="50" />
+            <output manurePerDay="50" liquidManurePerDay="0" palletsPerDay="1" foodSpillagePerDay="6"/>
+            <breeding birthRatePerDay="0.025" />
+            <dummy filename="dataS2/character/sheep/sheepLoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="2" />
+        </subType>
+    </animal>
+
+    <animal type="PIG" class="Animal" statsBreeding="breedPigsCount">
+        <subType name="$l10n_shopItem_pigRed" fillTypeName="PIG_TYPE_RED" >
+            <store itemName="$l10n_shopItem_pigRed" canBeBought="true" image="$data/store/animals/pigs/store_pigRed.png" buyPrice="1000" sellPrice="900" transportPrice="50"/>
+            <input strawPerDay="20" waterPerDay="10" foodPerDay="90" />
+            <output manurePerDay="50" liquidManurePerDay="65"  foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.166" />
+            <dummy filename="dataS2/character/pig/pigLoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_pigWhite" fillTypeName="PIG_TYPE_WHITE" >
+            <store itemName="$l10n_shopItem_pigWhite" canBeBought="true" image="$data/store/animals/pigs/store_pigWhite.png" buyPrice="1000" sellPrice="900" transportPrice="50"/>
+            <input strawPerDay="20" waterPerDay="10" foodPerDay="90" />
+            <output manurePerDay="50" liquidManurePerDay="65"  foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.166" />
+            <dummy filename="dataS2/character/pig/pigLoaded.i3d" />
+            <texture tileUIndex="2" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_pigBlackWhite" fillTypeName="PIG_TYPE_BLACK_WHITE" >
+            <store itemName="$l10n_shopItem_pigBlackWhite" canBeBought="true" image="$data/store/animals/pigs/store_pigBlackWhite.png" buyPrice="1000" sellPrice="900" transportPrice="50"/>
+            <input strawPerDay="20" waterPerDay="10" foodPerDay="90" />
+            <output manurePerDay="50" liquidManurePerDay="65"  foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.166" />
+            <dummy filename="dataS2/character/pig/pigLoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_animals_pigBlack" fillTypeName="PIG_TYPE_BLACK" >
+            <store itemName="$l10n_animals_pigBlack" canBeBought="true" image="$data/store/animals/pigs/store_pigBlack.png" buyPrice="1000" sellPrice="900" transportPrice="50"/>
+            <input strawPerDay="20" waterPerDay="10" foodPerDay="90" />
+            <output manurePerDay="50" liquidManurePerDay="65"  foodSpillagePerDay="20"/>
+            <breeding birthRatePerDay="0.166" />
+            <dummy filename="dataS2/character/pig/pigLoaded.i3d" />
+            <texture tileUIndex="1" tileVIndex="2" />
+        </subType>
+    </animal>
+
+    <animal type="CHICKEN" class="Animal" statsBreeding="breedChickenCount">
+        <subType name="$l10n_shopItem_chickenWhite" fillTypeName="CHICKEN_TYPE_WHITE" >
+            <store itemName="$l10n_shopItem_chickenWhite" canBeBought="true" image="$data/store/animals/chickens/store_chickenWhite.png" buyPrice="50" sellPrice="25" transportPrice="15"/>
+            <input strawPerDay="100" waterPerDay="5" foodPerDay="5" />
+            <output palletsPerDay="0.1" foodSpillagePerDay="5"/>
+            <breeding birthRatePerDay="0.1" />
+            <dummy filename="dataS2/character/chicken/hen.i3d" />
+            <texture tileUIndex="2" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_chickenBlack" fillTypeName="CHICKEN_TYPE_BLACK" >
+            <store itemName="$l10n_shopItem_chickenBlack" canBeBought="true" image="$data/store/animals/chickens/store_chickenBlack.png" buyPrice="50" sellPrice="25" transportPrice="15"/>
+            <input strawPerDay="100" waterPerDay="5" foodPerDay="5" />
+            <output manurePerDay="50" palletsPerDay="0.1" foodSpillagePerDay="5"/>
+            <breeding birthRatePerDay="0.1" />
+            <dummy filename="dataS2/character/chicken/hen.i3d" />
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+        <subType name="$l10n_shopItem_chickenBrown" fillTypeName="CHICKEN_TYPE_BROWN" >
+            <store itemName="$l10n_shopItem_chickenBrown" canBeBought="true" image="$data/store/animals/chickens/store_chickenBrown.png" buyPrice="50" sellPrice="25" transportPrice="15"/>
+            <input strawPerDay="100" waterPerDay="5" foodPerDay="5" />
+            <output manurePerDay="50" palletsPerDay="0.1" foodSpillagePerDay="5"/>
+            <breeding birthRatePerDay="0.1" />
+            <dummy filename="dataS2/character/chicken/hen.i3d" />
+            <texture tileUIndex="2" tileVIndex="2" />
+        </subType>
+        <subType name="$l10n_shopItem_chickenRooster" fillTypeName="CHICKEN_TYPE_ROOSTER" >
+            <store itemName="$l10n_shopItem_chickenRooster" canBeBought="true" image="$data/store/animals/chickens/store_chickenRooster.png" buyPrice="50" sellPrice="25" transportPrice="15"/>
+            <input strawPerDay="100" waterPerDay="5" foodPerDay="5" />
+            <output manurePerDay="50" palletsPerDay="0" foodSpillagePerDay="5"/>
+            <breeding birthRatePerDay="0" />
+            <dummy filename="dataS2/character/chicken/rooster.i3d" />
+            <texture tileUIndex="1" tileVIndex="1" />
+        </subType>
+    </animal>
+</animals>

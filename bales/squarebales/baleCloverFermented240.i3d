@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="baleSilage240" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/objects/squarebales/baleGrass240_specular.png"/>
+    <File fileId="3" filename="$data/objects/squarebales/baleStraw240_normal.png"/>
+    <File fileId="6" filename="$data/objects/squarebales/kuhnSW4014/baleSilage240_diffuse.png"/>
+    <File fileId="7" filename="$data/objects/squarebales/kuhnSW4014/baleSilage240_normal.png"/>
+    <File fileId="5" filename="$data/shaders/silageBaleShader.xml"/>
+    <File fileId="2" filename="baleCloverFermented240_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="baleGrass240_mat" materialId="4" customShaderId="5" customShaderVariation="colorMask">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3" bumpDepth="0.3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="wrapDiffuseMap" fileId="6"/>
+      <Custommap name="wrapNormalMap" fileId="7"/>
+      <CustomParameter name="wrappingState" value="0 0 0 0"/>
+      <CustomParameter name="colorScale" value="0.6662 0.3839 0.5481 1"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="baleCloverFermented240.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="baleCloverSilage240" translation="8.28536e-09 0 -5.35671e-08" dynamic="true" compound="true" collisionMask="16781314" staticFriction="1.3" dynamicFriction="1.3" density="0.2" clipDistance="250" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="silagebaleAttacherTrigger" translation="-8.28536e-09 0 5.35671e-08" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="11" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="3" name="baleSilage240_vis" translation="-8.28536e-09 0 5.35671e-08" clipDistance="250" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="10">
+      <Attribute name="baleMeshIndex" type="string" value="1"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="2"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0"/>
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="supportsWrapping" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

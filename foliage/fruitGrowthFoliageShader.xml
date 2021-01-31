@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="fadeInOutStartEnd"     target="fadeInOutStartEnd"  type="float4" defaultValue="-5 0 70 75" />
+        <Parameter name="frequencyAndScale"     target="frequencyAndScale"  type="float3" defaultValue="0.3 0.2 0 0" />
+        <Parameter name="plantRotate"           target="plantRotate"        type="float4" defaultValue="0.4363 1.57 0.0 0.0" minValue = "-6.0 -6.0 0.0 0.0"        maxValue = "6.0 6.0 1.0 1.0"/>
+        <Parameter name="cellSizeTerrainSizeScaleXZScaleY" target="cellSizeTerrainSizeScaleXZScaleY" type="float4"/>
+    </Parameters>
+    <Textures>
+        <Texture name = "positionColorMask" defaultColorProfile = "sRGB" defaultFilename = "grassFlowers_color.png"/>
+    </Textures>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="base"/>
+        <VertexAttribute name="uv2" group="base"/>
+        <VertexAttribute name="color" group="base"/>
+        <VertexAttribute name="blendweights" group="base"/>
+        <IgnoredVertexAttribute name="normal" group="base"/>
+    </VertexAttributes>
+    <Variations>
+        <Variation name = "PLANT_ROTATION">
+<![CDATA[
+/*
+foliage model have to be oriented to +X
+plantRotate.x - random
+                0.0   == 0 deg
+                0.262 == 15 deg
+                0.524 == 30 deg
+                0.785 == 45 deg
+                0.960 == 55 deg
+                6.283 == 360 deg
+plantRotate.y - rotation value,
+                0     == +X
+                1.570 == -Z
+                3.142 == -X
+                4.712 == +Z
+*/
+    #define PLANT_ROTATION
+]]>
+        </Variation>
+        <Variation name="COLOR_MASK">
+<![CDATA[
+    #define COLOR_MASK
+]]>
+        </Variation>
+        <Variation name="BILLBOARD">
+<![CDATA[
+    #define BILLBOARD_180
+]]>
+        </Variation>
+        <Variation name="COLOR_MASK_BILLBOARD">
+<![CDATA[
+    #define BILLBOARD_180
+    #define COLOR_MASK
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position = "SAMPLERS">
+<![CDATA[
+sampler2D positionColorMask;
+]]>
+            </CodeInjection>
+            <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+#if GPU_PROFILE <= GPU_PROFILE_HIGH
+    #define NUM_SHADOW_MAP_SAMPLES 1
+#endif
+#define DISTANCE_BLENDING
+#undef GEOMETRIC_SPECULAR_ANTIALISING
+]]>
+            </CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_VS">
+<![CDATA[
+float getPlantRotation(VS_INPUT In)
+{
+    #if defined(PLANT_ROTATION)
+        if (getDefaultTexCoords(In).x > 1) {
+            float mRand = lerp( -plantRotate.x, plantRotate.x, In.blendWeights.w );
+            return mRand + plantRotate.y;
+        }
+    #endif
+    return In.blendWeights.w*3.1415926;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float distanceBlendInverseAlpha : TEXCOORDn;
+#if defined(COLOR_MASK)
+    float2  albedoMapTexCoordsY : TEXCOORDn;
+#endif
+#if defined(BILLBOARD_180)
+    float2 texCoords2: TEXCOORDn;
+    float texCoords2Weight: TEXCOORDn;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_NORMAL_VS">
+<![CDATA[
+    float3 normal = float3(In.position.w, In.texCoords0.zw); // get mesh normal
+#if defined(BILLBOARD_180)
+    return normal;
+#endif
+    normal = rotateFoliageVector(In, normal, getPlantRotation(In));
+    return rotateVectorToTerrainNormal(In, normal, In.texCoords1.xyz - 0.5);
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_TANGENT_VS">
+<![CDATA[
+    float3 tangent = float3(In.tangent.xyz); // get mesh tangent
+#if defined(BILLBOARD_180)
+    return tangent;
+#endif
+    tangent = rotateFoliageVector(In, tangent, getPlantRotation(In));
+    return rotateVectorToTerrainNormal(In, tangent, In.texCoords1.xyz - 0.5);
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_BITANGENT_SIDE_VS">
+<![CDATA[
+#if defined(BILLBOARD_180)
+    return 1;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_DEFAULT_TEXCOORDS_VS">
+<![CDATA[
+return getFoliageTexCoords(In);
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 fadeInOutStartEnd;
+uniform float4 frequencyAndScale;
+uniform float4 cellSizeTerrainSizeScaleXZScaleY;
+#if defined( PLANT_ROTATION )
+    uniform float4 plantRotate;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+float3 position = In.position.xyz * float3(16.0, 16.0, 16.0);  // get mesh XYZ
+float relativeHeight = min(1,max(0, position.y));
+position *= In.color.xyx * 8;  // scale by widthScale & heightScale
+float windScale = position.y;
+
+#if !defined(BILLBOARD_180)
+    position = rotateFoliageVector(In, position, getPlantRotation(In));
+#endif
+
+float3 blockPos = In.blendWeights.xyz;
+blockPos.xz = blockPos.xz*cellSizeTerrainSizeScaleXZScaleY.x;
+blockPos.y = (blockPos.y+0.5) * cellSizeTerrainSizeScaleXZScaleY.w;
+
+float3 blockPosWorld = mul(modelMatrix, float4(blockPos, 1));
+
+float2 curDir = readFoliageAnimationTexture(blockPosWorld);
+float bend = length(curDir);
+if (bend > 0) {
+    curDir /= bend;
+    float squish = 1 - bend;
+
+    float3 flatDir = normalize(float3(curDir.x, 0, curDir.y));
+    float3 flatPerp = float3(flatDir.z, 0, -flatDir.x);
+    float3 flatUp = float3(0, 1, 0);
+    float offsetInFlatDir = dot(position, flatDir);
+    float offsetInFlatPerp = dot(position, flatPerp);
+    float offsetInFlatUp = dot(position, flatUp);
+
+    float sinRot, cosRot;
+    sincos(bend * 1.570796, sinRot, cosRot);
+
+    offsetInFlatDir *= squish;
+
+    float newOffsetInFlatDir = offsetInFlatDir * cosRot + offsetInFlatUp * sinRot;
+    float newOffsetInFlatUp = offsetInFlatUp * cosRot - offsetInFlatDir * sinRot;
+
+    float3 bentPosition = flatDir * newOffsetInFlatDir + flatPerp * offsetInFlatPerp + flatUp * newOffsetInFlatUp;
+
+    position = lerp(position, bentPosition, relativeHeight);
+}
+
+#if !defined(BILLBOARD_180)
+position += blockPos;   // add blockPositionX,Y,Z
+#endif
+
+#if defined(DEPTH_VIS) // avoid shadow artefacts by not animating in the shadow map
+return position.xyz;
+#endif
+
+float directionX = sin(blockPos.x+blockPos.z);
+float3 direction = normalize(float3(directionX,0,1-directionX));
+
+float2 mFreqScale = frequencyAndScale.xy;
+float mSpeed = 1.0;
+
+mFreqScale.y *= 0.25;
+mSpeed *= 0.25;
+float offset1 = sin( mSpeed*cTime_s + blockPos.x*blockPos.z * mFreqScale.x)*windScale*mFreqScale.y;
+
+mFreqScale.y *= 8.0;
+mSpeed *= 10.0;
+float offset2 = sin( mSpeed*cTime_s + blockPos.x*blockPos.z * mFreqScale.x)*windScale*mFreqScale.y;
+
+float offset = lerp( offset1, offset2, cShared0 );
+
+return position.xyz + direction * offset;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GET_WORLD_POSE_VS">
+<![CDATA[
+
+#if defined(BILLBOARD_180)
+float mUVShift;
+float mUVShift2;
+{
+    float3 upVector     = float3(modelMatrix[0][1], modelMatrix[1][1], modelMatrix[2][1]);
+    float3 camToPos     = float3(modelMatrix[0][3], modelMatrix[1][3], modelMatrix[2][3]);
+
+    float3 blockPos = In.blendWeights.xyz;
+    blockPos.xz = blockPos.xz*cellSizeTerrainSizeScaleXZScaleY.x;
+    blockPos.y = (blockPos.y+0.5) * cellSizeTerrainSizeScaleXZScaleY.w;
+
+    float3 worldBlockPos = mul((float3x3)modelMatrix, blockPos);
+
+    camToPos += worldBlockPos;
+
+    // Apply some random camera alignment offset  to make the circle around the camera less obvious
+    float3 camToPosOrient = camToPos;
+    camToPosOrient.xz += (frac(sin(worldBlockPos.xz*0.412) * 12.0) - 0.5) * 0.2*length(camToPos);
+
+    {
+        float3 plantDir = rotateFoliageVector(In, worldNormal, getPlantRotation(In));
+        float3 mProjectCamToPos      = normalize(camToPosOrient -upVector*dot(upVector,camToPosOrient));
+        float3 mProjectedWorldNormal = normalize(plantDir -upVector*dot(upVector,plantDir));
+
+        float3 camCross     = cross( mProjectCamToPos, mProjectedWorldNormal );
+        float mEyeAngle     = acos(clamp(-dot( mProjectCamToPos, mProjectedWorldNormal), -1.0, 1.0));
+        float mUVShiftTileF = 8.0 * 0.5 * mEyeAngle / 3.1415926535897932384626433832795;
+        if ( camCross.y > 0 ){
+            mUVShiftTileF *= -1;
+        }
+        float mUVShiftTile1 = floor(mUVShiftTileF);
+        mUVShift            = mUVShiftTile1/8.0;
+        Out.texCoords2Weight = saturate(2*(mUVShiftTileF-mUVShiftTile1) - 0.5);
+        mUVShift2           = mUVShift + 1.0/8.0;
+    }
+
+    float3 sideVector = normalize(cross(camToPosOrient, upVector));
+
+    float3 dirVector = cross(sideVector, upVector);
+    // Roate 20deg towards the top (we generate the lods as if we view them from above)
+    //upVector = -sin(0.349)*dirVector + cos(0.349)*upVector;
+
+    worldPosition = camToPos + sideVector*(position.x) + upVector*position.y;
+
+
+    worldTangent.xyz = sideVector;
+    worldBitangent  = upVector;
+    worldNormal.xyz = cross(sideVector, upVector);
+}
+#endif
+]]>
+            </CodeInjection>
+           <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+#if defined(COLOR_MASK)
+    float3 fullWorldPosition = worldPosition + float3(invViewMatrix[0][3], invViewMatrix[1][3], invViewMatrix[2][3]);
+    float2 yPos = fullWorldPosition.xz;
+    yPos.y = 1 - yPos.y;
+    yPos /= (cellSizeTerrainSizeScaleXZScaleY.y*cellSizeTerrainSizeScaleXZScaleY.z);
+    yPos += float2(0.5,0.5);
+    Out.albedoMapTexCoordsY = yPos;
+#endif
+#if defined(BILLBOARD_180)
+    Out.texCoords2 = Out.defaultTexCoords;
+    Out.texCoords2.x += mUVShift2;
+    Out.defaultTexCoords.x += mUVShift;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_END">
+<![CDATA[
+    float3 blockPos = In.blendWeights.xyz;
+    blockPos.xz = blockPos.xz*cellSizeTerrainSizeScaleXZScaleY.x;
+    blockPos.y = (blockPos.y+0.5) * cellSizeTerrainSizeScaleXZScaleY.w;
+
+    blockPos = mul(modelMatrix, float4(blockPos, 1));
+
+#if defined(DEPTH_VIS)
+    float viewDirLength = length(lodViewpoint.xz - blockPos.xz);
+    float positionOnFadeIn = (viewDirLength - fadeInOutStartEnd.x) / (fadeInOutStartEnd.y - fadeInOutStartEnd.x);
+    float positionOnFadeOut = (viewDirLength - (fadeInOutStartEnd.z-6)) / (fadeInOutStartEnd.w - (fadeInOutStartEnd.z-6));
+#else
+    float viewDirLength = length(blockPos.xz);
+    float positionOnFadeIn = (viewDirLength - fadeInOutStartEnd.x) / (fadeInOutStartEnd.y - fadeInOutStartEnd.x);
+    float positionOnFadeOut = (viewDirLength - fadeInOutStartEnd.z) / (fadeInOutStartEnd.w - fadeInOutStartEnd.z);
+#endif
+    float alphaFadeIn = saturate(positionOnFadeIn);
+    float alphaFadeOut = 1 - saturate(positionOnFadeOut);
+    Out.distanceBlendInverseAlpha = alphaFadeIn - alphaFadeOut;
+]]>
+            </CodeInjection>
+          <CodeInjection position="GET_DISTANCE_BLEND_INVERSE_ALPHA_FS">
+            <![CDATA[
+return In.vs.distanceBlendInverseAlpha;
+]]>
+          </CodeInjection>
+          <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+#if defined(BILLBOARD_180)
+    #if defined(ALBEDO_MAP)
+        float4 combinedDiffuseAlpha = lerp(tex2D(baseMap, In.vs.ALBEDOMAP_TEXCOORD), tex2D(baseMap, In.vs.texCoords2), In.vs.texCoords2Weight);
+        diffuseColor = combinedDiffuseAlpha.xyz;
+    #endif
+#endif
+
+#if defined(ALBEDO_MAP)
+    #if defined(COLOR_MASK)
+        float3 mTexY      = tex2D( positionColorMask, In.vs.albedoMapTexCoordsY ).xyz;
+        diffuseColor *= mTexY;
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined(BILLBOARD_180)
+    #if defined(ALBEDO_MAP) && (defined(ALPHA_BLENDED) || defined(ALPHA_TESTED))
+        alpha = combinedDiffuseAlpha.w;
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS">
+<![CDATA[
+#if defined(BILLBOARD_180)
+    #if defined(NORMAL_MAP)
+        return lerp(tex2D(normalMap, In.vs.NORMALMAP_TEXCOORD).xyz, tex2D(normalMap, In.vs.texCoords2).xyz, In.vs.texCoords2Weight) - 0.5;
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_TANGENT_SPACE_NORMAL_FS">
+<![CDATA[
+#if defined(BILLBOARD_180)
+    #if defined(NORMAL_MAP)
+        return normalize(getUnnormalizedTangentSpaceNormal(In, globals));
+    #endif
+#endif
+]]>
+            </CodeInjection>
+          </CodeInjections>
+    </LodLevel>
+</CustomShader>

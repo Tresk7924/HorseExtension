@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="mower">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>NOVACAT 301 ED</name>
+        <specs>
+            <neededPower>70</neededPower>
+            <workingWidth>3.1</workingWidth>
+            <combination>X8 ED</combination>
+        </specs>
+        <functions>
+            <function>$l10n_function_mower</function>
+        </functions>
+        <image>vehicles/CuttersEtc/poettingerNovaCat301/store_poettingerNovaCat301.png</image>
+        <price>19000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>POETTINGER</brand>
+        <category>mowers</category>
+        <shopFoldingState>1</shopFoldingState>
+        <shopTranslationOffset>0 -0.35 0</shopTranslationOffset>
+        <shopRotationOffset>0.19 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1200908</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>190008</indexBufferMemoryUsage>
+        <textureMemoryUsage>13282168</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_mower</typeDesc>
+        <filename>$data/vehicles/poettinger/poettingerNovaCat301/poettingerNovaCat301.i3d</filename>
+        <size width="3.8" length="2.5" />
+        <speedLimit value="22" />
+        <components>
+            <component centerOfMass="0 0.4 0" solverIterationCount="10" mass="500" />
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="405" />
+            <joint component1="1" component2="2" node="componentJoint01" rotLimit="0 0 0" transLimit="0 0 0" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <powerConsumer ptoRpm="470" neededMinPtoPower="25" neededMaxPtoPower="25"/>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundRefNode" threshold="0.3" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="mower" functionName="processMowerArea" disableBackwards="false" >
+            <area startNode="areaStart" widthNode="areaWidth" heightNode="areaHeight" />
+            <groundReferenceNode index="1" />
+            <folding minLimit="0" maxLimit="0.1" />
+            <mower dropWindrow="true" dropAreaIndex="2" />
+        </workArea>
+
+        <workArea type="auxiliary" >
+            <area startNode="areaDropStart" widthNode="areaDropWidth" heightNode="areaDropHeight" />
+        </workArea>
+    </workAreas>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode" upperRotationOffset="3" lowerRotLimitScale="0 0 0">
+                <distanceToGround lower="0.8" upper="0.8" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <lowerAnimation name="lowerAnimation" speed="1" />
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"   length="1.5" diameter="0.02" />
+        <hose inputAttacherJointIndices="1" type="hydraulicOut"  node="hydraulicOut01"   length="1.5" diameter="0.02" />
+    </connectionHoses>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputNode" aboveAttacher="true" />
+        <local startNode="localPowerTakeOff01Start" endNode="localPowerTakeOff01End" />
+        <local startNode="localPowerTakeOff02Start" endNode="localPowerTakeOff02End" />
+    </powerTakeOffs>
+
+    <foldable>
+        <foldingParts startMoveDirection="1" turnOnFoldMaxLimit="0.1" turnOnFoldMinLimit="0" >
+            <foldingPart animationName="folding" speedScale="1" />
+        </foldingParts>
+    </foldable>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="componentJoint01" playSound="true">
+                <componentJoint index="1" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts isActiveDirtyTimeOffset="3">
+            <movingPart node="mainArm" localReferencePoint="mainArm2" referencePoint="refNode" referenceFrame="poettingerNovaCat301_main_component1" isActiveDirty="true" limitedAxis="1">
+                <dependentPart node="mainArm2" />
+                <dependentPart node="mowerArm" />
+                <dependentPart node="hydraulicMower" />
+                <dependentPart node="spring" />
+                <dependentPart node="springMower" />
+            </movingPart>
+            <movingPart node="mainArm2" referencePoint="mainArm2Ref" referenceFrame="poettingerNovaCat301_main_component1"/>
+            <movingPart node="mowerArm" localReferencePoint="mowerArm2" referencePoint="mowerArmRef" referenceFrame="poettingerNovaCat301_main_component1" limitedAxis="1">
+                <dependentPart node="mowerArm2" />
+                <dependentPart node="mower" />
+            </movingPart>
+            <movingPart node="mowerArm2" referencePoint="mowerArmRef" referenceFrame="poettingerNovaCat301_main_component1" />
+            <movingPart node="mower" referenceFrame="refNode" />
+            <movingPart node="hydraulicMower" referencePoint="hydraulicMowerRef" referenceFrame="hydraulicMowerRef" >
+                <translatingPart node="hydraulicMowerPunch" />
+            </movingPart>
+            <movingPart node="spring" referencePoint="springRef" referenceFrame="springRef" scaleZ="true" />
+            <movingPart node="springMower" referencePoint="springMowerRef" referenceFrame="springMowerRef" scaleZ="true" />
+        </movingParts>
+
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="poettingerNovaCat301_mower_component2"/>
+        </sounds>
+    </cylindered>
+
+    <animations>
+        <animation name="lowerAnimation">
+            <part componentJointIndex="1" startTime="0" endTime="1" startTransLimit="0 0 0" endTransLimit="0 0.4 0" startRotLimit="0 0 0" endRotLimit="0 0 8" />
+            <part node="componentJoint01" startTime="0" endTime="1" startTrans="0 0.35 0" endTrans="0 0 0" />
+        </animation>
+        <animation name="moveSupport">
+            <part node="supportArm" startTime="0"    endTime="0.7"  startTrans="0 0.19 0" endTrans="0 0 0"/>
+        </animation>
+
+        <animation name="folding">
+            <part node="transportArmLeft" startTime="0" endTime="1.9" startRot="0 0 0" endRot="0 0 190"/>
+            <part node="transportArmRight" startTime="0.1" endTime="2" startRot="0 0 0" endRot="0 0 -190"/>
+
+            <part node="decalsTransportLeftAnimation"      startTime="0" endTime="2" startTrans="0.275 -0.838 0.142"   endTrans="-0.051 -0.581 0.147" />
+            <part node="decalsTransportLeftAnimation"      startTime="0" endTime="2" startRot="0 0 0"                   endRot="0 0 -25.498" />
+
+            <part node="decalsTransportRighAnimation"      startTime="0" endTime="2" startTrans="-0.275 -0.838 0.474"   endTrans="0.051 -0.581 0.51" />
+            <part node="decalsTransportRighAnimation"      startTime="0" endTime="2" startRot="0 0 0"                   endRot="0 0 25.498" />
+
+            <part node="colPartLeft"  startTime="0" endTime="1.9" startRot="0 0 0" endRot="0 0 190"/>
+            <part node="colPartRight" startTime="0.1" endTime="2" startRot="0 0 0" endRot="0 0 -190"/>
+        </animation>
+    </animations>
+
+    <mower fruitTypeConverter="MOWERCONDITIONER">
+        <animationNodes>
+            <animationNode node="drum"     rotSpeed="-1500" rotAxis="1" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter01" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter02" rotSpeed="3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter03" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter04" rotSpeed="-3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter05" rotSpeed="3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter06" rotSpeed="-3000" rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+            <animationNode node="cutter07" rotSpeed="-3000"  rotAxis="2" turnOnFadeTime="3" turnOffFadeTime="3"/>
+        </animationNodes>
+
+        <dropEffects>
+            <dropEffect dropAreaIndex="2">
+                <effectNode effectNode="mowerEffect" materialType="mower" materialTypeId="1" delay="0" />
+            </dropEffect>
+        </dropEffects>
+    </mower>
+
+    <turnOnVehicle turnOffIfNotAllowed="true">
+        <sounds>
+            <start template="DEFAULT_MOWER_START_SHORT" linkNode="poettingerNovaCat301_mower_component2" />
+            <stop template="DEFAULT_MOWER_STOP"         linkNode="poettingerNovaCat301_mower_component2" />
+            <work template="DEFAULT_MOWER_WORK"         linkNode="poettingerNovaCat301_mower_component2" />
+        </sounds>
+    </turnOnVehicle>
+
+    <ai>
+        <needsLowering value="true" />
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack" />
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack" />
+        <collisionTrigger node="aiCollisionTrigger" />
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.7" maxX="1.7" minZ="-1" maxZ="1" yOffset="-0.3" node="1>0" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="poettingerNovacatX8_mat" baseNode="novaCut301_vis">
+            <shaderParameter name="colorMat1" value="POETTINGER_RED1"/>
+            <shaderParameter name="colorMat2" value="POETTINGER_WHITE1"/>
+            <shaderParameter name="colorMat3" value="POETTINGER_YELLOW"/>
+            <shaderParameter name="colorMat5" value="POETTINGER_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="poettingerNovaCat301_main_component1" node="0>" />
+        <i3dMapping id="novaCut301_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="topReferenceNode" node="0>0|0|1" />
+        <i3dMapping id="componentJoint01" node="0>0|1|0|0" />
+        <i3dMapping id="mainArm" node="0>0|1|1" />
+        <i3dMapping id="mainArm2" node="0>0|1|1|0" />
+        <i3dMapping id="mowerArm" node="0>0|1|1|1" />
+        <i3dMapping id="mowerArm2" node="0>0|1|1|1|0" />
+        <i3dMapping id="mower" node="0>0|1|1|1|1" />
+        <i3dMapping id="drum" node="0>0|1|1|1|1|0" />
+        <i3dMapping id="cutter01" node="0>0|1|1|1|1|1|0" />
+        <i3dMapping id="cutter02" node="0>0|1|1|1|1|1|1" />
+        <i3dMapping id="cutter03" node="0>0|1|1|1|1|1|2" />
+        <i3dMapping id="cutter04" node="0>0|1|1|1|1|1|3" />
+        <i3dMapping id="cutter05" node="0>0|1|1|1|1|1|4" />
+        <i3dMapping id="cutter06" node="0>0|1|1|1|1|1|5" />
+        <i3dMapping id="cutter07" node="0>0|1|1|1|1|1|6" />
+        <i3dMapping id="supportArm" node="0>0|1|1|1|1|2|0" />
+        <i3dMapping id="ptoInputNode" node="0>0|1|1|1|1|3" />
+        <i3dMapping id="hydraulicMowerRef" node="0>0|1|1|1|1|4" />
+        <i3dMapping id="springMower" node="0>0|1|1|1|1|5" />
+        <i3dMapping id="mainArm2Ref" node="0>0|1|1|1|1|6" />
+        <i3dMapping id="areaStart" node="0>0|1|1|1|1|7|0" />
+        <i3dMapping id="areaWidth" node="0>0|1|1|1|1|7|1" />
+        <i3dMapping id="areaHeight" node="0>0|1|1|1|1|7|2" />
+        <i3dMapping id="areaDropStart" node="0>0|1|1|1|1|7|3" />
+        <i3dMapping id="areaDropWidth" node="0>0|1|1|1|1|7|4" />
+        <i3dMapping id="areaDropHeight" node="0>0|1|1|1|1|7|5" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|1|1|1|1|8|0|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|1|1|1|1|8|0|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|1|1|1|1|8|0|2" />
+        <i3dMapping id="sizeMarkerLeft" node="0>0|1|1|1|1|8|1|0" />
+        <i3dMapping id="sizeMarkerRight" node="0>0|1|1|1|1|8|1|1" />
+        <i3dMapping id="sizeMarkerBack" node="0>0|1|1|1|1|8|1|2" />
+        <i3dMapping id="aiCollisionTrigger" node="0>0|1|1|1|1|8|2" />
+        <i3dMapping id="mowerEffect" node="0>0|1|1|1|1|9|0" />
+        <i3dMapping id="transportArmLeft" node="0>0|1|1|1|1|10|0" />
+        <i3dMapping id="decalsTransportLeftAnimation" node="0>0|1|1|1|1|10|0|1" />
+        <i3dMapping id="transportArmRight" node="0>0|1|1|1|1|10|1" />
+        <i3dMapping id="decalsTransportRighAnimation" node="0>0|1|1|1|1|10|1|1" />
+        <i3dMapping id="localPowerTakeOff01Start" node="0>0|1|1|1|1|12|0" />
+        <i3dMapping id="localPowerTakeOff01End" node="0>0|1|1|1|1|12|1" />
+        <i3dMapping id="localPowerTakeOff02Start" node="0>0|1|1|1|1|12|2" />
+        <i3dMapping id="localPowerTakeOff02End" node="0>0|1|1|1|1|12|3" />
+        <i3dMapping id="groundRefNode" node="0>0|1|1|1|1|14" />
+        <i3dMapping id="springRef" node="0>0|1|1|2" />
+        <i3dMapping id="springMowerRef" node="0>0|1|1|3" />
+        <i3dMapping id="mowerArmRef" node="0>0|1|2" />
+        <i3dMapping id="spring" node="0>0|1|4" />
+        <i3dMapping id="hydraulicMower" node="0>0|2|0" />
+        <i3dMapping id="hydraulicMowerPunch" node="0>0|2|0|0" />
+        <i3dMapping id="hydraulicIn01" node="0>0|2|0|1|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|2|0|1|1" />
+        <i3dMapping id="poettingerNovaCat301_mower_component2" node="1>" />
+        <i3dMapping id="refNode" node="1>0" />
+        <i3dMapping id="colPartLeft" node="1>1" />
+        <i3dMapping id="colPartRight" node="1>2" />
+    </i3dMappings>
+</vehicle>

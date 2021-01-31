@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="baleWrapper">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>            <en>SW 4014 Multi</en>
+        </name>
+        <functions>
+            <function>$l10n_function_multiWrapper</function>
+        </functions>
+        <specs>
+            <fillTypes>SQUAREBALE ROUNDBALE GRASS_WINDROW ALFALFA_WINDROW CLOVER_WINDROW HORSEGRASS_WINDROW CROP_WINDROW</fillTypes>
+        </specs>
+        <image>mods/vehicles/Kuhn/store_kuhnSW4014.png</image>
+        <price>54000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>KUHN</brand>
+        <category>baling</category>
+        <shopTranslationOffset>0 0 0</shopTranslationOffset>
+        <shopRotationOffset>1.512 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1234664</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>164850</indexBufferMemoryUsage>
+        <textureMemoryUsage>12233616</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_baleWrapper</typeDesc>
+        <filename>$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014.i3d</filename>
+        <size width="3.5" length="5" widthOffset="0.8" lengthOffset="0.8"/>
+        <components>
+            <component centerOfMass="0.72 0.6 -0.5" solverIterationCount="10" mass="1750"/>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="900"/>
+            <joint component1="1" component2="2" node="componentJoint" transLimit="0 0 0"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/trelleborg/AW305/480_45R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="1.0" repr="wheelLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.12" spring="20" damper="20"/>
+                        <wheelChock parkingNode="wheelChock01" color="SHARED_BLACK1"/>
+                        <wheelChock parkingNode="wheelChock02" color="SHARED_BLACK1" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/AW305/480_45R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="1.0" repr="wheelRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.12" spring="20" damper="20"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <hub linkNode="wheelLeft" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.203 0.203 0.203"/>
+            <hub linkNode="wheelRight" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.203 0.203 0.203"/>
+        </hubs>
+    </wheels>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint rootNode="kuhnSW4014_attacher_component2" node="attacherJoint" jointType="implement" lowerTransLimitScale="0 0 0" isDefaultLowered="true" needsLowering="false" allowsLowering="false">
+                <distanceToGround lower="0.556" upper="0.556"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+        <brakeForce>0.4</brakeForce>
+    </attachable>
+    <powerConsumer ptoRpm="500" neededMinPtoPower="20" neededMaxPtoPower="20"/>
+    <lights>
+        <sharedLight linkNode="backlightLeft" filename="$data/shared/assets/lights/lizard/rearMultipointLight_03_left.xml"/>
+        <sharedLight linkNode="backlightRight" filename="$data/shared/assets/lights/lizard/rearMultipointLight_03_right.xml"/>
+        <sharedLight linkNode="sideMarker_01" filename="$data/shared/assets/lights/lizard/sideMarker_01_left.xml"/>
+        <sharedLight linkNode="sideMarker_02" filename="$data/shared/assets/lights/lizard/sideMarker_01_right.xml"/>
+        <sharedLight linkNode="yellowRound01" filename="$data/shared/assets/reflectors/lizard/yellowRound_01.xml"/>
+        <sharedLight linkNode="yellowRound02" filename="$data/shared/assets/reflectors/lizard/yellowRound_01.xml"/>
+        <realLights>
+            <low>
+                <light node="backLightsHigh1" lightTypes="0 3"/>
+                <light node="backLightsHigh" lightTypes="0 3"/>
+            </low>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0 3"/>
+                <light node="backLightsHigh" lightTypes="0 3"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="backLightsHigh1"/>
+                <brakeLight node="backLightsHigh"/>
+                <reverseLight node="reverseLight"/>
+                <reverseLight node="reverseLight11"/>
+            </high>
+        </realLights>
+    </lights>
+    <foldable>
+        <foldingParts startMoveDirection="1">
+            <foldingPart animationName="folding" speedScale="1.0"/>
+        </foldingParts>
+    </foldable>
+    <cylindered>
+        <movingTools>
+            <!-- drawbar -->
+            <movingTool node="drawbar" wheelIndices="2">
+                <componentJoint index="1" anchorActor="0"/>
+                <dependentPart node="hydraulicDrawbar"/>
+            </movingTool>
+            <!-- fake node for hydraulic sound -->
+            <movingTool node="fakeAnimationNodeLoadUnload" playSound="true"/>
+        </movingTools>
+        <movingParts>
+            <!-- hydraulicDrawbar -->
+            <movingPart node="hydraulicDrawbar" referencePoint="hydraulicDrawbarRef" referenceFrame="hydraulicDrawbarRef" playSound="true">
+                <translatingPart node="hydraulicDrawbarPush"/>
+            </movingPart>
+            <!-- drawbarAttacherRotYRef -->
+            <movingPart node="drawbarAttacherRotY" referencePoint="drawbarAttacherRotYRef" referenceFrame="drawbarAttacherRotYRef" isActiveDirty="true" limitedAxis="2"/>
+        </movingParts>
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="kuhnSW4014_main_component1"/>
+        </sounds>
+    </cylindered>
+    <animations>
+        <!-- move support wheel down/up -->
+        <animation name="moveSupport">
+            <part node="support" startTime="0" duration="0.2" startRot="2.735 13.596 0" endRot="-79.87 13.596 0"/>
+            <part node="supportCol" startTime="0" duration="0.2" startTrans="0.51 0.078 2.064" endTrans="0.51 -0.528 2.064"/>
+            <part componentJointIndex="1" startTime="0" duration="0.2" startRotLimit="25 80 0" endRotLimit="0 0 0"/>
+        </animation>
+        <animation name="folding">
+            <!-- drawbar -->
+            <part node="drawbar" startTime="0" endTime="5" startRot="0 0 0" endRot="0 -38 0"/>
+            <!-- clip -->
+            <part node="j_mainRotor_root" startTime="0" endTime="5" animationClip="unfoldingSource" clipStartTime="4633" clipEndTime="0"/>
+            <!-- belt -->
+            <part node="belt" startTime="1.1" endTime="5" shaderParameter="beltPos" shaderStartValues="-0.27 0 0 0" shaderEndValues="0.474 0 0 0"/>
+        </animation>
+        <animation name="moveRoundBaleToWrapper">
+            <part node="fakeAnimationNodeLoadUnload" startTime="0" endTime="1.9" startRot="0 0 0" endRot="1 1 1"/>
+            <part node="grabNode" startTime="0" endTime="1.9" endTrans="0 0 0"/>
+            <part node="j_mainRotor_root" startTime="0" endTime="5" animationClip="roundbale_pickupSource" clipStartTime="0" clipEndTime="1966"/>
+        </animation>
+        <animation name="moveSquareBaleToWrapper">
+            <part node="fakeAnimationNodeLoadUnload" startTime="0" endTime="1.9" startRot="0 0 0" endRot="1 1 1"/>
+            <part node="grabNode" startTime="0" endTime="1.9" endTrans="0 0 0"/>
+            <part node="j_mainRotor_root" startTime="0" endTime="5" animationClip="squarebale_pickupSource" clipStartTime="0" clipEndTime="1966"/>
+        </animation>
+        <animation name="wrapRoundBale">
+            <part node="fakeAnimationNodeWrap" startTime="0" endTime="14.8" startRot="0 0 0" endRot="1 1 1"/>
+            <part node="j_mainRotor_root" startTime="0" endTime="14.8" animationClip="roundbale_wrapSource" clipStartTime="0" clipEndTime="7400"/>
+        </animation>
+        <animation name="wrapSquareBale">
+            <part node="fakeAnimationNodeWrap" startTime="0" endTime="14.8" startRot="0 0 0" endRot="1 1 1"/>
+            <part node="j_mainRotor_root" startTime="0" endTime="14.8" animationClip="squarebale_wrapSource" clipStartTime="0" clipEndTime="7400"/>
+        </animation>
+        <animation name="dropRoundBaleFromWrapper">
+            <part node="fakeAnimationNodeLoadUnload" startTime="0" endTime="1.9" startRot="0 0 0" endRot="1 1 1"/>
+            <part node="j_mainRotor_root" startTime="0" endTime="1.9" animationClip="roundbale_dropSource" clipStartTime="0" clipEndTime="1900"/>
+        </animation>
+        <animation name="dropSquareBaleFromWrapper">
+            <part node="fakeAnimationNodeLoadUnload" startTime="0" endTime="1.9" startRot="0 0 0" endRot="1 1 1"/>
+            <part node="j_mainRotor_root" startTime="0" endTime="1.9" animationClip="squarebale_dropSource" clipStartTime="0" clipEndTime="1900"/>
+        </animation>
+    </animations>
+    <foliageBending>
+        <bendingNode minX="-0.6" maxX="2.0" minZ="-1.4" maxZ="1.0" yOffset="0.6"/>
+    </foliageBending>
+    <baleWrapper foldMinLimit="0.0" foldMaxLimit="0.0">
+        <grabber node="grabNode" nearestDistance="0.8"/>
+        <roundBaleWrapper baleNode="baleNode" wrapperNode="fakeAnimationNodeLoadUnload" wrapperRotAxis="2" wrappingTime="14.8">
+            <animations>
+                <moveToWrapper animName="moveRoundBaleToWrapper" animSpeed="1" reverseAfterMove="false"/>
+                <wrapBale animName="wrapRoundBale" animSpeed="1"/>
+                <dropFromWrapper animName="dropRoundBaleFromWrapper" animSpeed="1"/>
+            </animations>
+            <baleTypes>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+            </baleTypes>
+            <wrappingState>
+                <key time="0" wrappingState="0"/>
+                <key time="0.089" wrappingState="0"/>
+                <key time="0.0891" wrappingState="0.033"/>
+                <key time="0.1337" wrappingState="0.033"/>
+                <key time="0.1338" wrappingState="0.075"/>
+                <key time="0.1783" wrappingState="0.075"/>
+                <key time="0.1784" wrappingState="0.119"/>
+                <key time="0.227" wrappingState="0.119"/>
+                <key time="0.2271" wrappingState="0.16"/>
+                <key time="0.2675" wrappingState="0.16"/>
+                <key time="0.2676" wrappingState="0.1899"/>
+                <key time="0.3121" wrappingState="0.1899"/>
+                <key time="0.3122" wrappingState="0.226"/>
+                <key time="0.3567" wrappingState="0.226"/>
+                <key time="0.3568" wrappingState="0.246"/>
+                <key time="0.4013" wrappingState="0.246"/>
+                <key time="0.4014" wrappingState="0.295"/>
+                <key time="0.4459" wrappingState="0.295"/>
+                <key time="0.446" wrappingState="0.31"/>
+                <key time="1" wrappingState="1"/>
+            </wrappingState>
+            <sounds wrappingEndTime="0.8969">
+                <start template="BALE_WRAPPING_START" linkNode="kuhnSW4014_main_component1"/>
+                <wrap template="BALE_WRAPPING_01" linkNode="kuhnSW4014_main_component1"/>
+                <stop template="BALE_WRAPPING_STOP" linkNode="kuhnSW4014_main_component1"/>
+            </sounds>
+            <wrappingCollisions>
+                <collision node="roundBaleCollision" activeCollisionMask="8194" inActiveCollisionMask="0"/>
+            </wrappingCollisions>
+        </roundBaleWrapper>
+        <squareBaleWrapper baleNode="baleNode" wrapperNode="fakeAnimationNodeLoadUnload" wrapperRotAxis="2" wrappingTime="14.8" unloadBaleText="action_unloadSquareBale">
+            <animations>
+                <moveToWrapper animName="moveSquareBaleToWrapper" animSpeed="1" reverseAfterMove="false"/>
+                <wrapBale animName="wrapSquareBale" animSpeed="1"/>
+                <dropFromWrapper animName="dropSquareBaleFromWrapper" animSpeed="1"/>
+            </animations>
+            <baleTypes>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleAlfalfaSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleCloverSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleCloverFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleCropWindrowSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleHorseSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleCropWindrowSilage_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleHorseSilage_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+            </baleTypes>
+            <wrappingState>
+                <key time="0" wrappingState="0"/>
+                <key time="0.077" wrappingState="0"/>
+                <key time="0.078" wrappingState="0.009"/>
+                <key time="0.133" wrappingState="0.003"/>
+                <key time="0.134" wrappingState="0.069"/>
+                <key time="0.2256" wrappingState="0.069"/>
+                <key time="0.2297" wrappingState="0.14"/>
+                <key time="0.314" wrappingState="0.14"/>
+                <key time="0.3229" wrappingState="0.28"/>
+                <key time="1" wrappingState="1"/>
+            </wrappingState>
+            <sounds wrappingEndTime="0.8969">
+                <start template="BALE_WRAPPING_START" linkNode="kuhnSW4014_main_component1"/>
+                <wrap template="BALE_WRAPPING_01" linkNode="kuhnSW4014_main_component1"/>
+                <stop template="BALE_WRAPPING_STOP" linkNode="kuhnSW4014_main_component1"/>
+            </sounds>
+            <wrappingCollisions>
+                <collision node="squareBaleCollision" activeCollisionMask="8194" inActiveCollisionMask="0"/>
+            </wrappingCollisions>
+        </squareBaleWrapper>
+    </baleWrapper>
+    <baseMaterial>
+        <material name="kuhnSW4014_mat" baseNode="kuhnSW4014_vis">
+            <shaderParameter name="colorMat0" value="KUHN_RED1"/>
+        </material>
+    </baseMaterial>
+    <wrappingColorConfigurations>
+        <wrappingColorConfiguration color="0.995 0.995 0.995 1" price="0"/>
+        <wrappingColorConfiguration color="0.05 0.05 0.05 1" price="0"/>
+        <wrappingColorConfiguration color="0.6662 0.3839 0.5481 1" price="0"/>
+        <wrappingColorConfiguration color="0.391 0.521 0.366 1" price="0"/>
+        <wrappingColorConfiguration color="0.20836 1 0.20836 1" price="0" />
+        <wrappingColorConfiguration color="0.7593 0.38891 0.42591 1" price="0" />
+        <wrappingColorConfiguration color="0.03155 0.32504 0.52952 1" price="0" />
+        <colorNode node="baleWrapRight"/>
+        <colorNode node="baleWrapLeft"/>
+        <colorNode node="mainRotor_silage"/>
+    </wrappingColorConfigurations>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+    <i3dMappings>
+        <i3dMapping id="kuhnSW4014_main_component1" node="0>"/>
+        <i3dMapping id="kuhnSW4014_vis" node="0>0"/>
+        <i3dMapping id="wheelLeft" node="0>0|0"/>
+        <i3dMapping id="backlightLeft" node="0>0|1|0|0"/>
+        <i3dMapping id="yellowRound02" node="0>0|1|0|1"/>
+        <i3dMapping id="sideMarker_01" node="0>0|1|0|2"/>
+        <i3dMapping id="reverseLight" node="0>0|1|1"/>
+        <i3dMapping id="turnLightLeftBack" node="0>0|1|2"/>
+        <i3dMapping id="backLightsHigh" node="0>0|1|3"/>
+        <i3dMapping id="drawbar" node="0>0|2|0"/>
+        <i3dMapping id="hydraulicDrawbarRef" node="0>0|2|0|0"/>
+        <i3dMapping id="componentJoint" node="0>0|2|0|1"/>
+        <i3dMapping id="support" node="0>0|2|0|2"/>
+        <i3dMapping id="drawbarAttacherRotY" node="0>0|2|0|3"/>
+        <i3dMapping id="supportCol" node="0>0|2|0|4"/>
+        <i3dMapping id="wheelChock01" node="0>0|2|0|6|0"/>
+        <i3dMapping id="wheelChock02" node="0>0|2|0|6|1"/>
+        <i3dMapping id="hydraulicDrawbar" node="0>0|3|0"/>
+        <i3dMapping id="hydraulicDrawbarPush" node="0>0|3|0|0"/>
+        <i3dMapping id="wheelRight" node="0>0|4|0|0"/>
+        <i3dMapping id="backlightRight" node="0>0|4|0|1|0|0"/>
+        <i3dMapping id="yellowRound01" node="0>0|4|0|1|0|1"/>
+        <i3dMapping id="sideMarker_02" node="0>0|4|0|1|0|2"/>
+        <i3dMapping id="backLightsHigh1" node="0>0|4|0|1|1"/>
+        <i3dMapping id="turnLightRightBack" node="0>0|4|0|1|2"/>
+        <i3dMapping id="reverseLight11" node="0>0|4|0|1|3"/>
+        <i3dMapping id="j_Right_pm_frame_end" node="0>0|4|1|0|0"/>
+        <i3dMapping id="baleNode" node="0>0|7|1|0"/>
+        <i3dMapping id="grabNode" node="0>0|7|1|0|0"/>
+        <i3dMapping id="squareBaleCollision" node="0>0|7|1|0|1"/>
+        <i3dMapping id="roundBaleCollision" node="0>0|7|1|0|2"/>
+        <i3dMapping id="j_mainRotor_root" node="0>0|8|0"/>
+        <i3dMapping id="fakeAnimationNodeLoadUnload" node="0>0|8|2"/>
+        <i3dMapping id="fakeAnimationNodeWrap" node="0>0|8|2|0"/>
+        <i3dMapping id="baleWrapRight" node="0>0|9|0"/>
+        <i3dMapping id="baleWrapLeft" node="0>0|9|1"/>
+        <i3dMapping id="mainRotor_silage" node="0>0|9|7"/>
+        <i3dMapping id="belt" node="0>0|10|1"/>
+        <i3dMapping id="kuhnSW4014_attacher_component2" node="1>"/>
+        <i3dMapping id="attacherJoint" node="1>0"/>
+        <i3dMapping id="drawbarAttacherRotYRef" node="1>1"/>
+    </i3dMappings>
+</vehicle>

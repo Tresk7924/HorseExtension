@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="fruitPreparer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>FT 300 Onion</name>
+        <specs>
+            <neededPower>85</neededPower>
+            <workingWidth>3.0</workingWidth>
+            <combination>ROOTSTER 604</combination>
+        </specs>
+        <functions>
+            <function>$l10n_function_haulmTopperSugarbeet</function>
+        </functions>
+        <image>$data/vehicles/grimme/grimmeFT300/store_grimmeFT300.png</image>
+        <price>22000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>GRIMME</brand>
+        <category>beetHarvesting</category>
+        <vertexBufferMemoryUsage>1213960</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>166374</indexBufferMemoryUsage>
+        <textureMemoryUsage>7165400</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_haulmTopper</typeDesc>
+        <filename>$data/vehicles/grimme/grimmeFT300/grimmeFT300.i3d</filename>
+        <size width="3.8" length="3" />
+        <speedLimit value="15" />
+        <components>
+            <component centerOfMass="0 0.55 -0.3" solverIterationCount="10" mass="1000" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel>
+                        <physics restLoad="0.3" repr="wheelFrontRightAxis" driveNode="wheelFrontRight" radius="0.31" width="0.15" initialCompression="25" suspTravel="0.05" spring="18" damper="10" frictionScale="1" mass="0.1" rotationDamping="0.002" versatileYRot="true" rotMin="-50" rotMax="100"/>
+                    </wheel>
+                    <wheel>
+                        <physics restLoad="0.3" repr="wheelFrontLeftAxis"  driveNode="wheelFrontLeft"  radius="0.31" width="0.15" initialCompression="25" suspTravel="0.05" spring="18" damper="10" frictionScale="1" mass="0.1" rotationDamping="0.002" versatileYRot="true" rotMin="-100" rotMax="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode" allowsLowering="true" lowerTransLimitScale="0 0 0">
+                <distanceToGround lower="0.6" upper="1.2" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <brakeForce>0.05</brakeForce>
+        <support animationName="moveSupport" />
+    </attachable>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" detachNode="ptoDetachNode" inputNode="ptoInputNode" aboveAttacher="true" filename="$data/shared/assets/powerTakeOffs/walterscheidWWZ.xml" />
+    </powerTakeOffs>
+
+    <powerConsumer ptoRpm="540" neededMinPtoPower="25" neededMaxPtoPower="25"/>
+
+    <lights>
+        <sharedLight linkNode="sideMarker_01_left"          filename="$data/shared/assets/lights/lizard/sideMarker_01_left.xml" />
+        <sharedLight linkNode="sideMarker_01_right"          filename="$data/shared/assets/lights/lizard/sideMarker_01_right.xml" />
+    </lights>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="grimmeFT300_main_component1" threshold="0.1" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="fruitPreparer" functionName="processFruitPreparerArea" disableBackwards="false" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+        </workArea>
+    </workAreas>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="supportArm" startTime="0" duration="0.6" startTrans="0 0.475 -1.043" endTrans="0 0 -1.043" />
+        </animation>
+    </animations>
+
+    <fruitPreparer fruitType="onion">
+        <animationNodes>
+            <animationNode node="drum" rotAxis="1" rotSpeed="1500" turnOnFadeTime="2" turnOffFadeTime="2" />
+        </animationNodes>
+        <sounds>
+            <work template="DEFOLIATOR_01" linkNode="grimmeFT300_main_component1" />
+        </sounds>
+    </fruitPreparer>
+
+    <workParticles>
+        <particle>
+			<node node="prepareFruitEmitter" refNodeIndex="1" particleType="PREPARE_FRUIT" fillType="onion" />
+        </particle>
+    </workParticles>
+
+    <ai>
+        <areaMarkers leftNode="aiLeftMarker" rightNode="aiRightMarker" backNode="aiBackMarker" />
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-1.2" maxZ="0.9 " yOffset="0.2" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="grimmeFT300_mat" baseNode="grimme_vis">
+            <shaderParameter name="colorMat0" value="GRIMME_RED1"/>
+            <shaderParameter name="colorMat1" value="GRIMME_YELLOW1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="grimmeFT300_main_component1" node="0>" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+        <i3dMapping id="ptoInputNode" node="0>0|1" />
+        <i3dMapping id="ptoDetachNode" node="0>0|2" />
+        <i3dMapping id="grimme_vis" node="0>1" />
+        <i3dMapping id="leftWheelRot" node="0>1|0|0" />
+        <i3dMapping id="wheelFrontLeftAxis" node="0>1|0|0|0" />
+        <i3dMapping id="wheelFrontLeft" node="0>1|0|0|0|0" />
+        <i3dMapping id="rightWheelRot" node="0>1|0|1" />
+        <i3dMapping id="wheelFrontRightAxis" node="0>1|0|1|0" />
+        <i3dMapping id="wheelFrontRight" node="0>1|0|1|0|0" />
+        <i3dMapping id="topReferenceNode" node="0>2" />
+        <i3dMapping id="sideMarker_01_left" node="0>3|0" />
+        <i3dMapping id="sideMarker_01_right" node="0>3|1" />
+        <i3dMapping id="supportArm" node="0>4" />
+        <i3dMapping id="drum" node="0>5" />
+        <i3dMapping id="workAreaStart" node="0>6|0" />
+        <i3dMapping id="workAreaWidth" node="0>6|1" />
+        <i3dMapping id="workAreaHeight" node="0>6|2" />
+        <i3dMapping id="aiLeftMarker" node="0>7|0|0" />
+        <i3dMapping id="aiRightMarker" node="0>7|0|1" />
+        <i3dMapping id="aiBackMarker" node="0>7|0|2" />
+        <i3dMapping id="prepareFruitEmitter" node="0>8|0" />
+    </i3dMappings>
+</vehicle>

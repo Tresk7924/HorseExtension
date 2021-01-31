@@ -1,0 +1,46 @@
+<animalFood>
+    <animals>
+        <animalFoodGroups type="COW" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_forage"  productionWeight="0.8"  fillTypes="FORAGE" />
+            <foodGroup title="$l10n_fillTypeGroup_bulk"    productionWeight="0.1" fillTypes="DRYGRASS_WINDROW CLOVER_WINDROW DRYALFALFA_WINDROW"/>
+			<foodGroup title="$l10n_fillTypeGroup_base"    productionWeight="0.05" fillTypes="SILAGE ALFALFA_FERMENTED"/>
+            <foodGroup title="$l10n_fillTypeGroup_grass"   productionWeight="0.05" fillTypes="WETGRASS_WINDROW GRASS_WINDROW" />
+		</animalFoodGroups>
+        <animalFoodGroups type="SHEEP" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_grass"   productionWeight="0.250" fillTypes="SILAGE CLOVER_FERMENTED" />
+			<foodGroup title="$l10n_fillTypeGroup_bulk"   productionWeight="0.250" fillTypes="DRYGRASS_WINDROW DRYCLOVER_WINDROW" />
+			<foodGroup title="$l10n_fillTypeGroup_base"   productionWeight="0.250" fillTypes="WETGRASS_WINDROW GRASS_WINDROW WETCLOVER_WINDROW" />
+			<foodGroup title="$l10n_fillTypeGroup_earth"   productionWeight="0.250" fillTypes="SUGARBEET CARROT" />
+        </animalFoodGroups>
+		
+        <animalFoodGroups type="PIG" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_base"    productionWeight="0.50" eatWeight="0.50" fillTypes="MAIZE WETCLOVER_WINDROW" />
+            <foodGroup title="$l10n_fillTypeGroup_grain"   productionWeight="0.25" eatWeight="0.25" fillTypes="WHEAT BARLEY" />
+            <foodGroup title="$l10n_fillTypeGroup_protein" productionWeight="0.20" eatWeight="0.20" fillTypes="SOYBEAN CANOLA SUNFLOWER" />
+            <foodGroup title="$l10n_fillTypeGroup_earth"   productionWeight="0.05" eatWeight="0.05" fillTypes="POTATO SUGARBEET CARROT" />
+        </animalFoodGroups>
+        <animalFoodGroups type="HORSE" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_bulk"    productionWeight="0.15" eatWeight="0.125" fillTypes="OAT"/>
+			<foodGroup title="$l10n_fillTypeGroup_base"    productionWeight="0.35" eatWeight="0.325" fillTypes="WETGRASS_WINDROW GRASS_WINDROW HORSEGRASS_FERMENTED"/>
+            <foodGroup title="$l10n_fillTypeGroup_grass"   productionWeight="0.40" eatWeight="0.375" fillTypes="DRYHORSEGRASS_WINDROW DRYALFALFA_WINDROW" />
+			<foodGroup title="$l10n_fillTypeGroup_earth"   productionWeight="0.10" eatWeight="0.175" fillTypes="CARROT" />
+        </animalFoodGroups>
+        <animalFoodGroups type="CHICKEN" consumptionType="SERIAL">
+            <foodGroup title="$l10n_fillTypeGroup_grain"   productionWeight="0.50" fillTypes="WHEAT" />
+			<foodGroup title="$l10n_fillTypeGroup_base"   productionWeight="0.50" fillTypes="SUGARBEET CARROT" />
+			<foodGroup title="$l10n_fillTypeGroup_bulk" productionWeight="0.40" fillTypes="SOYBEAN MAIZE BARLEY" />
+        </animalFoodGroups>
+		
+		
+		         
+	
+    </animals>
+    <foodMixtures>
+        <foodMixture type="PIG" fillType="PIGFOOD" >
+            <ingredient fillTypes="MAIZE" weight="0.5" />
+            <ingredient fillTypes="WHEAT BARLEY" weight="0.25" />
+            <ingredient fillTypes="SOYBEAN CANOLA SUNFLOWER" weight="0.2" />
+            <ingredient fillTypes="POTATO SUGARBEET" weight="0.05" />
+        </foodMixture>
+    </foodMixtures>
+</animalFood>

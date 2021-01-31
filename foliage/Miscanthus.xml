@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType distanceTexturePath="distance">
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="0.8" shapeSource="Miscanthus.i3d">
+        <foliageStateDefaults widthVariance="0.2" heightVariance="0.5" horizontalPositionVariance="3" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="25" blendOutDistance="2" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="100" blendOutDistance="2" texCoords="0 0 1 1" />
+        <!-- 1 0 0 0 - invisible -->
+        <foliageState name="invisible" distanceMap="acre_fine_distance_diffuse.png" />
+        <!-- 0 1 0 0 - green small -->
+        <foliageState name="green small" distanceMap="foliage_Miscanthus_distance2_diffuse.png" distanceMapLayer="0" horizontalPositionVariance="0.12" width="0.8" height="0.8">
+            <foliageShape>
+                <foliageLod blockShape="0>0" atlasSize="1" atlasOffset="1 0" />
+                <foliageLod blockShape="1>0" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 0 0 - green middle -->
+        <foliageState name="green middle" distanceMap="foliage_Miscanthus_distance3_diffuse.png" distanceMapLayer="0" horizontalPositionVariance="0.12" width="1.8" height="1.8">
+            <foliageShape>
+                <foliageLod blockShape="0>1" atlasSize="1" atlasOffset="1 0" />
+                <foliageLod blockShape="1>1" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 1 0 - green big -->
+        <foliageState name="green big" distanceMap="foliage_Miscanthus_distance4_diffuse.png" distanceMapLayer="0" horizontalPositionVariance="0.12" width="4" height="4">
+            <foliageShape>
+                <foliageLod blockShape="0>2" atlasSize="1" atlasOffset="1 0" />
+                <foliageLod blockShape="1>2" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 1 0 - harvest ready -->
+        <foliageState name="harvest ready 1" distanceMap="foliage_Miscanthus_distance5_diffuse.png" distanceMapLayer="0" width="4" height="4.5">
+            <foliageShape>
+                <foliageLod blockShape="0>3" atlasSize="3" atlasOffset="0.25 0" />
+                <foliageLod blockShape="1>3" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 1 0 - harvest ready -->
+        <foliageState name="harvest ready 2" distanceMap="foliage_Miscanthus_distance5_diffuse.png" distanceMapLayer="0" width="4" height="4.5">
+            <foliageShape>
+                <foliageLod blockShape="0>3" atlasSize="3" atlasOffset="0.25 0" />
+                <foliageLod blockShape="1>3" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 1 0 - harvest ready -->
+        <foliageState name="harvest ready 3" distanceMap="foliage_Miscanthus_distance5_diffuse.png" distanceMapLayer="0" width="4" height="4.5">
+            <foliageShape>
+                <foliageLod blockShape="0>3" atlasSize="3" atlasOffset="0.25 0" />
+                <foliageLod blockShape="1>3" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 0 1 - harvest ready -->
+        <foliageState name="harvest ready 4" distanceMap="foliage_Miscanthus_distance6_diffuse.png" distanceMapLayer="0" width="4" height="4.5">
+            <foliageShape>
+                <foliageLod blockShape="0>3" atlasSize="3" atlasOffset="0.25 0" />
+                <foliageLod blockShape="1>3" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 0 1 - harvested (cut whole plant) -->
+        <foliageState name="harvested (cut whole plant)" distanceMap="foliage_Miscanthus_distance7_diffuse.png" horizontalPositionVariance="0.2" numBlocksPerUnit="2" distanceMapLayer="0" width="4" height="3">
+            <foliageShape>
+                <foliageLod blockShape="0>4" atlasSize="3" atlasOffset="0.25 0" />
+                <foliageLod blockShape="1>4" atlasSize="1" atlasOffset="1 0" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+</foliageType>
