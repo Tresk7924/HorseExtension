@@ -34,11 +34,11 @@ and change it to
 ```
 Then find the line
 ```
-<File fileId="206" filename="map/cultivator_density.gdm"/>
+<File fileId="206" filename="map/terrainDetailHeight_density.gdm"/>
 ```
 and change it to
 ```
-<File fileId="206" filename="map/cultivator_density.png"/>
+<File fileId="206" filename="map/terrainDetailHeight_density.png"/>
 ```
 
 #### New shaders to support increased heightTypes and terrain angles
