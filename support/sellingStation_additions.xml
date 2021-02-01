@@ -1,0 +1,47 @@
+<!-- BGA modifications -->
+<!-- Change fillTypes for the bunker (don't copy the whole block, just change the fillTypes strings) -->
+<bunker>
+    <unloadingStation node="0|0" stationName="$l10n_station_bgaBunker" appearsOnPDA="true" appearsOnStats="true" storageRadius="0" hotspotTextOffset="0px -8px">
+        <unloadTrigger exactFillRootNode="0" baleTriggerNode="1"/>
+    </unloadingStation>
+
+    <slot capacity="50000" litersPerSecond="10" >
+        <fillType fillTypes="silage alfalfa_fermented clover_fermented horseGrass_fermented" scale="0.4" pricePerLiter="0.2"/>
+        <fillType fillTypes="grass_windrow dryGrass_windrow alfalfa_windrow dryAlfalfa_windrow semiDryAlfalfa_windrow clover_windrow semiDryClover_windrow dryClover_windrow crop_windrow miscanthus semiDryHorseGrass_windrow dryHorseGrass_windrow horseGrass" scale="0.2" pricePerLiter="0.044"/>
+        <fillType fillTypes="manure" scale="0.4" pricePerLiter="0.1"/>
+        <display baseNode="0|1" />
+    </slot>
+    <slot capacity="50000" litersPerSecond="10">
+        <fillType fillTypes="liquidManure" scale="0.3" pricePerLiter="0.1"/>
+    </slot>
+</bunker>
+<!-- End BGA Section -->
+
+<!-- Bale selling points -->
+<!-- Add fillType entries to sellingStation element -->
+<fillType name="alfalfa_windrow"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="dryAlfalfa_windrow"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="alfalfa_fermented"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="clover_windrow"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="dryClover_windrow"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="clover_fermented"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="grass_fermented"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="semiDryAlfalfa_windrow"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="semiDryClover_windrow"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="semiDryHorseGrass_windrow"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="dryHorseGrass_windrow"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="semiDryGrass"               priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<!-- End Bales Section -->
+
+<!-- Grain and root crops selling points -->
+<!-- Add fillType entries to sellingStation element.
+You might want to change these around if you have separate grain and root crop selling points,
+or for example if you have a brewery sellpoint they probably don't want field_grass, onions, and carrots. -->
+<fillType name="rye"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="spelt"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="triticale"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="onion"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="carrot"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="field_grass"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="miscanthus"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<!-- End Grain Section -->

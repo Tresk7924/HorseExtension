@@ -1,0 +1,94 @@
+<animalFood>    
+	<!-- This is the animalFood.xml it basically more or less replaces what would be the husbandryFoodDefinitions.xml when MaizePlus is active. 
+	We override all default stuff so husbandryFoodDefinitions is invalid if MaizePlus is active. 
+	If you use a custom husbandryFoodDefinitions in your map and you want to have the same changes or additional animals with MaizePlus active, or you want to alter the MaizePlus Settings for your Map you can do so as follows.
+	- create a Folder called "maizePlus" in the base directory of your map 
+	- copy this XML-File into it 
+	- rename the XML to animalFoodAdditions.xml 
+	- remove everything you don't want to edit/change 
+	- leave/add those things you do want to change. The addition file is loaded after the main file so if you change a setting for the existing Foodgroups or Foodmixtures the map-file will override the base MaizePlus file!
+	-->
+
+	<!-- If you add a filltype that doesn't exist it ignores ist, but also adds a warning to the log. -->
+	<!-- If you want to add a fillType that might not exist on all maps/mod-combinations you might not want a warning appearing in the log. You can add those fillTypes here -->
+	<ignoreFillTypesWithoutWarning fillTypes="CCM" />
+
+	<!-- all the foodGroups, one food group for each animal -->
+    <foodGroups>
+        <foodGroup animalType="COW" consumptionType="PARALLEL"> <!-- Caution! Due to a default game limitation you can't have more than 4 "contents" -->
+            <content title="$l10n_fillTypeGroup_forage"  productionWeight="0.25" eatWeight="0.35"  fillTypes="CHOPPEDMAIZE_FERMENTED GRASS_FERMENTED SILAGE" />
+            <content title="$l10n_fillTypeGroup_bulk"    productionWeight="0.25" eatWeight="0.25"  fillTypes="DRYGRASS_WINDROW DRYCLOVER_WINDROW DRYALFALFA_WINDROW HAYPELLETS"/>
+			<content title="$l10n_fillTypeGroup_base"    productionWeight="0.25" eatWeight="0.20"  fillTypes="CLOVER_FERMENTED ALFALFA_FERMENTED"/>
+            <content title="$l10n_fillTypeGroup_grass"   productionWeight="0.25" eatWeight="0.20"  fillTypes="WETGRASS_WINDROW GRASS_WINDROW CLOVER_WINDROW CHOPPEDMAIZE" />                     
+        </foodGroup>  	
+        <foodGroup animalType="PIG" consumptionType="PARALLEL">
+            <content title="$l10n_fillTypeGroup_base"    productionWeight="0.18" eatWeight="0.18" fillTypes="WETGRASS_WINDROW GRASS_WINDROW WETCLOVER_WINDROW CHOPPEDMAIZE CLOVER_FERMENTED" />
+            <content title="$l10n_fillTypeGroup_grain"   productionWeight="0.35" eatWeight="0.35" fillTypes="MAIZE WHEAT BARLEY CCM" />
+            <content title="$l10n_fillTypeGroup_protein" productionWeight="0.30" eatWeight="0.30" fillTypes="SOYBEAN CANOLA SUNFLOWER" />
+            <content title="$l10n_fillTypeGroup_earth"   productionWeight="0.17" eatWeight="0.17" fillTypes="POTATO SUGARBEET CARROT" />           
+        </foodGroup> 
+        <foodGroup animalType="SHEEP" consumptionType="PARALLEL">
+            <content title="$l10n_fillTypeGroup_base"   productionWeight="0.250" eatWeight="0.50"  fillTypes="GRASS_FERMENTED CLOVER_FERMENTED" />
+			<content title="$l10n_fillTypeGroup_bulk"   productionWeight="0.250" eatWeight="0.25"  fillTypes="DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW" />
+			<content title="$l10n_fillTypeGroup_grass"   productionWeight="0.250" eatWeight="0.20"  fillTypes="WETGRASS_WINDROW GRASS_WINDROW WETCLOVER_WINDROW CHOPPEDMAIZE HAYPELLETS" />
+			<content title="$l10n_fillTypeGroup_earth"   productionWeight="0.250" eatWeight="0.05"  fillTypes="SUGARBEET CARROT" />           
+        </foodGroup>        
+        <foodGroup animalType="HORSE" consumptionType="PARALLEL">
+            <content title="$l10n_fillTypeGroup_bulk"    productionWeight="0.15" eatWeight="0.125" fillTypes="OAT"/>
+			<content title="$l10n_fillTypeGroup_base"    productionWeight="0.35" eatWeight="0.325" fillTypes="WETGRASS_WINDROW GRASS_WINDROW HORSEGRASS_FERMENTED HAYPELLETS"/>
+            <content title="$l10n_fillTypeGroup_grass"   productionWeight="0.40" eatWeight="0.375" fillTypes="DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYHORSEGRASS_WINDROW" />
+			<content title="$l10n_fillTypeGroup_earth"   productionWeight="0.10" eatWeight="0.175" fillTypes="CARROT" />            
+        </foodGroup>   
+        <foodGroup animalType="CHICKEN" consumptionType="PARALLEL">
+            <content title="$l10n_fillTypeGroup_grain"   productionWeight="0.50" eatWeight="0.50" fillTypes="WHEAT" />
+			<content title="$l10n_fillTypeGroup_base"   productionWeight="0.50" eatWeight="0.25" fillTypes="SUGARBEET CARROT" />
+			<content title="$l10n_fillTypeGroup_bulk" productionWeight="0.40" eatWeight="0.25" fillTypes="SOYBEAN MAIZE BARLEY" />           
+        </foodGroup>                     
+    </foodGroups>
+
+	<!-- Food Mixtures, default only has food mixture for pig, we use food mixture for cows aswell -->
+    <foodMixtures>
+        <foodMixture animalType="COW" fillType="FORAGE" >
+            <ingredient fillTypes="SILAGE" weight="0.4" />         
+            <ingredient fillTypes="CLOVER_FERMENTED" weight="0.3" />           
+            <ingredient fillTypes="GRASS_WINDROW" weight="0.3" />           
+        </foodMixture>
+        <foodMixture animalType="PIG" fillType="PIGFOOD" >
+            <ingredient fillTypes="GRASS_WINDROW" weight="0.5" />
+            <ingredient fillTypes="MAIZE" weight="0.25" />
+            <ingredient fillTypes="SOYBEAN" weight="0.2" />
+            <ingredient fillTypes="POTATO" weight="0.05" />          
+        </foodMixture>       
+    </foodMixtures>
+
+	<!-- unlike in the default husbandry food definitions we define mixerWagonSettings here too -->
+    <mixerWagonSettings>
+        <mixerWagonFillTypes>
+            <mixerWagonFillType minPercentage="20" maxPercentage="50" name="choppedmaize_fermented">
+                <fillType fillType="choppedMaize_fermented" />
+            </mixerWagonFillType>
+            <mixerWagonFillType minPercentage="0" maxPercentage="50" name="silage">
+                <fillType fillType="silage" />
+            </mixerWagonFillType>
+            <mixerWagonFillType minPercentage="0" maxPercentage="35" name="straw">
+                <fillType fillType="straw" />
+            </mixerWagonFillType>
+			<mixerWagonFillType minPercentage="20" maxPercentage="50" name="grass_fermented">
+                <fillType fillType="grass_fermented" />
+            </mixerWagonFillType>
+            <mixerWagonFillType minPercentage="1" maxPercentage="15" name="SOYBEAN">
+                <fillType fillType="CCM" />
+				<fillType fillType="BARLEY" />
+				<fillType fillType="CANOLA" />
+				<fillType fillType="SOYBEAN" />
+            </mixerWagonFillType>
+			<mixerWagonFillType minPercentage="2" maxPercentage="15" name="sugarbeet">
+                <fillType fillType="sugarbeet" />
+				<fillType fillType="POTATO" />
+            </mixerWagonFillType>          
+        </mixerWagonFillTypes>   
+    </mixerWagonSettings> 
+</animalFood>
+
+
+

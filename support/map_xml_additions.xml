@@ -1,0 +1,18 @@
+<!-- Add or change entries in root map element -->
+<husbandryAnimals filename="HorseExtension/xml/husbandryAnimals.xml" />
+<husbandryFood filename="HorseExtension/xml/husbandryFoodDefinition.xml" />
+<fillTypes filename="HorseExtension/xml/fillTypes.xml" />
+<fruitTypes filename="HorseExtension/xml/fruitTypes.xml" />
+<baleTypes filename="HorseExtension/xml/baleTypes.xml" />
+<densityMapHeightTypes filename="HorseExtension/xml/densityMapHeightTypes.xml" />
+<!-- End section -->
+
+<!-- Add entries to additionalFiles element or add block to root map element if additionalFiles not present -->
+<additionalFiles>
+    <additionalFile filename="HorseExtension/fillPlanes/fillPlane_materialHolder.i3d" />
+    <additionalFile filename="HorseExtension/materialHolders/particle_materialHolder.i3d" />
+    <additionalFile filename="HorseExtension/materialHolders/effect_materialHolder.i3d" />
+    <additionalFile filename="HorseExtension/materialHolders/cutterEffect_materialHolder.i3d" />
+    <additionalFile filename="HorseExtension/huds/iconMaterialHolders.i3d" />
+</additionalFiles>
+<!-- End additionalFiles section -->

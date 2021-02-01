@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<economy>
+    <annotation>Copyright (c) Realismus Modding, 2018</annotation>
+
+    <ai workdayStart="6" workdayEnd="18" workdayPay="1650" overtimePay="2475" />
+
+    <!-- Factors for every period on top of the existing vanilla prices -->
+    <repricing>
+
+        <animals>
+            <type name="COW">
+                <factors>
+                    <factor period="11">0.99</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.00</factor>
+                    <factor period="2" >1.04</factor>
+                    <factor period="3" >1.02</factor>
+                    <factor period="4" >0.96</factor>
+                    <factor period="5" >0.91</factor>
+                    <factor period="6" >1.03</factor>
+                    <factor period="7" >0.96</factor>
+                    <factor period="8" >1.02</factor>
+                    <factor period="9" >1.03</factor>
+                    <factor period="10">1.06</factor>
+                </factors>
+            </type>
+
+            <type name="SHEEP">
+                <factors>
+                    <factor period="11">0.96</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.12</factor>
+                    <factor period="3" >1.14</factor>
+                    <factor period="4" >1.09</factor>
+                    <factor period="5" >0.99</factor>
+                    <factor period="6" >0.95</factor>
+                    <factor period="7" >0.90</factor>
+                    <factor period="8" >0.88</factor>
+                    <factor period="9" >0.92</factor>
+                    <factor period="10">0.97</factor>
+                </factors>
+            </type>
+
+            <type name="PIG">
+                <factors>
+                    <factor period="11">1.07</factor>
+                    <factor period="12">1.02</factor>
+                    <factor period="1" >1.03</factor>
+                    <factor period="2" >1.03</factor>
+                    <factor period="3" >1.11</factor>
+                    <factor period="4" >1.00</factor>
+                    <factor period="5" >1.01</factor>
+                    <factor period="6" >1.03</factor>
+                    <factor period="7" >1.00</factor>
+                    <factor period="8" >0.95</factor>
+                    <factor period="9" >0.88</factor>
+                    <factor period="10">0.89</factor>
+                </factors>
+            </type>
+
+            <type name="CHICKEN">
+                <factors>
+                    <factor period="11">0.92</factor>
+                    <factor period="12">0.88</factor>
+                    <factor period="1" >0.98</factor>
+                    <factor period="2" >1.05</factor>
+                    <factor period="3" >1.18</factor>
+                    <factor period="4" >1.21</factor>
+                    <factor period="5" >1.12</factor>
+                    <factor period="6" >0.99</factor>
+                    <factor period="7" >0.93</factor>
+                    <factor period="8" >0.92</factor>
+                    <factor period="9" >0.92</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+
+            <type name="HORSE">
+                	<factors all="0" />
+            </type>
+        </animals>
+
+        <fillTypes>
+            <type name="WHEAT">
+                <factors shift="1">
+                    <factor period="11">1.21</factor>
+                    <factor period="12">1.08</factor>
+                    <factor period="1" >1.00</factor>
+                    <factor period="2" >1.07</factor>
+                    <factor period="3" >0.99</factor>
+                    <factor period="4" >0.94</factor>
+                    <factor period="5" >0.85</factor>
+                    <factor period="6" >0.81</factor>
+                    <factor period="7" >0.86</factor>
+                    <factor period="8" >0.99</factor>
+                    <factor period="9" >1.08</factor>
+                    <factor period="10">1.13</factor>
+                </factors>
+            </type>
+
+            <type name="BARLEY">
+                <factors shift="1">
+                    <factor period="11">1.21</factor>
+                    <factor period="12">1.08</factor>
+                    <factor period="1" >1.00</factor>
+                    <factor period="2" >1.07</factor>
+                    <factor period="3" >0.99</factor>
+                    <factor period="4" >0.94</factor>
+                    <factor period="5" >0.85</factor>
+                    <factor period="6" >0.81</factor>
+                    <factor period="7" >0.86</factor>
+                    <factor period="8" >0.99</factor>
+                    <factor period="9" >1.08</factor>
+                    <factor period="10">1.13</factor>
+                </factors>
+            </type>
+
+            <type name="OAT">
+                <factors shift="1">
+                    <factor period="11">1.21</factor>
+                    <factor period="12">1.08</factor>
+                    <factor period="1" >1.00</factor>
+                    <factor period="2" >1.07</factor>
+                    <factor period="3" >0.99</factor>
+                    <factor period="4" >0.94</factor>
+                    <factor period="5" >0.85</factor>
+                    <factor period="6" >0.81</factor>
+                    <factor period="7" >0.86</factor>
+                    <factor period="8" >0.99</factor>
+                    <factor period="9" >1.08</factor>
+                    <factor period="10">1.13</factor>
+                </factors>
+            </type>
+
+            <type name="CANOLA">
+                <factors shift="1">
+                    <factor period="11">1.08</factor>
+                    <factor period="12">1.00</factor>
+                    <factor period="1" >1.07</factor>
+                    <factor period="2" >0.99</factor>
+                    <factor period="3" >0.94</factor>
+                    <factor period="4" >0.85</factor>
+                    <factor period="5" >0.81</factor>
+                    <factor period="6" >0.86</factor>
+                    <factor period="7" >0.99</factor>
+                    <factor period="8" >1.08</factor>
+                    <factor period="9" >1.13</factor>
+                    <factor period="10">1.21</factor>
+                </factors>
+            </type>
+
+            <type name="MAIZE">
+                <factors>
+                    <factor period="11">1.33</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.08</factor>
+                    <factor period="3" >1.04</factor>
+                    <factor period="4" >1.14</factor>
+                    <factor period="5" >1.31</factor>
+                    <factor period="6" >0.98</factor>
+                    <factor period="7" >0.88</factor>
+                    <factor period="8" >0.71</factor>
+                    <factor period="9" >0.61</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+
+            <type name="SOYBEAN">
+                <factors>
+                    <factor period="11">0.74</factor>
+                    <factor period="12">0.64</factor>
+                    <factor period="1" >0.99</factor>
+                    <factor period="2" >1.05</factor>
+                    <factor period="3" >1.16</factor>
+                    <factor period="4" >1.42</factor>
+                    <factor period="5" >1.59</factor>
+                    <factor period="6" >1.13</factor>
+                    <factor period="7" >0.87</factor>
+                    <factor period="8" >0.81</factor>
+                    <factor period="9" >0.77</factor>
+                    <factor period="10">0.87</factor>
+                </factors>
+            </type>
+
+            <type name="POTATO">
+                <factors>
+                    <factor period="11">1,22</factor>
+                    <factor period="12">1,21</factor>
+                    <factor period="1" >1,12</factor>
+                    <factor period="2" >1,04</factor>
+                    <factor period="3" >0,93</factor>
+                    <factor period="4" >0,85</factor>
+                    <factor period="5" >0,79</factor>
+                    <factor period="6" >0,79</factor>
+                    <factor period="7" >0,86</factor>
+                    <factor period="8" >0,96</factor>
+                    <factor period="9" >1,08</factor>
+                    <factor period="10">1,16</factor>
+                </factors>
+            </type>
+
+            <type name="SUGARBEET">
+                <factors>
+                    <factor period="11">1.22</factor>
+                    <factor period="12">1.21</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.04</factor>
+                    <factor period="3" >0.93</factor>
+                    <factor period="4" >0.85</factor>
+                    <factor period="5" >0.79</factor>
+                    <factor period="6" >0.79</factor>
+                    <factor period="7" >0.86</factor>
+                    <factor period="8" >0.96</factor>
+                    <factor period="9" >1.08</factor>
+                    <factor period="10">1.16</factor>
+                </factors>
+            </type>
+
+            <type name="SUNFLOWER">
+                <factors>
+                    <factor period="11">0.74</factor>
+                    <factor period="12">1.12</factor>
+                    <factor period="1" >1.20</factor>
+                    <factor period="2" >1.17</factor>
+                    <factor period="3" >1.05</factor>
+                    <factor period="4" >0.87</factor>
+                    <factor period="5" >0.94</factor>
+                    <factor period="6" >0.99</factor>
+                    <factor period="7" >1.10</factor>
+                    <factor period="8" >1.11</factor>
+                    <factor period="9" >1.06</factor>
+                    <factor period="10">0.65</factor>
+                </factors>
+            </type>
+
+            <type name="COTTON">
+                <factors>
+                    <factor period="11">0.98</factor>
+                    <factor period="12">1.07</factor>
+                    <factor period="1" >1.11</factor>
+                    <factor period="2" >1.03</factor>
+                    <factor period="3" >1.02</factor>
+                    <factor period="4" >1.02</factor>
+                    <factor period="5" >0.92</factor>
+                    <factor period="6" >0.90</factor>
+                    <factor period="7" >0.87</factor>
+                    <factor period="8" >1.02</factor>
+                    <factor period="9" >1.02</factor>
+                    <factor period="10">1.04</factor>
+                </factors>
+            </type>
+
+            <type name="SUGARCANE">
+                <factors>
+                    <factor period="11">0.97</factor>
+                    <factor period="12">0.94</factor>
+                    <factor period="1" >0.94</factor>
+                    <factor period="2" >0.96</factor>
+                    <factor period="3" >1.01</factor>
+                    <factor period="4" >1.01</factor>
+                    <factor period="5" >1.05</factor>
+                    <factor period="6" >1.04</factor>
+                    <factor period="7" >1.05</factor>
+                    <factor period="8" >1.04</factor>
+                    <factor period="9" >1.02</factor>
+                    <factor period="10">1.01</factor>
+                </factors>
+            </type>
+
+            <type name="WOODCHIPS">
+                <factors>
+                    <factor period="11">1.69</factor>
+                    <factor period="12">1.66</factor>
+                    <factor period="1" >1.24</factor>
+                    <factor period="2" >0.99</factor>
+                    <factor period="3" >0.74</factor>
+                    <factor period="4" >0.61</factor>
+                    <factor period="5" >0.53</factor>
+                    <factor period="6" >0.53</factor>
+                    <factor period="7" >0.62</factor>
+                    <factor period="8" >0.80</factor>
+                    <factor period="9" >1.14</factor>
+                    <factor period="10">1.43</factor>
+                </factors>
+            </type>
+
+            <type name="MANURE">
+                <factors>
+                    <factor period="11">1.11</factor>
+                    <factor period="12">1.11</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.03</factor>
+                    <factor period="3" >0.97</factor>
+                    <factor period="4" >0.92</factor>
+                    <factor period="5" >0.89</factor>
+                    <factor period="6" >0.89</factor>
+                    <factor period="7" >0.93</factor>
+                    <factor period="8" >0.98</factor>
+                    <factor period="9" >1.05</factor>
+                    <factor period="10">1.08</factor>
+                </factors>
+            </type>
+
+            <type name="LIQUIDMANURE">
+                <factors>
+                    <factor period="11">1.11</factor>
+                    <factor period="12">1.11</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.03</factor>
+                    <factor period="3" >0.97</factor>
+                    <factor period="4" >0.92</factor>
+                    <factor period="5" >0.89</factor>
+                    <factor period="6" >0.89</factor>
+                    <factor period="7" >0.93</factor>
+                    <factor period="8" >0.98</factor>
+                    <factor period="9" >1.05</factor>
+                    <factor period="10">1.08</factor>
+                </factors>
+            </type>
+
+            <type name="DIGESTATE">
+                <factors>
+                    <factor period="11">1.11</factor>
+                    <factor period="12">1.11</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.03</factor>
+                    <factor period="3" >0.97</factor>
+                    <factor period="4" >0.92</factor>
+                    <factor period="5" >0.89</factor>
+                    <factor period="6" >0.89</factor>
+                    <factor period="7" >0.93</factor>
+                    <factor period="8" >0.98</factor>
+                    <factor period="9" >1.05</factor>
+                    <factor period="10">1.08</factor>
+                </factors>
+            </type>
+
+            <type name="MILK">
+                <factors>
+                    <factor period="11">1.08</factor>
+                    <factor period="12">1.07</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.01</factor>
+                    <factor period="3" >0.96</factor>
+                    <factor period="4" >0.90</factor>
+                    <factor period="5" >0.95</factor>
+                    <factor period="6" >0.95</factor>
+                    <factor period="7" >1.03</factor>
+                    <factor period="8" >1.09</factor>
+                    <factor period="9" >0.98</factor>
+                    <factor period="10">0.96</factor>
+                </factors>
+            </type>
+
+            <type name="WOOL">
+                <factors>
+                    <factor period="11">0.93</factor>
+                    <factor period="12">0.97</factor>
+                    <factor period="1" >1.13</factor>
+                    <factor period="2" >1.25</factor>
+                    <factor period="3" >1.29</factor>
+                    <factor period="4" >1.19</factor>
+                    <factor period="5" >0.99</factor>
+                    <factor period="6" >0.91</factor>
+                    <factor period="7" >0.81</factor>
+                    <factor period="8" >0.77</factor>
+                    <factor period="9" >0.85</factor>
+                    <factor period="10">0.95</factor>
+                </factors>
+            </type>
+
+            <type name="EGG">
+                <factors>
+                    <factor period="11">1.08</factor>
+                    <factor period="12">0.91</factor>
+                    <factor period="1" >0.79</factor>
+                    <factor period="2" >0.71</factor>
+                    <factor period="3" >0.91</factor>
+                    <factor period="4" >1.10</factor>
+                    <factor period="5" >1.11</factor>
+                    <factor period="6" >0.94</factor>
+                    <factor period="7" >0.94</factor>
+                    <factor period="8" >1.03</factor>
+                    <factor period="9" >1.25</factor>
+                    <factor period="10">1.21</factor>
+                </factors>
+            </type>
+
+            <!-- Selling unbaled grass, hay and straw is unrealistic -->
+            <type name="GRASS_WINDROW">
+                	<factors all="0" />
+            </type>
+
+            <type name="DRYGRASS_WINDROW">
+                	<factors all="0" />
+            </type>
+
+            <type name="STRAW">
+                	<factors all="0" />
+            </type>
+			<!-- Maizeplus Filltypes -->
+			<type name="SILOCLOVER">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="CLOVER_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="SILOALFALFA">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="ALFALFA_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="HORSEGRASS_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYCLOVER_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYALFALFA_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYHORSEGRASS_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="ONION">
+				<factors>
+					<factor period="11">1.22</factor>
+					<factor period="12">1.21</factor>
+					<factor period="1">1.12</factor>
+					<factor period="2">1.04</factor>
+					<factor period="3">0.93</factor>
+					<factor period="4">0.85</factor>
+					<factor period="5">0.79</factor>
+					<factor period="6">0.79</factor>
+					<factor period="7">0.86</factor>
+					<factor period="8">0.96</factor>
+					<factor period="9">1.08</factor>
+					<factor period="10">1.16</factor>
+				</factors>
+			</type>
+			
+			<type name="CARROT">
+				<factors>
+					<factor period="11">1.22</factor>
+					<factor period="12">1.21</factor>
+					<factor period="1">1.12</factor>
+					<factor period="2">1.04</factor>
+					<factor period="3">0.93</factor>
+					<factor period="4">0.85</factor>
+					<factor period="5">0.79</factor>
+					<factor period="6">0.79</factor>
+					<factor period="7">0.86</factor>
+					<factor period="8">0.96</factor>
+					<factor period="9">1.08</factor>
+					<factor period="10">1.16</factor>
+				</factors>
+			</type>
+			
+			<type name="FIELD_GRASS">
+				<factors>
+					<factor period="11">1.21</factor>
+					<factor period="12">1.08</factor>
+					<factor period="1">1</factor>
+					<factor period="2">1.07</factor>
+					<factor period="3">0.99</factor>
+					<factor period="4">0.94</factor>
+					<factor period="5">0.85</factor>
+					<factor period="6">0.81</factor>
+					<factor period="7">0.86</factor>
+					<factor period="8">0.99</factor>
+					<factor period="9">1.08</factor>
+					<factor period="10">1.13</factor>
+				</factors>
+			</type>
+			
+			<type name="TRITICALE">
+				<factors>
+					<factor period="11">1.21</factor>
+					<factor period="12">1.08</factor>
+					<factor period="1">1</factor>
+					<factor period="2">1.07</factor>
+					<factor period="3">0.99</factor>
+					<factor period="4">0.94</factor>
+					<factor period="5">0.85</factor>
+					<factor period="6">0.81</factor>
+					<factor period="7">0.86</factor>
+					<factor period="8">0.99</factor>
+					<factor period="9">1.08</factor>
+					<factor period="10">1.13</factor>
+				</factors>
+			</type>
+			
+			<type name="RYE">
+				<factors>
+					<factor period="11">1.21</factor>
+					<factor period="12">1.08</factor>
+					<factor period="1">1</factor>
+					<factor period="2">1.07</factor>
+					<factor period="3">0.99</factor>
+					<factor period="4">0.94</factor>
+					<factor period="5">0.85</factor>
+					<factor period="6">0.81</factor>
+					<factor period="7">0.86</factor>
+					<factor period="8">0.99</factor>
+					<factor period="9">1.08</factor>
+					<factor period="10">1.13</factor>
+				</factors>
+			</type>
+			
+			<type name="SPELT">
+				<factors>
+					<factor period="11">1.21</factor>
+					<factor period="12">1.08</factor>
+					<factor period="1">1</factor>
+					<factor period="2">1.07</factor>
+					<factor period="3">0.99</factor>
+					<factor period="4">0.94</factor>
+					<factor period="5">0.85</factor>
+					<factor period="6">0.81</factor>
+					<factor period="7">0.86</factor>
+					<factor period="8">0.99</factor>
+					<factor period="9">1.08</factor>
+					<factor period="10">1.13</factor>
+				</factors>
+			</type>
+			
+			<type name="MISCANTHUS">
+				<factors>
+					<factor period="11">1.69</factor>
+					<factor period="12">1.66</factor>
+					<factor period="1">1.24</factor>
+					<factor period="2">0.99</factor>
+					<factor period="3">0.74</factor>
+					<factor period="4">0.61</factor>
+					<factor period="5">0.53</factor>
+					<factor period="6">0.53</factor>
+					<factor period="7">0.62</factor>
+					<factor period="8">0.8</factor>
+					<factor period="9">1.14</factor>
+					<factor period="10">1.43</factor>
+				</factors>
+			</type>			
+
+			<type name="SILAGE">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="CHOPPEDMAIZE_FERMENTED">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="CHOPPEDMAIZE">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="GRASS_FERMENTED">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="SILOGRASS">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			
+			<type name="SILOCLOVER">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="CLOVER_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="SILOALFALFA">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="ALFALFA_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="HORSEGRASS_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYCLOVER_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYALFALFA_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYHORSEGRASS_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+
+            <type name="CCM">
+                <factors>
+                    <factor period="11">1.33</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.08</factor>
+                    <factor period="3" >1.04</factor>
+                    <factor period="4" >1.14</factor>
+                    <factor period="5" >1.31</factor>
+                    <factor period="6" >0.98</factor>
+                    <factor period="7" >0.88</factor>
+                    <factor period="8" >0.71</factor>
+                    <factor period="9" >0.61</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+            <type name="CCMRAW">
+                <factors>
+                    <factor period="11">1.33</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.08</factor>
+                    <factor period="3" >1.04</factor>
+                    <factor period="4" >1.14</factor>
+                    <factor period="5" >1.31</factor>
+                    <factor period="6" >0.98</factor>
+                    <factor period="7" >0.88</factor>
+                    <factor period="8" >0.71</factor>
+                    <factor period="9" >0.61</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+
+			<type name="WETCLOVER_WINDROW">
+				<factors all="0" />
+			</type>
+			<type name="CROP_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="CLOVER_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="SEMIDRYCLOVER_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="WETALFALFA_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="ALFALFA_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="SEMIDRYALFALFA_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="WETHORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="HORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="HORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="SEMIDRYHORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>
+			
+			<type name="WETGRASS_WINDROW">
+				<factors all="0" />
+			</type>
+
+            <!-- Lowering price of pigfood when bought in bulk -->
+            <type name="PIGFOOD">
+                <factors all="0.4" />
+            </type>
+			
+            <type name="HOPS">
+                <factors>
+                    <factor period="11">1.33</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.08</factor>
+                    <factor period="3" >1.04</factor>
+                    <factor period="4" >1.14</factor>
+                    <factor period="5" >1.31</factor>
+                    <factor period="6" >0.98</factor>
+                    <factor period="7" >0.88</factor>
+                    <factor period="8" >0.71</factor>
+                    <factor period="9" >0.61</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+        </fillTypes>
+
+        <bales>
+            <type name="STRAW">
+                <factors>
+                    <factor period="11">1.08</factor>
+                    <factor period="12">1.10</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.06</factor>
+                    <factor period="3" >1.03</factor>
+                    <factor period="4" >0.97</factor>
+                    <factor period="5" >0.91</factor>
+                    <factor period="6" >0.89</factor>
+                    <factor period="7" >0.91</factor>
+                    <factor period="8" >0.98</factor>
+                    <factor period="9" >1.05</factor>
+                    <factor period="10">1.07</factor>
+                </factors>
+            </type>
+
+            <type name="DRYGRASS_WINDROW">
+                <factors>
+                    <factor period="11">1.08</factor>
+                    <factor period="12">1.10</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.06</factor>
+                    <factor period="3" >1.03</factor>
+                    <factor period="4" >0.97</factor>
+                    <factor period="5" >0.91</factor>
+                    <factor period="6" >0.89</factor>
+                    <factor period="7" >0.91</factor>
+                    <factor period="8" >0.98</factor>
+                    <factor period="9" >1.05</factor>
+                    <factor period="10">1.07</factor>
+                </factors>
+            </type>
+
+            <type name="SILAGE">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			
+			<!-- Maize Plus filltypes -->
+			<type name="CHOPPEDMAIZE_FERMENTED">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="CHOPPEDMAIZE">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="GRASS_FERMENTED">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			<type name="SILOGRASS">
+                <factors>
+                    <factor period="11">0.37</factor>
+                    <factor period="12">0.37</factor>
+                    <factor period="1" >0.35</factor>
+                    <factor period="2" >0.34</factor>
+                    <factor period="3" >0.32</factor>
+                    <factor period="4" >0.31</factor>
+                    <factor period="5" >0.30</factor>
+                    <factor period="6" >0.30</factor>
+                    <factor period="7" >0.31</factor>
+                    <factor period="8" >0.33</factor>
+                    <factor period="9" >0.35</factor>
+                    <factor period="10">0.36</factor>
+                </factors>
+            </type>
+			
+			<type name="SILOCLOVER">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="CLOVER_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="SILOALFALFA">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="ALFALFA_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="HORSEGRASS_FERMENTED">
+				<factors>
+					<factor period="11">0.37</factor>
+					<factor period="12">0.37</factor>
+					<factor period="1">0.35</factor>
+					<factor period="2">0.34</factor>
+					<factor period="3">0.32</factor>
+					<factor period="4">0.31</factor>
+					<factor period="5">0.30</factor>
+					<factor period="6">0.30</factor>
+					<factor period="7">0.31</factor>
+					<factor period="8">0.33</factor>
+					<factor period="9">0.35</factor>
+					<factor period="10">0.36</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYCLOVER_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYALFALFA_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+			
+			<type name="DRYHORSEGRASS_WINDROW">
+				<factors>
+					<factor period="11">1.08</factor>
+					<factor period="12">1.1</factor>
+					<factor period="1">1.06</factor>
+					<factor period="2">1.06</factor>
+					<factor period="3">1.03</factor>
+					<factor period="4">0.97</factor>
+					<factor period="5">0.91</factor>
+					<factor period="6">0.89</factor>
+					<factor period="7">0.91</factor>
+					<factor period="8">0.98</factor>
+					<factor period="9">1.05</factor>
+					<factor period="10">1.07</factor>
+				</factors>
+			</type>
+            <type name="CCM">
+                <factors>
+                    <factor period="11">1.33</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.08</factor>
+                    <factor period="3" >1.04</factor>
+                    <factor period="4" >1.14</factor>
+                    <factor period="5" >1.31</factor>
+                    <factor period="6" >0.98</factor>
+                    <factor period="7" >0.88</factor>
+                    <factor period="8" >0.71</factor>
+                    <factor period="9" >0.61</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+            <type name="CCMRAW">
+                <factors>
+                    <factor period="11">1.33</factor>
+                    <factor period="12">0.98</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.08</factor>
+                    <factor period="3" >1.04</factor>
+                    <factor period="4" >1.14</factor>
+                    <factor period="5" >1.31</factor>
+                    <factor period="6" >0.98</factor>
+                    <factor period="7" >0.88</factor>
+                    <factor period="8" >0.71</factor>
+                    <factor period="9" >0.61</factor>
+                    <factor period="10">0.92</factor>
+                </factors>
+            </type>
+			<type name="CROP_WINDROW">
+				<factors all="0" />
+			</type>
+			<type name="WETCLOVER_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="CLOVER_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="SEMIDRYCLOVER_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="WETALFALFA_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="ALFALFA_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="SEMIDRYALFALFA_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="WETHORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="HORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="HORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="SEMIDRYHORSEGRASS_WINDROW">
+				<factors all="0" />
+			</type>			
+			<type name="WETGRASS_WINDROW">
+				<factors all="0" />
+			</type>
+            <!-- Selling grass is unrealistic -->
+            <type name="GRASS_WINDROW">
+                	<factors all="0" />
+            </type>
+			
+        </bales>
+
+    </repricing>
+
+</economy>

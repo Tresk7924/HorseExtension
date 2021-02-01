@@ -1,0 +1,221 @@
+<!-- Add entries to extraSourceFiles element or add to modDesc root element if extraSourceFiles not present -->
+<extraSourceFiles>
+    <sourceFile filename="HorseExtension/scripts/fruitDestructionReloaded.lua" />
+    <sourceFile filename="HorseExtension/scripts/FillTypeMover.lua"/>
+</extraSourceFiles>
+<!-- End Section -->
+
+<!-- Add to root modDesc element -->
+<registerSpecializations>
+    <registerSpecialization name="addBalesToWrapper" className="AddBalesToWrapper" filename="HorseExtension/scripts/AddBalesToWrapper.lua" searchedSpecializations="baleWrapper"/>
+</registerSpecializations>
+<addBalesToWrapper>
+    <addBale fillType="WETGRASS"            baleFilename="HorseExtension/bales/squarebales/baleSilage240.i3d"                         isRoundbale="false"/>
+    <addBale fillType="SEMIDRY_GRASS"       baleFilename="HorseExtension/bales/squarebales/baleSilage240.i3d"                         isRoundbale="false"/>
+    <addBale fillType="WETALFALFA"          baleFilename="HorseExtension/bales/squarebales/baleAlfalfaSilage240.i3d"                  isRoundbale="false"/>
+    <addBale fillType="ALFALFA"             baleFilename="HorseExtension/bales/squarebales/baleAlfalfaSilage240.i3d"                  isRoundbale="false"/>
+    <addBale fillType="SEMIDRYALFALFA"      baleFilename="HorseExtension/bales/squarebales/baleAlfalfaSilage240.i3d"                  isRoundbale="false"/>
+    <addBale fillType="WETCLOVER"           baleFilename="HorseExtension/bales/squarebales/baleCloverSilage240.i3d"                   isRoundbale="false"/>
+    <addBale fillType="CLOVER"              baleFilename="HorseExtension/bales/squarebales/baleCloverSilage240.i3d"                   isRoundbale="false"/>
+    <addBale fillType="SEMIDRYCLOVER"       baleFilename="HorseExtension/bales/squarebales/baleCloverSilage240.i3d"                   isRoundbale="false"/>
+    <addBale fillType="WETHORSEGRASS"       baleFilename="HorseExtension/bales/squarebales/baleSilage240.i3d"                         isRoundbale="false"/>
+    <addBale fillType="HORSEGRASS"          baleFilename="HorseExtension/bales/squarebales/baleSilage240.i3d"                         isRoundbale="false"/>
+    <addBale fillType="SEMIDRYHORSEGRASS"   baleFilename="HorseExtension/bales/squarebales/baleHorseSilage240.i3d"                    isRoundbale="false"/>
+    <addBale fillType="CROP_WINDROW"        baleFilename="HorseExtension/bales/squarebales/baleCropWindrowSilage240.i3d"              isRoundbale="false" isWindrow="false"/>
+    <addBale fillType="WETGRASS"            baleFilename="HorseExtension/bales/squarebales/squareBaleGrass_8Knots.i3d"                isRoundbale="false"/>
+    <addBale fillType="SEMIDRY_GRASS"       baleFilename="HorseExtension/bales/squarebales/squareBaleGrass_8Knots.i3d"                isRoundbale="false"/>
+    <addBale fillType="WETALFALFA"          baleFilename="HorseExtension/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d"     isRoundbale="false"/>
+    <addBale fillType="ALFALFA"             baleFilename="HorseExtension/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d"     isRoundbale="false"/>
+    <addBale fillType="SEMIDRYALFALFA"      baleFilename="HorseExtension/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d"     isRoundbale="false"/>
+    <addBale fillType="WETCLOVER"           baleFilename="HorseExtension/bales/squarebales/squareBaleCloverFermented_8Knots.i3d"      isRoundbale="false"/>
+    <addBale fillType="CLOVER"              baleFilename="HorseExtension/bales/squarebales/squareBaleCloverFermented_8Knots.i3d"      isRoundbale="false"/>
+    <addBale fillType="SEMIDRYCLOVER"       baleFilename="HorseExtension/bales/squarebales/squareBaleCloverFermented_8Knots.i3d"      isRoundbale="false"/>
+    <addBale fillType="WETHORSEGRASS"       baleFilename="HorseExtension/bales/squarebales/squareBaleGrass_8Knots.i3d"                isRoundbale="false"/>
+    <addBale fillType="HORSEGRASS"          baleFilename="HorseExtension/bales/squarebales/squareBaleGrass_8Knots.i3d"                isRoundbale="false"/>
+    <addBale fillType="SEMIDRYHORSEGRASS"   baleFilename="HorseExtension/bales/squarebales/squareBaleHorseSilage_8Knots.i3d"          isRoundbale="false"/>
+    <addBale fillType="CROP_WINDROW"        baleFilename="HorseExtension/bales/squarebales/squareBaleCropWindrowSilage_8Knots.i3d"    isRoundbale="false" isWindrow="false"/>
+    <addBale fillType="WETGRASS"            baleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"              kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  claasBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  viconBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 isRoundbale="true"/>
+    <addBale fillType="SEMIDRY_GRASS"       baleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"              kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  claasBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  viconBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 isRoundbale="true"/>
+    <addBale fillType="WETALFALFA"          baleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"       kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"           claasBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"          andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"           viconBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"          isRoundbale="true"/>
+    <addBale fillType="ALFALFA"             baleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"       kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"           claasBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"          andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"           viconBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"          isRoundbale="true"/>
+    <addBale fillType="SEMIDRYALFALFA"      baleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"       kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"           claasBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"          andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"           viconBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d"          isRoundbale="true"/>
+    <addBale fillType="WETCLOVER"           baleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"        kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"            claasBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"           andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"            viconBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"           isRoundbale="true"/>
+    <addBale fillType="CLOVER"              baleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"        kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"            claasBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"           andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"            viconBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"           isRoundbale="true"/>
+    <addBale fillType="SEMIDRYCLOVER"       baleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"        kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"            claasBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"           andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"            viconBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d"           isRoundbale="true"/>
+    <addBale fillType="WETHORSEGRASS"       baleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"              kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  claasBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  viconBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 isRoundbale="true"/>
+    <addBale fillType="HORSEGRASS"          baleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"              kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  claasBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                  viconBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d"                 isRoundbale="true"/>
+    <addBale fillType="SEMIDRYHORSEGRASS"   baleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d"         kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d"             claasBaleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d"            andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d"             viconBaleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d"            isRoundbale="true"/>
+    <addBale fillType="CROP_WINDROW"        baleFilename="HorseExtension/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d"   kuhnBaleFilename="HorseExtension/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d"       claasBaleFilename="HorseExtension/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d"      andersonBaleFilename="HorseExtension/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d"       viconBaleFilename="HorseExtension/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d"      isRoundbale="true" isWindrow="false"/>
+</addBalesToWrapper>
+<!-- End Section -->
+
+<!-- Add entries to storeItems element or add to modDesc root element if storeItems not present -->
+<storeItems>
+    <!--Bales-->
+    <storeItem xmlFilename="HorseExtension/vehicles/Bales/SW_4014/kuhnSW4014.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Bales/FBP_3135/kuhnFBP3135.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Bales/Ursus_Wrapper/z586.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Bales/Ursus_Stacker/ursusT127.xml"/>
+    <!--Carrot-->
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/maus5.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/panther2.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/terraDosT4_40.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/terraFelis2.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/tiger6.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/holmerHR12.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/rr6x45.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/rrXL9.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/SE260.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Carrot/grimmeKS75.xml"/>
+    <!--Cutters Etc-->
+    <storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/GrimmeRH24_60/grimmeRH2460.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/bigM450/bigM450.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/poettingerNovaCatX8/poettingerNovaCatX8.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/poettingerNovaCat301/poettingerNovaCat301.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/newHollandDiscbine313/newHollandDiscbine313.xml"/>
+    <!--Onion-->
+    <storeItem xmlFilename="HorseExtension/vehicles/Onion/rootster604.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Onion/varitron470.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Onion/keiler2.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Onion/SE260.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Onion/grimmeFT300.xml"/>
+    <storeItem xmlFilename="HorseExtension/vehicles/Onion/grimmeKS75-4.xml"/>
+</storeItems>
+<!-- End Section -->
+
+<!-- Add entries to l10n element if present or add to root modDesc element if l10n not present -->
+<l10n>
+    <text name="fillType_alfalfa">
+        <en>Alfalfa</en>
+        <de>Luzerne</de>
+    </text>
+    <text name="fillType_alfalfa_windrow">
+        <en>Alfalfa fresh</en>
+        <de>Luzerne frisch</de>
+    </text>
+    <text name="fillType_semiDryAlfalfa_windrow">
+        <en>Alfalfa SemiDry</en>
+        <de>Luzerne angewelkt</de>
+    </text>
+    <text name="fillType_dryAlfalfa">
+        <en>Alfalfa Hay</en>
+        <de>Luzerne Heu</de>
+    </text>
+    <text name="fillType_dryAlfalfa_windrow">
+        <en>Alfalfa Hay</en>
+        <de>Luzerne Heu</de>
+    </text>
+    <text name="fillType_alfalfa_fermented">
+        <en>Alfalfa Silage</en>
+        <de>Luzerne Silage</de>
+    </text>
+    <text name="fillType_field_grass">
+        <en>Fieldgrass</en>
+        <de>Ackergras</de>
+    </text>
+    <text name="fillType_clover">
+        <en>Clover</en>
+        <de>Klee</de>
+    </text>
+    <text name="fillType_clover_windrow">
+        <en>Clover fresh</en>
+        <de>Klee frisch</de>
+    </text>
+    <text name="fillType_semiDryClover_windrow">
+        <en>Clover SemiDry</en>
+        <de>Klee angewelkt</de>
+    </text>
+    <text name="fillType_dryClover">
+        <en>Clover Hay</en>
+        <de>Klee Heu</de>
+    </text>
+    <text name="fillType_dryClover_windrow">
+        <en>Clover Hay</en>
+        <de>Klee Heu</de>
+    </text>
+    <text name="fillType_clover_fermented">
+        <en>Clover Silage</en>
+        <de>Kleesilage</de>
+    </text>
+    <text name="fillType_carrot">
+        <en>Carrot</en>
+        <de>Karotten</de>
+    </text>
+    <text name="fillType_onion">
+        <en>Onion</en>
+        <de>Zwiebeln</de>
+    </text>
+    <text name="fillType_crop_windrow">
+        <en>Cropswath</en>
+        <de>Getreideschwad</de>
+    </text>
+    <text name="fillType_rye">
+        <en>Rye</en>
+        <de>Roggen</de>
+    </text>
+    <text name="fillType_spelt">
+        <en>Spelt</en>
+        <de>Dinkel</de>
+    </text>
+    <text name="fillType_triticale">
+        <en>Triticale</en>
+        <de>Tritikale</de>
+    </text>
+    <text name="fillType_miscanthus">
+        <en>Miscanthus</en>
+        <de>Elefantengras</de>
+    </text>
+    <text name="fillType_horseGrass">
+        <en>HorseGrass</en>
+        <de>Pferdegras</de>
+    </text>
+    <text name="fillType_pastureGrass">
+        <en>PastureGrass</en>
+        <de>Weidegras</de>
+    </text>
+    <text name="fillType_wetHorseGrass">
+        <en>HorseGrass Wet</en>
+        <de>Gras</de>
+    </text>
+    <text name="fillType_horseGrass_windrow">
+        <en>HorseGrass</en>
+        <de>Pferdegras</de>
+    </text>
+    <text name="fillType_semiDryHorseGrass_windrow">
+        <en>HorseGrass SemiDry</en>
+        <de>Pferdefeuchtheu</de>
+    </text>
+    <text name="fillType_dryHorseGrass_windrow">
+        <en>HorseHay</en>
+        <de>Pferdeheu</de>
+    </text>
+    <text name="fillType_horseGrass_fermented">
+        <en>HorseSilage</en>
+        <de>Pferdesilage</de>
+    </text>
+    <text name="fillType_wetGrass">
+        <en>Grass fresh</en>
+        <de>Gras frisch</de>
+    </text>
+    <text name="fillType_semiDryGrass">
+        <en>Grass SemiDry</en>
+        <de>Gras angewelkt</de>
+    </text>
+    <text name="function_haulmTopperCarrot">
+        <en>Carrot Topper</en>
+        <de>Entkrauter Karotten</de>
+    </text>
+    <text name="function_haulmTopperOnion">
+        <en>Onion Topper</en>
+        <de>Entkrauter Zwiebeln</de>
+    </text>
+    <text name="function_harvestingCarrotWithoutPreparer">
+        <en>Carrot Harvester</en>
+        <de>Vollernter Karotten</de>
+    </text>
+    <text name="function_harvestingOnionWithoutPreparer">
+        <en>Onion Harvester</en>
+        <de>Vollernter Zwiebeln</de>
+    </text>
+</l10n>
+<!-- End Section -->

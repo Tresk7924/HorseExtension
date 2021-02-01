@@ -1,0 +1,78 @@
+<!-- Add to Files element. -->
+<!-- If your map.i3d file isn't in maps/ you might need to change the filenames. -->
+<!-- e.g. if your map is in the mod's main folder, you'll need to remove "../" from the start of the filenames -->
+<File fileId="3330" filename="../HorseExtension/foliage/Miscanthus.xml"/>
+<File fileId="3351" filename="../HorseExtension/foliage/alfalfa.xml"/>
+<File fileId="3363" filename="../HorseExtension/foliage/carrot.xml"/>
+<File fileId="3356" filename="../HorseExtension/foliage/clover.xml"/>
+<File fileId="3331" filename="../HorseExtension/foliage/distance/acre_fine_distance_diffuse.dds"/>
+<File fileId="3311" filename="../HorseExtension/foliage/distance/acre_fine_distance_diffuse.png"/>
+<File fileId="3357" filename="../HorseExtension/foliage/distance/acre_plantedRows_distance_diffuse.png"/>
+<File fileId="3324" filename="../HorseExtension/foliage/distance/foliage_Miscanthus_distance2_diffuse.png"/>
+<File fileId="3325" filename="../HorseExtension/foliage/distance/foliage_Miscanthus_distance3_diffuse.png"/>
+<File fileId="3326" filename="../HorseExtension/foliage/distance/foliage_Miscanthus_distance4_diffuse.png"/>
+<File fileId="3327" filename="../HorseExtension/foliage/distance/foliage_Miscanthus_distance5_diffuse.png"/>
+<File fileId="3328" filename="../HorseExtension/foliage/distance/foliage_Miscanthus_distance6_diffuse.png"/>
+<File fileId="3329" filename="../HorseExtension/foliage/distance/foliage_Miscanthus_distance7_diffuse.png"/>
+<File fileId="3332" filename="../HorseExtension/foliage/distance/foliage_TriRye_distance2_diffuse.png"/>
+<File fileId="3333" filename="../HorseExtension/foliage/distance/foliage_TriRye_distance3_diffuse.png"/>
+<File fileId="3334" filename="../HorseExtension/foliage/distance/foliage_TriRye_distance4_diffuse.png"/>
+<File fileId="3335" filename="../HorseExtension/foliage/distance/foliage_TriRye_distance5_diffuse.png"/>
+<File fileId="3336" filename="../HorseExtension/foliage/distance/foliage_TriRye_distance6_diffuse.png"/>
+<File fileId="3337" filename="../HorseExtension/foliage/distance/foliage_TriRye_distance7_diffuse.png"/>
+<File fileId="3347" filename="../HorseExtension/foliage/distance/foliage_alfalfa_distance2_diffuse.png"/>
+<File fileId="3348" filename="../HorseExtension/foliage/distance/foliage_alfalfa_distance4_diffuse.png"/>
+<File fileId="3349" filename="../HorseExtension/foliage/distance/foliage_alfalfa_distance5_diffuse.png"/>
+<File fileId="3350" filename="../HorseExtension/foliage/distance/foliage_alfalfa_distance7_diffuse.png"/>
+<File fileId="3364" filename="../HorseExtension/foliage/distance/foliage_beet_haulm_distance_diffuse.png"/>
+<File fileId="3358" filename="../HorseExtension/foliage/distance/foliage_carrot_distance2_diffuse.png"/>
+<File fileId="3359" filename="../HorseExtension/foliage/distance/foliage_carrot_distance3_diffuse.png"/>
+<File fileId="3360" filename="../HorseExtension/foliage/distance/foliage_carrot_distance4_diffuse.png"/>
+<File fileId="3361" filename="../HorseExtension/foliage/distance/foliage_carrot_distance5_diffuse.png"/>
+<File fileId="3362" filename="../HorseExtension/foliage/distance/foliage_carrot_distance6_diffuse.png"/>
+<File fileId="3352" filename="../HorseExtension/foliage/distance/foliage_clover_distance2_diffuse.dds"/>
+<File fileId="3353" filename="../HorseExtension/foliage/distance/foliage_clover_distance3_diffuse.dds"/>
+<File fileId="3354" filename="../HorseExtension/foliage/distance/foliage_clover_distance4_diffuse.dds"/>
+<File fileId="3355" filename="../HorseExtension/foliage/distance/foliage_clover_distance5_diffuse.dds"/>
+<File fileId="3312" filename="../HorseExtension/foliage/distance/foliage_field_grass_distance2_diffuse.png"/>
+<File fileId="3313" filename="../HorseExtension/foliage/distance/foliage_field_grass_distance3_diffuse.png"/>
+<File fileId="3314" filename="../HorseExtension/foliage/distance/foliage_field_grass_distance4_diffuse.png"/>
+<File fileId="3315" filename="../HorseExtension/foliage/distance/foliage_field_grass_distance5_diffuse.png"/>
+<File fileId="3316" filename="../HorseExtension/foliage/distance/foliage_field_grass_distance7_diffuse.png"/>
+<File fileId="3318" filename="../HorseExtension/foliage/distance/foliage_horseGrass_distance2_diffuse.png"/>
+<File fileId="3319" filename="../HorseExtension/foliage/distance/foliage_horseGrass_distance4_diffuse.png"/>
+<File fileId="3320" filename="../HorseExtension/foliage/distance/foliage_horseGrass_distance5_diffuse.png"/>
+<File fileId="3321" filename="../HorseExtension/foliage/distance/foliage_horseGrass_distance7_diffuse.png"/>
+<File fileId="3365" filename="../HorseExtension/foliage/distance/foliage_onion_distance2_diffuse.png"/>
+<File fileId="3366" filename="../HorseExtension/foliage/distance/foliage_onion_distance3_diffuse.png"/>
+<File fileId="3367" filename="../HorseExtension/foliage/distance/foliage_onion_distance4_diffuse.png"/>
+<File fileId="3368" filename="../HorseExtension/foliage/distance/foliage_onion_distance5_diffuse.png"/>
+<File fileId="3369" filename="../HorseExtension/foliage/distance/foliage_onion_distance6_diffuse.png"/>
+<File fileId="3340" filename="../HorseExtension/foliage/distance/foliage_spelt_distance2_diffuse.png"/>
+<File fileId="3341" filename="../HorseExtension/foliage/distance/foliage_spelt_distance3_diffuse.png"/>
+<File fileId="3342" filename="../HorseExtension/foliage/distance/foliage_spelt_distance4_diffuse.png"/>
+<File fileId="3343" filename="../HorseExtension/foliage/distance/foliage_spelt_distance5_diffuse.png"/>
+<File fileId="3344" filename="../HorseExtension/foliage/distance/foliage_spelt_distance6_diffuse.png"/>
+<File fileId="3345" filename="../HorseExtension/foliage/distance/foliage_spelt_distance7_diffuse.png"/>
+<File fileId="3317" filename="../HorseExtension/foliage/field_grass.xml"/>
+<File fileId="3322" filename="../HorseExtension/foliage/horseGrass.xml"/>
+<File fileId="3370" filename="../HorseExtension/foliage/onion.xml"/>
+<File fileId="3323" filename="../HorseExtension/foliage/pastureGrass.xml"/>
+<File fileId="3338" filename="../HorseExtension/foliage/rye.xml"/>
+<File fileId="3346" filename="../HorseExtension/foliage/spelt.xml"/>
+<File fileId="3339" filename="../HorseExtension/foliage/triticale.xml"/>
+<!-- End Files element additions -->
+
+<!-- Add entries to FoliageMultiLayer element -->
+<FoliageType name="field_grass" foliageXmlId="3317"/>
+<FoliageType name="horseGrass" foliageXmlId="3322"/>
+<FoliageType name="pastureGrass" foliageXmlId="3323"/>
+<FoliageType name="miscanthus" foliageXmlId="3330"/>
+<FoliageType name="rye" foliageXmlId="3338"/>
+<FoliageType name="triticale" foliageXmlId="3339"/>
+<FoliageType name="spelt" foliageXmlId="3346"/>
+<FoliageType name="alfalfa" foliageXmlId="3351"/>
+<FoliageType name="clover" foliageXmlId="3356"/>
+<FoliageType name="carrot" foliageXmlId="3363"/>
+<FoliageType name="onion" foliageXmlId="3370"/>
+<!-- End FoliageMultiLayer element additions -->
