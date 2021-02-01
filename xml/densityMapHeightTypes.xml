@@ -93,115 +93,115 @@
             <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
             <textures diffuse="$data/fillPlanes/tarp_diffuse.png" normal="$data/fillPlanes/tarp_normal.png" distance="$data/fillPlanes/distance/tarpDistance_diffuse.png" />
         </densityMapHeightType>
-		
+
         <densityMapHeightType fillTypeName="alfalfa" maxSurfaceAngle="36" fillToGroundScale="1.0" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/alfalfa_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="maps/fillPlanes/distance/alfalfaDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/alfalfa_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="HorseExtension/fillPlanes/distance/alfalfaDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="wetAlfalfa_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/wetAlfalfa_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/grassDistance_diffuse.dds" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/wetAlfalfa_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/grassDistance_diffuse.dds" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="alfalfa_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/alfalfa_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/grassDistance_diffuse.dds" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/alfalfa_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/grassDistance_diffuse.dds" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="semiDryAlfalfa_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/semiDryAlfalfa_windrow_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/grassDistance_diffuse.dds" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/semiDryAlfalfa_windrow_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/grassDistance_diffuse.dds" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="dryAlfalfa_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/dryAlfalfa_windrow_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/hayDistance_diffuse.dds" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/dryAlfalfa_windrow_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="$data/fillPlanes/distance/hayDistance_diffuse.dds" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="alfalfa_fermented" maxSurfaceAngle="36" fillToGroundScale="1" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/alfalfa_fermented_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="maps/fillPlanes/distance/clover_fermented_distance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/alfalfa_fermented_diffuse.png" normal="$data/fillPlanes/hay_normal.dds" distance="HorseExtension/fillPlanes/distance/clover_fermented_distance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="clover" maxSurfaceAngle="36" fillToGroundScale="1" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/clover_diffuse.png" normal="maps/fillPlanes/tipOnGround/clover_normal.png" distance="maps/fillPlanes/distance/cloverDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/clover_diffuse.png" normal="HorseExtension/fillPlanes/tipOnGround/clover_normal.png" distance="HorseExtension/fillPlanes/distance/cloverDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="wetClover_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/wetClover_diffuse.png" normal="maps/fillPlanes/tipOnGround/clover_normal.png" distance="maps/fillPlanes/distance/clover_windrowDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/wetClover_diffuse.png" normal="HorseExtension/fillPlanes/tipOnGround/clover_normal.png" distance="HorseExtension/fillPlanes/distance/clover_windrowDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="clover_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/clover_windrow_diffuse.png" normal="maps/fillPlanes/tipOnGround/clover_normal.png" distance="maps/fillPlanes/distance/clover_windrowDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/clover_windrow_diffuse.png" normal="HorseExtension/fillPlanes/tipOnGround/clover_normal.png" distance="HorseExtension/fillPlanes/distance/clover_windrowDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="semiDryClover_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/semiDryClover_windrow_diffuse.png" normal="maps/fillPlanes/tipOnGround/clover_normal.png" distance="maps/fillPlanes/distance/dryClover_windrowDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/semiDryClover_windrow_diffuse.png" normal="HorseExtension/fillPlanes/tipOnGround/clover_normal.png" distance="HorseExtension/fillPlanes/distance/dryClover_windrowDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="dryClover_windrow" maxSurfaceAngle="36" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/dryClover_windrow_diffuse.png" normal="maps/fillPlanes/tipOnGround/clover_normal.png" distance="maps/fillPlanes/distance/dryClover_windrowDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/dryClover_windrow_diffuse.png" normal="HorseExtension/fillPlanes/tipOnGround/clover_normal.png" distance="HorseExtension/fillPlanes/distance/dryClover_windrowDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="clover_fermented" maxSurfaceAngle="36" fillToGroundScale="1" allowsSmoothing="false" >
             <collision scale="0.35 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/clover_fermented_diffuse.png" normal="maps/fillPlanes/tipOnGround/clover_normal.png" distance="maps/fillPlanes/distance/clover_fermented_distance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/clover_fermented_diffuse.png" normal="HorseExtension/fillPlanes/tipOnGround/clover_normal.png" distance="HorseExtension/fillPlanes/distance/clover_fermented_distance_diffuse.png" />
         </densityMapHeightType>
-		
+
 		<densityMapHeightType fillTypeName="field_grass" maxSurfaceAngle="36" fillToGroundScale="1" allowsSmoothing="false" >
             <collision scale="1.00 " baseOffset="0.08" minOffset="0.10" maxOffset="1.08" />
-            <textures diffuse="maps/fillPlanes/field_grass_diffuse.png" normal="maps/fillPlanes/field_grass_normal.png" distance="maps/fillPlanes/distance/field_grassDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/field_grass_diffuse.png" normal="HorseExtension/fillPlanes/field_grass_normal.png" distance="HorseExtension/fillPlanes/distance/field_grassDistance_diffuse.png" />
         </densityMapHeightType>
 				<densityMapHeightType fillTypeName="carrot" maxSurfaceAngle="30" fillToGroundScale="1.0" allowsSmoothing="false" >
             <collision scale="1.00" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
-            <textures diffuse="maps/fillPlanes/carrot_diffuse.png" normal="maps/fillPlanes/carrot_normal.png" distance="maps/fillPlanes/distance/carrotDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/carrot_diffuse.png" normal="HorseExtension/fillPlanes/carrot_normal.png" distance="HorseExtension/fillPlanes/distance/carrotDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="onion" maxSurfaceAngle="30" fillToGroundScale="1.0" allowsSmoothing="false" >
             <collision scale="1.00" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
-            <textures diffuse="maps/fillPlanes/onion_diffuse.png" normal="maps/fillPlanes/onion_normal.png" distance="maps/fillPlanes/distance/onionDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/onion_diffuse.png" normal="HorseExtension/fillPlanes/onion_normal.png" distance="HorseExtension/fillPlanes/distance/onionDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="wetGrass_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/wetGrass_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/wetGrass_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="semiDry_grass_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/tipOnGround/semiDryGrass_windrow_diffuse.png" normal="$data/fillPlanes/hay_normal.png" distance="$data/fillPlanes/distance/hayDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/tipOnGround/semiDryGrass_windrow_diffuse.png" normal="$data/fillPlanes/hay_normal.png" distance="$data/fillPlanes/distance/hayDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="spelt" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false" >
             <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
-            <textures diffuse="maps/fillPlanes/spelt_diffuse.png" normal="maps/fillPlanes/rye_normal.png" distance="$data/foliage/distance/foliage_barley_distance5_diffuse.dds" />
+            <textures diffuse="HorseExtension/fillPlanes/spelt_diffuse.png" normal="HorseExtension/fillPlanes/rye_normal.png" distance="$data/foliage/distance/foliage_barley_distance5_diffuse.dds" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="crop_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/cropWindrow_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/cropWindrow_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="wetHorseGrass_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/wetHorseGrass_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/wetHorseGrass_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="horseGrass_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/horseGrass_diffuse.png" normal="$data/fillPlanes/hay_normal.png" distance="$data/fillPlanes/distance/hayDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/horseGrass_diffuse.png" normal="$data/fillPlanes/hay_normal.png" distance="$data/fillPlanes/distance/hayDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="semiDryHorseGrass_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/semiDryHorseGrass_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/semiDryHorseGrass_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="dryHorseGrass_windrow" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/dryHorseGrass_diffuse.png" normal="$data/fillPlanes/hay_normal.png" distance="$data/fillPlanes/distance/hayDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/dryHorseGrass_diffuse.png" normal="$data/fillPlanes/hay_normal.png" distance="$data/fillPlanes/distance/hayDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="horseGrass_fermented" maxSurfaceAngle="35" fillToGroundScale="3.5" allowsSmoothing="false" >
             <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
-            <textures diffuse="maps/fillPlanes/horseGrass_fermented_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/horseGrass_fermented_diffuse.png" normal="$data/fillPlanes/grass_normal.png" distance="$data/fillPlanes/distance/grassDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="miscanthus" maxSurfaceAngle="30" fillToGroundScale="1" allowsSmoothing="true" >
             <collision scale="1.00" baseOffset="0.2" minOffset="0.1" maxOffset="0.3" />
-            <textures diffuse="maps/fillPlanes/miscanthus_diffuse.png" normal="maps/fillPlanes/miscanthus_normal.png" distance="maps/fillPlanes/distance/miscanthusDistance_diffuse.png" />
+            <textures diffuse="HorseExtension/fillPlanes/miscanthus_diffuse.png" normal="HorseExtension/fillPlanes/miscanthus_normal.png" distance="HorseExtension/fillPlanes/distance/miscanthusDistance_diffuse.png" />
         </densityMapHeightType>
 		<densityMapHeightType fillTypeName="triticale" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false" >
             <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
-            <textures diffuse="maps/fillPlanes/triticale_diffuse.png" normal="maps/fillPlanes/triticale_normal.png" distance="maps/fillPlanes/distance/triticale_distance.png" />
+            <textures diffuse="HorseExtension/fillPlanes/triticale_diffuse.png" normal="HorseExtension/fillPlanes/triticale_normal.png" distance="HorseExtension/fillPlanes/distance/triticale_distance.png" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="rye" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false" >
             <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
-            <textures diffuse="maps/fillPlanes/rye_diffuse.png" normal="maps/fillPlanes/rye_normal.png" distance="maps/fillPlanes/distance/rye_distance.png" />
+            <textures diffuse="HorseExtension/fillPlanes/rye_diffuse.png" normal="HorseExtension/fillPlanes/rye_normal.png" distance="HorseExtension/fillPlanes/distance/rye_distance.png" />
         </densityMapHeightType>
     </densityMapHeightTypes>
 </map>

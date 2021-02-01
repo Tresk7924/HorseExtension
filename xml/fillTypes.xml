@@ -49,99 +49,99 @@
             <image hud="$dataS2/menu/hud/fillTypes/hud_fill_dryGrass_windrow.png" hudSmall="$dataS2/menu/hud/fillTypes/hud_fill_dryGrass_windrow_sml.png" />
             <physics massPerLiter="0.07" maxPhysicalSurfaceAngle="50" />
         </fillType>
-        
+
 		<fillType name="ALFALFA" title="$l10n_fillType_alfalfa" showOnPriceTable="false"  pricePerLiter="0.6" >
-            <image hud="maps/huds/hud_fill_alfalfa.png" hudSmall="maps/huds/hud_fill_alfalfa_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_alfalfa.png" hudSmall="HorseExtension/huds/hud_fill_alfalfa_sml.png" />
             <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="42.5" />
 			<pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
 		<fillType name="WETALFALFA_WINDROW" title="$l10n_fillType_alfalfa_windrow" showOnPriceTable="false"  pricePerLiter="0.048" >
-            <image hud="maps/huds/hud_fill_alfalfa.png" hudSmall="maps/huds/hud_fill_alfalfa_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_alfalfa.png" hudSmall="HorseExtension/huds/hud_fill_alfalfa_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
         <fillType name="ALFALFA_WINDROW" title="$l10n_fillType_alfalfa_windrow" showOnPriceTable="true"  pricePerLiter="0.048" >
-            <image hud="maps/huds/hud_fill_alfalfa.png" hudSmall="maps/huds/hud_fill_alfalfa_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_alfalfa.png" hudSmall="HorseExtension/huds/hud_fill_alfalfa_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="SEMIDRYALFALFA" title="$l10n_fillType_semiDryAlfalfa_windrow" showOnPriceTable="false" pricePerLiter="0.052" >
-            <image hud="maps/huds/hud_fill_alfalfaSemi.png" hudSmall="maps/huds/hud_fill_alfalfaSemi_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_alfalfaSemi.png" hudSmall="HorseExtension/huds/hud_fill_alfalfaSemi_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="SEMIDRYALFALFA_WINDROW" title="$l10n_fillType_semiDryAlfalfa_windrow" showOnPriceTable="true" pricePerLiter="0.052" >
-            <image hud="maps/huds/hud_fill_alfalfaSemi.png" hudSmall="maps/huds/hud_fill_alfalfaSemi_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_alfalfaSemi.png" hudSmall="HorseExtension/huds/hud_fill_alfalfaSemi_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
         <fillType name="DRYALFALFA" title="$l10n_fillType_dryalfalfa" showOnPriceTable="false" pricePerLiter="0.06" >
-            <image hud="maps/huds/hud_fill_dryAlfalfa_windrow.png" hudSmall="maps/huds/hud_fill_dryAlfalfa_windrow_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_dryAlfalfa_windrow.png" hudSmall="HorseExtension/huds/hud_fill_dryAlfalfa_windrow_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="42.5" />
         </fillType>
         <fillType name="DRYALFALFA_WINDROW" title="$l10n_fillType_dryAlfalfa_windrow" showOnPriceTable="true" pricePerLiter="0.06" >
-            <image hud="maps/huds/hud_fill_dryAlfalfa_windrow.png" hudSmall="maps/huds/hud_fill_dryAlfalfa_windrow_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_dryAlfalfa_windrow.png" hudSmall="HorseExtension/huds/hud_fill_dryAlfalfa_windrow_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="ALFALFA_FERMENTED" title="$l10n_fillType_alfalfa_fermented" showOnPriceTable="true" pricePerLiter="0.14" >
-            <image hud="maps/huds/hud_fill_alfalfa_fermented.png" hudSmall="maps/huds/hud_fill_alfalfa_fermented_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_alfalfa_fermented.png" hudSmall="HorseExtension/huds/hud_fill_alfalfa_fermented_sml.png" />
             <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="CLOVER" title="$l10n_fillType_clover" showOnPriceTable="false"  pricePerLiter="0.51" >
-            <image hud="maps/huds/hud_fill_clover.png" hudSmall="maps/huds/hud_fill_clover_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_clover.png" hudSmall="HorseExtension/huds/hud_fill_clover_sml.png" />
             <physics massPerLiter="0.8" maxPhysicalSurfaceAngle="42.5" />
 			<pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
 		<fillType name="WETCLOVER_WINDROW" title="$l10n_fillType_clover_windrow" showOnPriceTable="false"  pricePerLiter="0.048" >
-            <image hud="maps/huds/hud_fill_clover.png" hudSmall="maps/huds/hud_fill_clover_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_clover.png" hudSmall="HorseExtension/huds/hud_fill_clover_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40.5" />
         </fillType>
 		<fillType name="CLOVER_WINDROW" title="$l10n_fillType_clover_windrow" showOnPriceTable="true"  pricePerLiter="0.048" >
-            <image hud="maps/huds/hud_fill_clover.png" hudSmall="maps/huds/hud_fill_clover_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_clover.png" hudSmall="HorseExtension/huds/hud_fill_clover_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40.5" />
         </fillType>
 		<fillType name="SEMIDRYCLOVER" title="$l10n_fillType_semiDryClover_windrow" showOnPriceTable="false"  pricePerLiter="0.052" >
-            <image hud="maps/huds/hud_fill_cloverSemi.png" hudSmall="maps/huds/hud_fill_cloverSemi_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_cloverSemi.png" hudSmall="HorseExtension/huds/hud_fill_cloverSemi_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="SEMIDRYCLOVER_WINDROW" title="$l10n_fillType_semiDryClover_windrow" showOnPriceTable="true"  pricePerLiter="0.052" >
-            <image hud="maps/huds/hud_fill_cloverSemi.png" hudSmall="maps/huds/hud_fill_cloverSemi_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_cloverSemi.png" hudSmall="HorseExtension/huds/hud_fill_cloverSemi_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="DRYCLOVER" title="$l10n_fillType_dryClover" showOnPriceTable="false"  pricePerLiter="0.06" >
-            <image hud="maps/huds/hud_fill_dryClover.png" hudSmall="maps/huds/hud_fill_dryClover_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_dryClover.png" hudSmall="HorseExtension/huds/hud_fill_dryClover_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
-		</fillType>	
+		</fillType>
         <fillType name="DRYCLOVER_WINDROW" title="$l10n_fillType_dryClover_windrow" showOnPriceTable="true"  pricePerLiter="0.06" >
-            <image hud="maps/huds/hud_fill_dryClover.png" hudSmall="maps/huds/hud_fill_dryClover_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_dryClover.png" hudSmall="HorseExtension/huds/hud_fill_dryClover_sml.png" />
             <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="CLOVER_FERMENTED" title="$l10n_fillType_clover_fermented" showOnPriceTable="true" pricePerLiter="0.14" >
-            <image hud="maps/huds/hud_fill_clover_fermented.png" hudSmall="maps/huds/hud_fill_clover_fermented_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_clover_fermented.png" hudSmall="HorseExtension/huds/hud_fill_clover_fermented_sml.png" />
             <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="40" />
-        </fillType>       
+        </fillType>
 		<fillType name="FIELD_GRASS" title="$l10n_fillType_field_grass" showOnPriceTable="true" pricePerLiter="0.42" >
-            <image hud="maps/huds/hud_fill_field_grass.png" hudSmall="maps/huds/hud_fill_field_grass_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_field_grass.png" hudSmall="HorseExtension/huds/hud_fill_field_grass_sml.png" />
             <physics massPerLiter="0.50" maxPhysicalSurfaceAngle="45" />
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
 		<fillType name="CARROT" title="$l10n_fillType_carrot" showOnPriceTable="true" pricePerLiter="0.122" >
-            <image hud="maps/huds/hud_fill_carrot.png" hudSmall="maps/huds/hud_fill_carrot_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_carrot.png" hudSmall="HorseExtension/huds/hud_fill_carrot_sml.png" />
             <physics massPerLiter="0.65" maxPhysicalSurfaceAngle="34" />
         </fillType>
 		<fillType name="ONION" title="$l10n_fillType_onion" showOnPriceTable="true" pricePerLiter="0.122" >
-            <image hud="maps/huds/hud_fill_onion.png" hudSmall="maps/huds/hud_fill_onion_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_onion.png" hudSmall="HorseExtension/huds/hud_fill_onion_sml.png" />
             <physics massPerLiter="0.65" maxPhysicalSurfaceAngle="34" />
         </fillType>
-		
+
 		<fillType name="CROP_WINDROW" title="$l10n_fillType_crop_windrow" showOnPriceTable="true" pricePerLiter="0.041" >
-            <image hud="maps/huds/hud_fill_crop_windrow.png" hudSmall="maps/huds/hud_fill_crop_windrow_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_crop_windrow.png" hudSmall="HorseExtension/huds/hud_fill_crop_windrow_sml.png" />
             <physics massPerLiter="0.26" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="PASTUREGRASS" title="$l10n_fillType_pastureGrass" showOnPriceTable="false"  pricePerLiter="0.048" >
-            <image hud="maps/huds/hud_fill_pastureGrass.png" hudSmall="maps/huds/hud_fill_pastureGrass_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_pastureGrass.png" hudSmall="HorseExtension/huds/hud_fill_pastureGrass_sml.png" />
             <physics massPerLiter="0.44" maxPhysicalSurfaceAngle="40" />
         </fillType>
-		
-		
+
+
         <fillType name="HORSEGRASS" title="$l10n_fillType_horseGrass" showOnPriceTable="false"  pricePerLiter="0.048" >
-            <image hud="maps/huds/hud_fill_horseGrass.png" hudSmall="maps/huds/hud_fill_horseGrass_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_horseGrass.png" hudSmall="HorseExtension/huds/hud_fill_horseGrass_sml.png" />
             <physics massPerLiter="0.44" maxPhysicalSurfaceAngle="40" />
         </fillType>
         <fillType name="WETHORSEGRASS_WINDROW" title="$l10n_fillType_wetHorseGrass" showOnPriceTable="false"  pricePerLiter="0.048" >
@@ -153,34 +153,34 @@
             <physics massPerLiter="0.350" maxPhysicalSurfaceAngle="40" />
         </fillType>
         <fillType name="SEMIDRYHORSEGRASS_WINDROW" title="$l10n_fillType_semiDryHorseGrass_windrow" showOnPriceTable="true" pricePerLiter="0.052" >
-            <image hud="maps/huds/hud_fill_horseGrass.png" hudSmall="maps/huds/hud_fill_horseGrass_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_horseGrass.png" hudSmall="HorseExtension/huds/hud_fill_horseGrass_sml.png" />
             <physics massPerLiter="0.07" maxPhysicalSurfaceAngle="40" />
         </fillType>
         <fillType name="DRYHORSEGRASS_WINDROW" title="$l10n_fillType_dryHorseGrass_windrow" showOnPriceTable="true" pricePerLiter="0.06" >
-            <image hud="maps/huds/hud_fill_dryHorseGrass_windrow.png" hudSmall="maps/huds/hud_fill_dryHorseGrass_windrow_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_dryHorseGrass_windrow.png" hudSmall="HorseExtension/huds/hud_fill_dryHorseGrass_windrow_sml.png" />
             <physics massPerLiter="0.07" maxPhysicalSurfaceAngle="40" />
         </fillType>
         <fillType name="HORSEGRASS_FERMENTED" title="$l10n_fillType_horseGrass_fermented" showOnPriceTable="true" pricePerLiter="0.16" >
-            <image hud="maps/huds/hud_fill_horseGrass_fermented.png" hudSmall="maps/huds/hud_fill_horseGrass_fermented_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_horseGrass_fermented.png" hudSmall="HorseExtension/huds/hud_fill_horseGrass_fermented_sml.png" />
             <physics massPerLiter="0.07" maxPhysicalSurfaceAngle="40" />
         </fillType>
 		<fillType name="TRITICALE" title="$l10n_fillType_triticale" showOnPriceTable="true" pricePerLiter="0.34" >
-            <image hud="maps/huds/hud_fill_triticale.png" hudSmall="maps/huds/hud_fill_triticale_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_triticale.png" hudSmall="HorseExtension/huds/hud_fill_triticale_sml.png" />
             <physics massPerLiter="0.78" maxPhysicalSurfaceAngle="15" />
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
         <fillType name="RYE" title="$l10n_fillType_rye" showOnPriceTable="true" pricePerLiter="0.337" >
-            <image hud="maps/huds/hud_fill_rye.png" hudSmall="maps/huds/hud_fill_rye_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_rye.png" hudSmall="HorseExtension/huds/hud_fill_rye_sml.png" />
             <physics massPerLiter="0.68" maxPhysicalSurfaceAngle="15" />
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
 		<fillType name="SPELT" title="$l10n_fillType_spelt" showOnPriceTable="true" pricePerLiter="0.307" >
-            <image hud="maps/huds/hud_fill_spelt.png" hudSmall="maps/huds/hud_fill_spelt_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_spelt.png" hudSmall="HorseExtension/huds/hud_fill_spelt_sml.png" />
             <physics massPerLiter="0.66" maxPhysicalSurfaceAngle="15" />
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
         <fillType name="Miscanthus" title="$l10n_fillType_miscanthus" showOnPriceTable="true" pricePerLiter="0.10" >
-            <image hud="maps/huds/hud_fill_miscanthus.png" hudSmall="maps/huds/hud_fill_miscanthus_sml.png" />
+            <image hud="HorseExtension/huds/hud_fill_miscanthus.png" hudSmall="HorseExtension/huds/hud_fill_miscanthus_sml.png" />
             <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="40" />
         </fillType>
 	</fillTypes>
