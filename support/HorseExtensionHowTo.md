@@ -61,6 +61,8 @@ and change the filename to
 ```
 The fileId numbers might be different. Ignore them, don't change them.
 
+IMPORTANT. This tutorial assumes that the map.i3d is in the maps/ folder. If it is somewhere else, you might have to change the filename entries to reflect this. Paths here are *relative* to the map.i3d location (e.g. if your map.i3d is in the root folder of your map mod, you would need to remove "../" from the start of the filname entries).
+
 #### Change the heightType parameters
 
 Find the line that starts `<DetailLayer name="terrainDetailHeight"` and change:
@@ -130,6 +132,7 @@ to
 ```
 <File fileId="219" filename="map/fruit_density.png"/>
 ```
+just changing `gdm` to `png`. Don't change `fileId` entries or the path to the file.
 
 Find the FoliageMultiLayer element and change
 ```

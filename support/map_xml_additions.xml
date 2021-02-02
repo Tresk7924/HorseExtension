@@ -1,4 +1,5 @@
 <!-- Add or change entries in root map element -->
+<!-- These filenammes should be absolute, so it doesn't matter where your map.xml is located -->
 <husbandryAnimals filename="HorseExtension/xml/husbandryAnimals.xml" />
 <husbandryFood filename="HorseExtension/xml/husbandryFoodDefinition.xml" />
 <fillTypes filename="HorseExtension/xml/fillTypes.xml" />
@@ -8,6 +9,7 @@
 <!-- End section -->
 
 <!-- Add entries to additionalFiles element or add block to root map element if additionalFiles not present -->
+<!-- These filenammes should be absolute, so it doesn't matter where your map.xml is located -->
 <additionalFiles>
     <additionalFile filename="HorseExtension/fillPlanes/fillPlane_materialHolder.i3d" />
     <additionalFile filename="HorseExtension/materialHolders/particle_materialHolder.i3d" />

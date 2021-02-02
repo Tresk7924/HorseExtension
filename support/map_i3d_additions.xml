@@ -1,5 +1,6 @@
 <!-- Add to Files element. -->
 <!-- If your map.i3d file isn't in maps/ you might need to change the filenames. -->
+<!-- Filenames are relative to the location of map.i3d -->
 <!-- e.g. if your map is in the mod's main folder, you'll need to remove "../" from the start of the filenames -->
 <File fileId="3330" filename="../HorseExtension/foliage/Miscanthus.xml"/>
 <File fileId="3351" filename="../HorseExtension/foliage/alfalfa.xml"/>
