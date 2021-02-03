@@ -1,3 +1,9 @@
+# Using assets in this pack
+
+A lot of the work in here was done by the modders at the [Farming Agency](https://fs-ukmodding.co.uk/). You can use this to modify maps for personal use, but don't release modified maps without their permission. They're pretty friendly people, and requests can be made at the [MaizePlus discord](https://discord.gg/RP3QdJr) if you want to release maps with HorseExtension support on the ModHub or other sites.
+
+The modders at F/A would rather spend time making mods better than dealing with people stealing their work. Do the right thing by the people who make this game better for all of us.
+
 # Preparing the map
 
 ## Adding HorseExtension files
