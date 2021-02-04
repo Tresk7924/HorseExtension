@@ -62,7 +62,101 @@
 <File fileId="3338" filename="../HorseExtension/foliage/rye.xml"/>
 <File fileId="3346" filename="../HorseExtension/foliage/spelt.xml"/>
 <File fileId="3339" filename="../HorseExtension/foliage/triticale.xml"/>
+
+<!-- Standard crops changed files -->
+<File fileId="9000" filename="../HorseExtension/standard/barley.i3d"/>
+<File fileId="9001" filename="../HorseExtension/standard/barley.i3d.shapes"/>
+<File fileId="9002" filename="../HorseExtension/standard/barley.xml"/>
+<File fileId="9003" filename="../HorseExtension/standard/canola.i3d"/>
+<File fileId="9004" filename="../HorseExtension/standard/canola.i3d.shapes"/>
+<File fileId="9005" filename="../HorseExtension/standard/canola.xml"/>
+<File fileId="9006" filename="../HorseExtension/standard/distance/acre_fine_distance_diffuse.dds"/>
+<File fileId="9007" filename="../HorseExtension/standard/distance/acre_plantedRows_distance_diffuse.dds"/>
+<File fileId="9008" filename="../HorseExtension/standard/distance/foliage_barley_distance2_diffuse.dds"/>
+<File fileId="9009" filename="../HorseExtension/standard/distance/foliage_barley_distance3_diffuse.dds"/>
+<File fileId="9010" filename="../HorseExtension/standard/distance/foliage_barley_distance4_diffuse.dds"/>
+<File fileId="9011" filename="../HorseExtension/standard/distance/foliage_barley_distance5_diffuse.dds"/>
+<File fileId="9012" filename="../HorseExtension/standard/distance/foliage_barley_distance6_diffuse.dds"/>
+<File fileId="9013" filename="../HorseExtension/standard/distance/foliage_barley_distance7_diffuse.dds"/>
+<File fileId="9014" filename="../HorseExtension/standard/distance/foliage_canola_distance2_diffuse.dds"/>
+<File fileId="9015" filename="../HorseExtension/standard/distance/foliage_canola_distance3_diffuse.dds"/>
+<File fileId="9016" filename="../HorseExtension/standard/distance/foliage_canola_distance4_diffuse.dds"/>
+<File fileId="9017" filename="../HorseExtension/standard/distance/foliage_canola_distance5_diffuse.dds"/>
+<File fileId="9018" filename="../HorseExtension/standard/distance/foliage_canola_distance6_diffuse.dds"/>
+<File fileId="9019" filename="../HorseExtension/standard/distance/foliage_canola_distance7_diffuse.dds"/>
+<File fileId="9020" filename="../HorseExtension/standard/distance/foliage_maize_distance2_diffuse.dds"/>
+<File fileId="9021" filename="../HorseExtension/standard/distance/foliage_maize_distance3_diffuse.dds"/>
+<File fileId="9022" filename="../HorseExtension/standard/distance/foliage_maize_distance4_diffuse.dds"/>
+<File fileId="9023" filename="../HorseExtension/standard/distance/foliage_maize_distance5_diffuse.dds"/>
+<File fileId="9024" filename="../HorseExtension/standard/distance/foliage_maize_distance6_diffuse.dds"/>
+<File fileId="9025" filename="../HorseExtension/standard/distance/foliage_maize_distance7_diffuse.dds"/>
+<File fileId="9026" filename="../HorseExtension/standard/distance/foliage_oat_distance2_diffuse.dds"/>
+<File fileId="9027" filename="../HorseExtension/standard/distance/foliage_oat_distance3_diffuse.dds"/>
+<File fileId="9028" filename="../HorseExtension/standard/distance/foliage_oat_distance4_diffuse.dds"/>
+<File fileId="9029" filename="../HorseExtension/standard/distance/foliage_oat_distance5_diffuse.dds"/>
+<File fileId="9030" filename="../HorseExtension/standard/distance/foliage_oat_distance6_diffuse.dds"/>
+<File fileId="9031" filename="../HorseExtension/standard/distance/foliage_oat_distance7_diffuse.dds"/>
+<File fileId="9032" filename="../HorseExtension/standard/distance/foliage_oilseed_distance2_diffuse.dds"/>
+<File fileId="9033" filename="../HorseExtension/standard/distance/foliage_potato_distance2_diffuse.dds"/>
+<File fileId="9034" filename="../HorseExtension/standard/distance/foliage_potato_distance3_diffuse.dds"/>
+<File fileId="9035" filename="../HorseExtension/standard/distance/foliage_potato_distance4_diffuse.dds"/>
+<File fileId="9036" filename="../HorseExtension/standard/distance/foliage_potato_distance5_diffuse.dds"/>
+<File fileId="9037" filename="../HorseExtension/standard/distance/foliage_potato_distance6_diffuse.dds"/>
+<File fileId="9038" filename="../HorseExtension/standard/distance/foliage_potato_haulm_distance_diffuse.dds"/>
+<File fileId="9039" filename="../HorseExtension/standard/distance/foliage_soybean_distance2_diffuse.dds"/>
+<File fileId="9040" filename="../HorseExtension/standard/distance/foliage_soybean_distance3_diffuse.dds"/>
+<File fileId="9041" filename="../HorseExtension/standard/distance/foliage_soybean_distance4_diffuse.dds"/>
+<File fileId="9042" filename="../HorseExtension/standard/distance/foliage_soybean_distance5_diffuse.dds"/>
+<File fileId="9043" filename="../HorseExtension/standard/distance/foliage_soybean_distance6_diffuse.dds"/>
+<File fileId="9044" filename="../HorseExtension/standard/distance/foliage_soybean_distance7_diffuse.dds"/>
+<File fileId="9045" filename="../HorseExtension/standard/distance/foliage_sunflower_distance2_diffuse.dds"/>
+<File fileId="9046" filename="../HorseExtension/standard/distance/foliage_sunflower_distance3_diffuse.dds"/>
+<File fileId="9047" filename="../HorseExtension/standard/distance/foliage_sunflower_distance4_diffuse.dds"/>
+<File fileId="9048" filename="../HorseExtension/standard/distance/foliage_sunflower_distance5_diffuse.dds"/>
+<File fileId="9049" filename="../HorseExtension/standard/distance/foliage_sunflower_distance6_diffuse.dds"/>
+<File fileId="9050" filename="../HorseExtension/standard/distance/foliage_sunflower_distance7_diffuse.dds"/>
+<File fileId="9051" filename="../HorseExtension/standard/distance/foliage_wheat_distance2_diffuse.dds"/>
+<File fileId="9052" filename="../HorseExtension/standard/distance/foliage_wheat_distance3_diffuse.dds"/>
+<File fileId="9053" filename="../HorseExtension/standard/distance/foliage_wheat_distance4_diffuse.dds"/>
+<File fileId="9054" filename="../HorseExtension/standard/distance/foliage_wheat_distance5_diffuse.dds"/>
+<File fileId="9055" filename="../HorseExtension/standard/distance/foliage_wheat_distance6_diffuse.dds"/>
+<File fileId="9056" filename="../HorseExtension/standard/distance/foliage_wheat_distance7_diffuse.dds"/>
+<File fileId="9057" filename="../HorseExtension/standard/grassDE.xml"/>
+<File fileId="9058" filename="../HorseExtension/standard/grassDense.i3d"/>
+<File fileId="9059" filename="../HorseExtension/standard/grassDense.i3d.shapes"/>
+<File fileId="9060" filename="../HorseExtension/standard/grassDense_diffuse.dds"/>
+<File fileId="9061" filename="../HorseExtension/standard/maize.i3d"/>
+<File fileId="9062" filename="../HorseExtension/standard/maize.i3d.shapes"/>
+<File fileId="9063" filename="../HorseExtension/standard/maize.xml"/>
+<File fileId="9064" filename="../HorseExtension/standard/oat.i3d"/>
+<File fileId="9065" filename="../HorseExtension/standard/oat.i3d.shapes"/>
+<File fileId="9066" filename="../HorseExtension/standard/oat.xml"/>
+<File fileId="9067" filename="../HorseExtension/standard/soybean.i3d"/>
+<File fileId="9068" filename="../HorseExtension/standard/soybean.i3d.shapes"/>
+<File fileId="9069" filename="../HorseExtension/standard/soybean.xml"/>
+<File fileId="9070" filename="../HorseExtension/standard/sunflower.i3d"/>
+<File fileId="9071" filename="../HorseExtension/standard/sunflower.i3d.shapes"/>
+<File fileId="9072" filename="../HorseExtension/standard/sunflower.xml"/>
+<File fileId="9073" filename="../HorseExtension/standard/wheat.i3d"/>
+<File fileId="9074" filename="../HorseExtension/standard/wheat.i3d.shapes"/>
+<File fileId="9075" filename="../HorseExtension/standard/wheat.xml"/>
+<!-- End Standard crops changed files -->
 <!-- End Files element additions -->
+
+
+<!-- Start Edit entries in FoliageMultiLayer element -->
+<FoliageType name="wheat" foliageXmlId="9075"/>
+<FoliageType name="grass" foliageXmlId="9057"/>
+<FoliageType name="canola" foliageXmlId="9005"/>
+<FoliageType name="barley" foliageXmlId="9002"/>
+<FoliageType name="maize" foliageXmlId="9063"/>
+
+<FoliageType name="sunflower" foliageXmlId="9072"/>
+<FoliageType name="soybean" foliageXmlId="9069"/>
+
+<FoliageType name="oat" foliageXmlId="9066"/>
+<!-- End Edit entries in FoliageMultiLayer element -->
+
 
 <!-- Add entries to FoliageMultiLayer element -->
 <FoliageType name="field_grass" foliageXmlId="3317"/>
