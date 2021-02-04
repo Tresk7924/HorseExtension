@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType distanceTexturePath="distance">
+    <!-- maize 
+    
+    5 6 7 8 
+    
+    1 0 0 0 - invisible
+    0 1 0 0 - green small
+    1 1 0 0 - green middle
+    0 0 1 0 - green big
+    1 0 1 0 - harvest ready
+    0 1 1 0 - harvest ready
+    1 1 1 0 - harvest ready
+    0 0 0 1 - dead
+    1 0 0 1 - harvested (cut)
+    1 1 1 1 - tire tracks (harvested)
+	
+    -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.3" shapeSource="maize.i3d">
+        <foliageStateDefaults distanceMapLayer="1" widthVariance="0" heightVariance="0.3" horizontalPositionVariance="0.25" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <!-- 1 0 0 0 - invisible -->
+        <foliageState name="invisible" distanceMap="acre_fine_distance_diffuse.png" />
+        <!-- 0 1 0 0 - green small -->
+        <foliageState name="green small" distanceMap="foliage_maize_distance2_diffuse.png" width="0.875" height="0.875">
+            <foliageShape>
+                <foliageLod blockShape="0>0" />
+                <foliageLod blockShape="1>0" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 0 0 - green middle -->
+        <foliageState name="green middle" distanceMap="foliage_maize_distance3_diffuse.png" width="1.5" height="1.5">
+            <foliageShape>
+                <foliageLod blockShape="0>1" />
+                <foliageLod blockShape="1>1" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 1 0 - green big -->
+        <foliageState name="green big" distanceMap="foliage_maize_distance4_diffuse.png" width="2.9" height="2.9">
+            <foliageShape>
+                <foliageLod blockShape="0>2" />
+                <foliageLod blockShape="1>2" />
+            </foliageShape>
+        </foliageState>
+         <!-- 0 0 1 0 - green big -->
+        <foliageState name="green big" distanceMap="foliage_maize_distance4_diffuse.png" width="2.9" height="3.2">
+            <foliageShape>
+                <foliageLod blockShape="0>2" />
+                <foliageLod blockShape="1>2" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 1 0 - green big -->
+        <foliageState name="green big" distanceMap="foliage_maize_distance4_diffuse.png" width="2.9" height="3.4">
+            <foliageShape>
+                <foliageLod blockShape="0>2" />
+                <foliageLod blockShape="1>2" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 1 0 - harvest ready -->
+        <foliageState name="harvest ready 3" distanceMap="foliage_maize_distance5_diffuse.png" width="2.9" height="2.9">
+            <foliageShape>
+                <foliageLod blockShape="0>3" />
+                <foliageLod blockShape="1>3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 0 0 1 - dead -->
+        <foliageState name="dead" distanceMap="foliage_maize_distance6_diffuse.png" width="2.7" height="2.7">
+            <foliageShape>
+                <foliageLod blockShape="0>4" />
+                <foliageLod blockShape="1>4" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 0 0 1 - harvested (cut) -->
+        <foliageState name="harvested (cut)" distanceMap="foliage_maize_distance7_diffuse.png" width="2.9" height="2.9">
+            <foliageShape>
+                <foliageLod blockShape="0>5" />
+                <foliageLod blockShape="1>5" />
+            </foliageShape>
+        </foliageState>
+        <!-- 1 1 1 1 - tire tracks (harvested) -->
+        <foliageState name="tire tracks" distanceMap="foliage_maize_distance7_diffuse.png" width="2.9" height="1.9">
+            <foliageShape>
+                <foliageLod blockShape="0>5" />
+                <foliageLod blockShape="1>5" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+</foliageType>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="canola" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/foliage/canola_diffuse.png" relativePath="true"/>
+    <File fileId="3" filename="$data/foliage/canola04LOD_diffuse_H.png" relativePath="true"/>
+    <File fileId="4" filename="$data/foliage/canola04LOD_normal_H.png" relativePath="true"/>
+    <File fileId="6" filename="$data/foliage/canola05LOD_normal_H.png" relativePath="true"/>
+    <File fileId="5" filename="$data/foliage/canola05LOD_diffuse_H.png" relativePath="true"/>
+    <File fileId="8" filename="$data/foliage/canola03LOD_normal_H.png" relativePath="true"/>
+    <File fileId="7" filename="$data/foliage/canola03LOD_diffuse_H.png" relativePath="true"/>
+    <File fileId="10" filename="$data/foliage/canola02LOD_normal_H.png" relativePath="true"/>
+    <File fileId="9" filename="$data/foliage/canola02LOD_diffuse_H.png" relativePath="true"/>
+    <File fileId="11" filename="$data/foliage/canola01LOD_diffuse_H.png" relativePath="true"/>
+    <File fileId="12" filename="$data/foliage/canola01LOD_normal_H.png" relativePath="true"/>
+    <File fileId="2" filename="$data/shaders/fruitGrowthFoliageShader.xml" relativePath="true"/>
+  </Files>
+
+  <Materials>
+    <Material name="canola_mat" materialId="1" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="2">
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="alphaBlendStartEnd" value="70 75 0 0"/>
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="canola04LOD_mat" materialId="5" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="2" customShaderVariation="BILLBOARD">
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+    </Material>
+    <Material name="canola05LOD_mat" materialId="6" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="2" customShaderVariation="BILLBOARD">
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="canola03LOD_mat" materialId="4" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="2" customShaderVariation="BILLBOARD">
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="canola02LOD_mat" materialId="3" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="2" customShaderVariation="BILLBOARD">
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+    </Material>
+    <Material name="canola01LOD_mat" materialId="2" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="2" customShaderVariation="BILLBOARD">
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="canola.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="canola" nodeId="1">
+      <Shape name="canola01" rotation="0 -419.289 0" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="2"/>
+      <Shape name="canola02" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="3"/>
+      <Shape name="canola03" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="4"/>
+      <Shape name="canola04" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="5"/>
+      <Shape name="canola05" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="6"/>
+      <Shape name="canola06_cut" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="7"/>
+    </TransformGroup>
+    <TransformGroup name="canolaLOD" nodeId="8">
+      <Shape name="_01_" shapeId="7" castsShadows="false" receiveShadows="true" materialIds="2" clipDistance="500" nodeId="9"/>
+      <Shape name="_02_" shapeId="8" castsShadows="false" receiveShadows="true" materialIds="3" clipDistance="500" nodeId="10"/>
+      <Shape name="_03_" shapeId="9" castsShadows="false" receiveShadows="true" materialIds="4" clipDistance="500" nodeId="11"/>
+      <Shape name="_04_" shapeId="10" castsShadows="false" receiveShadows="true" materialIds="5" clipDistance="500" nodeId="12"/>
+      <Shape name="_05_" shapeId="11" castsShadows="false" receiveShadows="true" materialIds="6" clipDistance="500" nodeId="13"/>
+      <Shape name="_06_" shapeId="12" castsShadows="false" receiveShadows="true" materialIds="5" clipDistance="500" nodeId="14"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
