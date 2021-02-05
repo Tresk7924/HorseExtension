@@ -2,6 +2,7 @@
 <extraSourceFiles>
     <sourceFile filename="HorseExtension/scripts/fruitDestructionReloaded.lua" />
     <sourceFile filename="HorseExtension/scripts/FillTypeMover.lua"/>
+    <sourceFile filename="HorseExtension/scripts/FieldManagerFix.lua"/>
 </extraSourceFiles>
 <!-- End Section -->
 
