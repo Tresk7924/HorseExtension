@@ -40,7 +40,7 @@
             <destruction filterStart="4" filterEnd="8" state="9" />
             <mapColors default="0.3324 0.5395 0.0823 1" colorBlind="0.7681 0.6514 0.0529 1"/>
         </fruitType>
-		<fruitType name="sugarBeet" shownOnMap="true" useForFieldJob="false">
+		<fruitType name="sugarBeet" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.04" />
             <harvest minHarvestingGrowthState="9" maxHarvestingGrowthState="9" cutState="8" allowsPartialGrowthState="false" literPerSqm="5.78" />
@@ -80,7 +80,7 @@
             <destruction filterStart="4" filterEnd="8" state="9" />
             <mapColors default="0.7329 0.7011 0.0887 1" colorBlind="0.2968 0.3712 0.2159 1"/>
         </fruitType>
-        <fruitType name="sunflower" shownOnMap="true" useForFieldJob="false">
+        <fruitType name="sunflower" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="true" seedUsagePerSqm="0.03" />
             <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" literPerSqm="0.52" />
@@ -98,7 +98,7 @@
             <destruction filterStart="2" filterEnd="8" state="9" />
             <mapColors default="0.8879 0.8069 0.7913 1" colorBlind="0.0546 0.0818 0.2789 1"/>
         </fruitType>
-        <fruitType name="soybean" shownOnMap="true" useForFieldJob="false">
+        <fruitType name="soybean" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" />
             <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" literPerSqm="0.45" />
@@ -353,7 +353,7 @@
             <destruction filterStart="1" filterEnd="7" state="8" />
             <mapColors default="0.1022 0.0423 0.0222 1" colorBlind="0.3029 0.4064 0.8011 1"/>
         </fruitType>
-		 <fruitType name="potato" shownOnMap="true" useForFieldJob="false">
+		 <fruitType name="potato" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="true" directionSnapAngle="11.25" alignsToSun="false" seedUsagePerSqm="0.38" />
             <harvest minHarvestingGrowthState="9" maxHarvestingGrowthState="9" cutState="8" allowsPartialGrowthState="false" literPerSqm="4.13" />
@@ -366,7 +366,7 @@
 		
 		<!--nur zum haeckseln-->
 		
-        <fruitType name="Miscanthus" title="Miscanthus" shownOnMap="true" useForFieldJob="true">
+        <fruitType name="Miscanthus" title="Miscanthus" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.05" />
             <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="7" cutState="8" allowsPartialGrowthState="false" literPerSqm="3" />
