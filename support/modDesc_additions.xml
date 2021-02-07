@@ -1,7 +1,6 @@
 <!-- Add entries to extraSourceFiles element or add to modDesc root element if extraSourceFiles not present -->
 <extraSourceFiles>
     <sourceFile filename="HorseExtension/scripts/fruitDestructionReloaded.lua" />
-    <sourceFile filename="HorseExtension/scripts/FillTypeMover.lua"/>
 </extraSourceFiles>
 <!-- End Section -->
 
