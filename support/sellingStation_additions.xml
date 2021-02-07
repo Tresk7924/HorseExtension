@@ -30,6 +30,7 @@
 <fillType name="semiDryClover_windrow"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 <fillType name="semiDryHorseGrass_windrow"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 <fillType name="dryHorseGrass_windrow"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+<fillType name="horseGrass_fermented"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 <fillType name="semiDryGrass"               priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 <!-- End Bales Section -->
 
