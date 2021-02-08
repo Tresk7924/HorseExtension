@@ -18,9 +18,9 @@
             <defaultCrop name="PASTUREGRASS"/>
             <defaultCrop name="OILSEEDRADISH" />
             <defaultCrop name="WEED" />
-            <defaultCrop name="DRYGRASS" />			
+            <defaultCrop name="DRYGRASS" />
 			<defaultCrop name="ALFALFA"/>
-			<defaultCrop name="CLOVER"/>			
+			<defaultCrop name="CLOVER"/>
 			<defaultCrop name="ONION"/>
 			<defaultCrop name="CARROT"/>
 			<defaultCrop name="FIELD_GRASS"/>
@@ -30,7 +30,7 @@
 			<defaultCrop name="RYE"/>
 			<defaultCrop name="TRITICALE"/>
 			<defaultCrop name="MISCANTHUS"/>
-			
+
         </defaultCrops>
 
         <growthTransitions>
@@ -251,7 +251,6 @@
             </gt>
             <gt index="11"> <!--early winter to mid winter-->
                 <crop name="BARLEY" setRange="1" setTo="CUT"/>
-				<crop name="MISCANTHUS"  incrementByOneRange="2-3"/>
                 <crop name="SUGARBEET" setRange="1-5" setTo="CUT" incrementByOneRange="7"/>
                 <crop name="SUNFLOWER" setRange="1-MAX" setTo="CUT"/>
                 <crop name="POTATO" setRange="1-MAX" setTo="CUT"/>
@@ -259,7 +258,7 @@
                 <crop name="CARROT" setRange="1-MAX" setTo="CUT"/>
 				<crop name="MISCANTHUS"  incrementByOneRange="3"/>
             </gt>
-            <gt index="12"> <!--mid winter to late winter-->				
+            <gt index="12"> <!--mid winter to late winter-->
                 <crop name="SUGARBEET" setRange="1-MAX" setTo="CUT"/>
 				<crop name="MISCANTHUS" setRange="4" setTo="6"/>
             </gt>
@@ -548,7 +547,7 @@
             <rotation category="GRASS"
                       returnPeriod="1" />
         </fruitType>
-        
+
 		<fruitType name="MISCANTHUS">
             <growth germinateTemp="5"
                     germinatesoilMoisture="5"
@@ -562,7 +561,7 @@
             <rotation category="GRASS"
                       returnPeriod="1" />
         </fruitType>
-		
+
         <fruitType name="WEED">
             <cultivation plantsWeed="true"/>
             <growth germinateTemp="4"
@@ -687,7 +686,7 @@
             <rotation category="ROOT" value="2" />
             <rotation category="NIGHTSHADE" value="1" />
             <rotation category="GRASS" value="1" />
-			
+
         </crop>
         <crop category="CEREAL">
             <rotation category="OILSEED" value="2" />
@@ -696,7 +695,7 @@
             <rotation category="ROOT" value="1" />
             <rotation category="NIGHTSHADE" value="0" />
             <rotation category="GRASS" value="2" />
-			
+
         </crop>
         <crop category="LEGUME">
             <rotation category="OILSEED" value="1" />
@@ -705,7 +704,7 @@
             <rotation category="ROOT" value="1" />
             <rotation category="NIGHTSHADE" value="1" />
             <rotation category="GRASS" value="1" />
-			
+
         </crop>
         <crop category="ROOT">
             <rotation category="OILSEED" value="0" />
@@ -714,7 +713,7 @@
             <rotation category="ROOT" value="1" />
             <rotation category="NIGHTSHADE" value="0" />
             <rotation category="GRASS" value="0" />
-			
+
         </crop>
         <crop category="NIGHTSHADE">
             <rotation category="OILSEED" value="1" />
@@ -723,7 +722,7 @@
             <rotation category="ROOT" value="0" />
             <rotation category="NIGHTSHADE" value="1" />
             <rotation category="GRASS" value="0" />
-			
+
         </crop>
         <crop category="GRASS">
             <rotation category="OILSEED" value="1" />
@@ -732,7 +731,7 @@
             <rotation category="ROOT" value="1" />
             <rotation category="NIGHTSHADE" value="1" />
             <rotation category="GRASS" value="1" />
-			
+
         </crop>
     </cropRotation>
 </crops>
