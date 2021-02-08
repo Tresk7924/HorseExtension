@@ -144,18 +144,17 @@
 <!-- End Files element additions -->
 
 
-<!-- Start Edit entries in FoliageMultiLayer element -->
+<!-- Replace the existing entries for standard crops in the FoliageMultiLayer element -->
+<!-- If you want to be thorough, you can hunt down the original File entries for the standard crop XML files (fileID will be the same as original foliageXmlId numbers). This is optional, and it's not harmful to leave them in. -->
 <FoliageType name="wheat" foliageXmlId="9075"/>
 <FoliageType name="grass" foliageXmlId="9057"/>
 <FoliageType name="canola" foliageXmlId="9005"/>
 <FoliageType name="barley" foliageXmlId="9002"/>
 <FoliageType name="maize" foliageXmlId="9063"/>
-
 <FoliageType name="sunflower" foliageXmlId="9072"/>
 <FoliageType name="soybean" foliageXmlId="9069"/>
-
 <FoliageType name="oat" foliageXmlId="9066"/>
-<!-- End Edit entries in FoliageMultiLayer element -->
+<!-- End FoliageMultiLayer element alterations -->
 
 
 <!-- Add entries to FoliageMultiLayer element -->

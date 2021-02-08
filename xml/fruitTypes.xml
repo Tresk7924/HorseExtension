@@ -116,9 +116,9 @@
             <destruction filterStart="2" filterEnd="8" state="9" />
             <mapColors default="0.8069 0.3231 0.0262 1" colorBlind="0.3968 0.3712 0.2159 1"/>
         </fruitType>
-		
+
 		<!--Graeser-->
-		
+
 		<fruitType name="grass" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
@@ -267,7 +267,7 @@
             <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="0" />
             <destruction filterStart="2" filterEnd="3" state="2" />
             <mapColors default="0.0648 0.3712 0.0497 1" colorBlind="0.0409 0.1070 0.2016 1"/>
-        </fruitType>  
+        </fruitType>
 		<fruitType name="wetHorseGrass_windrow" title="$l10n_fillType_wetHorseGrass" showOnPriceTable="false" shownOnMap="false" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="false" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.02" />
@@ -330,9 +330,9 @@
             <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" />
             <mapColors default="0.0423 0.1221 0.0252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
         </fruitType>
-		
+
 		<!--Wurzelfruechte-->
-		
+
 		<fruitType name="carrot" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="true" directionSnapAngle="22.5" alignsToSun="false" seedUsagePerSqm="0.04" />
@@ -363,10 +363,10 @@
             <destruction filterStart="1" filterEnd="7" state="8" />
             <mapColors default="0.2622 0.1248 0.0782 1" colorBlind="0.7991 0.7304 0.3419 1"/>
         </fruitType>
-		
+
 		<!--nur zum haeckseln-->
-		
-        <fruitType name="Miscanthus" title="Miscanthus" shownOnMap="true" useForFieldJob="false">
+
+        <fruitType name="miscanthus" title="Miscanthus" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.05" />
             <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="7" cutState="8" allowsPartialGrowthState="false" literPerSqm="3" />
@@ -412,7 +412,7 @@
 			<converter from="DRYGRASS"      			to="GRASS_WINDROW" 				factor="1.0" windrowFactor="1.0" />
             <converter from="WHEAT"         			to="CHAFF"            			factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->
             <converter from="BARLEY"        			to="CHAFF"            			factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->
-            <converter from="OAT"           			to="CHAFF"            			factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->           
+            <converter from="OAT"           			to="CHAFF"            			factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->
             <converter from="CANOLA"        			to="CHAFF"            			factor="3.0" />
             <converter from="SUNFLOWER"     			to="CHAFF"            			factor="3.0" />
             <converter from="SOYBEAN"       			to="CHAFF"            			factor="3.0" />
@@ -421,10 +421,10 @@
 			<converter from="RYE"       				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
             <converter from="TRITICALE" 				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
         </fruitTypeConverter>
-		
+
         <fruitTypeConverter name="MOWER">
             <converter from="CLOVER"    		to="WETCLOVER_WINDROW" 					factor="1" windrowFactor="1" />
-            <converter from="ALFALFA"   		to="WETALFALFA_WINDROW"   				factor="1" windrowFactor="1" />           
+            <converter from="ALFALFA"   		to="WETALFALFA_WINDROW"   				factor="1" windrowFactor="1" />
 			<converter from="FIELD_GRASS"    	to="WETGRASS_WINDROW"  					factor="1.25" windrowFactor="1.25" />
 			<converter from="GRASS"     		to="WETGRASS_WINDROW"     				factor="1" windrowFactor="1" />
 			<converter from="HORSEGRASS"     	to="WETHORSEGRASS_WINDROW" 				factor="1" windrowFactor="1" />
@@ -435,10 +435,10 @@
 			<converter from="RYE"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="TRITICALE" 		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
         </fruitTypeConverter>
-		
+
 		<fruitTypeConverter name="MOWERCONDITIONER">
             <converter from="CLOVER"    		to="CLOVER_WINDROW" 					factor="1" windrowFactor="1" />
-            <converter from="ALFALFA"   		to="ALFALFA_WINDROW"   					factor="1" windrowFactor="1" />           
+            <converter from="ALFALFA"   		to="ALFALFA_WINDROW"   					factor="1" windrowFactor="1" />
 			<converter from="FIELD_GRASS"    	to="GRASS_WINDROW"  					factor="1.25" windrowFactor="1.25" />
 			<converter from="GRASS"     		to="GRASS_WINDROW"     					factor="1" windrowFactor="1" />
 			<converter from="HORSEGRASS"     	to="HORSEGRASS_WINDROW" 				factor="1" windrowFactor="1" />
@@ -448,7 +448,7 @@
             <converter from="PASTUREGRASS"     	to="GRASS_WINDROW"     					factor="1" windrowFactor="1" />
 			<converter from="RYE"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="TRITICALE" 		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
-            
+
         </fruitTypeConverter>
     </fruitTypeConverters>
 </map>
