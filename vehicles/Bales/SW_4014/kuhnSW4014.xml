@@ -10,7 +10,7 @@
         <specs>
             <fillTypes>SQUAREBALE ROUNDBALE GRASS_WINDROW ALFALFA_WINDROW CLOVER_WINDROW HORSEGRASS_WINDROW CROP_WINDROW</fillTypes>
         </specs>
-        <image>mods/vehicles/Kuhn/store_kuhnSW4014.png</image>
+        <image>HorseExtension/vehicles/Bales/SW_4014/store_kuhnSW4014.png</image>
         <price>54000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>

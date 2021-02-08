@@ -10,7 +10,7 @@
         <functions>
             <function>$l10n_function_baleWrapper</function>
         </functions>
-        <image>vehicles/Bales/Ursus_Wrapper/store_z586.png</image>
+        <image>HorseExtension/vehicles/Bales/Ursus_Wrapper/store_z586.png</image>
         <price>8200</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
@@ -26,7 +26,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_baleWrapper</typeDesc>
-        <filename>vehicles/Bales/Ursus_Wrapper/z586.i3d</filename>
+        <filename>HorseExtension/vehicles/Bales/Ursus_Wrapper/z586.i3d</filename>
         <size width="3" length="6.2"/>
         <components>
             <component centerOfMass="0 0.5 -1" solverIterationCount="10" mass="1216"/>

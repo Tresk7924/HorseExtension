@@ -7,7 +7,7 @@
         <functions>
             <function>$l10n_function_baleStacker</function>
         </functions>
-        <image>vehicles/Bales/Ursus_Stacker/store_ursusT127.png</image>
+        <image>HorseExtension/vehicles/Bales/Ursus_Stacker/store_ursusT127.png</image>
         <price>39000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
@@ -22,7 +22,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_baleLoader</typeDesc>
-        <filename>vehicles/Bales/Ursus_Stacker/ursusT127.i3d</filename>
+        <filename>HorseExtension/vehicles/Bales/Ursus_Stacker/ursusT127.i3d</filename>
         <size width="3.2" length="7"/>
         <components>
             <component centerOfMass="0 0.5 -0.5" solverIterationCount="10" mass="3000"/>
