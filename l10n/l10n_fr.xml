@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+    <texts>
+        <!-- Alfalfa -->
+        <text name="fillType_wetAlfalfa"                   text="Luzerne humide" />
+        <text name="fillType_wetAlfalfa_windrow"           text="Luzerne humide" />
+        <text name="fillType_alfalfa"                      text="Luzerne" />
+        <text name="fillType_alfalfa_windrow"              text="Luzerne" />
+        <text name="fillType_semiDryAlfalfa"               text="Luzerne à moitié sec" />
+        <text name="fillType_semiDryAlfalfa_windrow"       text="Luzerne à moitié sec" />
+        <text name="fillType_dryAlfalfa"                   text="Luzerne sèche" />
+        <text name="fillType_dryAlfalfa_windrow"           text="Luzerne sèche" />
+        <text name="fillType_alfalfa_fermented"            text="Ensilage de luzerne" />
+        <!-- Clover -->
+        <text name="fillType_wetClover"                    text="Trèfle humide" />
+        <text name="fillType_wetClover_windrow"            text="Trèfle humide" />
+        <text name="fillType_clover"                       text="Trèfle" />
+        <text name="fillType_clover_windrow"               text="Trèfle" />
+        <text name="fillType_semiDryClover"                text="Trèfle à moitié sec" />
+        <text name="fillType_semiDryClover_windrow"        text="Trèfle à moitié sec" />
+        <text name="fillType_dryClover"                    text="Trèfle sèche" />
+        <text name="fillType_dryClover_windrow"            text="Trèfle sèche" />
+        <text name="fillType_clover_fermented"             text="Ensilage de trèfle" />
+        <!-- HorseGrass -->
+        <text name="fillType_wetHorseGrass"                text="erbe de cheval humide" />
+        <text name="fillType_wetHorseGrass_windrow"        text="erbe de cheval humide" />
+        <text name="fillType_horseGrass"                   text="Herbe de cheval" />
+        <text name="fillType_horseGrass_windrow"           text="Herbe de cheval" />
+        <text name="fillType_semiDryHorseGrass"            text="Foin humide de cheval" />
+        <text name="fillType_semiDryHorseGrass_windrow"    text="Foin humide de cheval" />
+        <text name="fillType_dryHorseGrass"                text="Foin de cheval" />
+        <text name="fillType_dryHorseGrass_windrow"        text="Foin de cheval" />
+        <text name="fillType_horseGrass_fermented"         text="Ensilage de chevaux" />
+        <!-- Grass -->
+        <text name="fillType_pastureGrass"                 text="Herbe de pâturage" />
+        <text name="fillType_wetGrass"                     text="Herbe fraîche" />
+        <text name="fillType_wetGrass_windrow"             text="Herbe fraîche" />
+        <text name="fillType_semiDryGrass"                 text="Herbe à moitié sec" />
+        <text name="fillType_semiDryGrass_windrow"         text="Herbe à moitié sec" />
+        <text name="fillType_grass_fermented"              text="nsilage de herbe" />
+        <!-- Grains -->
+        <text name="fillType_rye"                          text="Seigle" />
+        <text name="fillType_triticale"                    text="Triticale" />
+        <text name="fillType_spelt"                        text="Épeautre" />
+        <text name="fillType_field_grass"                  text="Champ gras" />
+        <!-- Root crops -->
+        <text name="fillType_carrot"                       text="Carottes" />
+        <text name="fillType_onion"                        text="Oignons" />
+        <!-- Forage -->
+        <text name="fillType_crop_windrow"                 text="Andain de grain" />
+        <text name="fillType_miscanthus"                   text="Miscanthus" />
+		<text name="fillType_ccmraw"                       text="Grist de maïs (frais)" />
+        <text name="fillType_ccm"                          text="CCM" />
+        <!-- Mods -->
+        <text name="function_multiPalletPacker"            text="Avec cette machine, les pommes de terre, les betteraves à sucre, les oignons ou les carottes sont emballés dans des palettes pour la vente ou chargés sur des bandes transporteuses." />
+        <text name="function_multiWrapper"                 text="L'enrubanneuse enveloppe les balles de toutes les herbes dans un feuille afin qu'elles puissent fermenter en ensilage." />
+        <text name="function_multiBaler"                   text="Cette presse presse la paille et toute l'herbe et leur foin en balles." />
+        <text name="function_multiStacker"                 text="e ramasseur de balles charge tous types de balles rondes et facilite leur transport." />
+        <text name="configuration_carrot"                  text="pour les carottes" />
+        <text name="configuration_onion"                   text="pour les oignons" />
+        <text name="name_HR_12_Carrot"                     text="HR 12 pour les carottes" />
+        <text name="name_HR_12_Onion"                      text="HR 12 pour les oignons" />
+        <text name="name_KS_75-4_Carrot"                   text="KS 75-4 pour les carottes" />
+        <text name="name_KS_75-4_Onion"                    text="KS 75-4 pour les oignons" />
+        <text name="name_SE_260_Carrot"                    text="SE 260 pour les carottes" />
+        <text name="name_SE_260_Onion"                     text="SE 260 pour les oignons" />
+        <text name="function_haulmTopperCarrot"            text="Ce haut de forme de foin retire le foin avant que les carottes puissent être récoltées." />
+        <text name="function_haulmTopperOnion"             text="Ce haut de forme de foin enlève le foin avant que les oignons puissent être récoltés." />
+        <text name="function_harvestingCarrotWithoutPreparer" text="Cette moissonneuse arrache les carottes du sol. Cette machine ne peut être utilisée qu'après avoir coupé le foin." />
+        <text name="function_harvestingOnionWithoutPreparer"  text="Cette récolteuse extrait les oignons du sol. Cette machine ne peut être utilisée qu'après avoir coupé le foin." />
+        <text name="function_mowerConditioner"             text="Cette tondeuse a également installé un conditionneur. Cela signifie que la tonte est immédiatement séchée." />
+
+    </texts>
+</l10n>
