@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+    <texts>
+        <!-- Alfalfa -->
+        <text name="fillType_wetAlfalfa"                   text="Alfalfa Fresh" />
+        <text name="fillType_wetAlfalfa_windrow"           text="Alfalfa Fresh" />
+        <text name="fillType_alfalfa"                      text="Alfalfa" />
+        <text name="fillType_alfalfa_windrow"              text="Alfalfa" />
+        <text name="fillType_semiDryAlfalfa"               text="Alfalfa Semi-dry" />
+        <text name="fillType_semiDryAlfalfa_windrow"       text="Alfalfa Semi-dry" />
+        <text name="fillType_dryAlfalfa"                   text="Alfalfa Hay" />
+        <text name="fillType_dryAlfalfa_windrow"           text="Alfalfa Hay" />
+        <text name="fillType_alfalfa_fermented"            text="Alfalfa Silage" />
+        <!-- Clover -->
+        <text name="fillType_wetClover"                    text="Clover Fresh" />
+        <text name="fillType_wetClover_windrow"            text="Clover Fresh" />
+        <text name="fillType_clover"                       text="Clover" />
+        <text name="fillType_clover_windrow"               text="Clover" />
+        <text name="fillType_semiDryClover"                text="Clover Semi-dry" />
+        <text name="fillType_semiDryClover_windrow"        text="Clover Semi-dry" />
+        <text name="fillType_dryClover"                    text="Clover Hay" />
+        <text name="fillType_dryClover_windrow"            text="Clover Hay" />
+        <text name="fillType_clover_fermented"             text="Clover Silage" />
+        <!-- HorseGrass -->
+        <text name="fillType_wetHorseGrass"                text="Horsegrass Fresh" />
+        <text name="fillType_wetHorseGrass_windrow"        text="Horsegrass Fresh" />
+        <text name="fillType_horseGrass"                   text="Horsegrass" />
+        <text name="fillType_horseGrass_windrow"           text="Horsegrass" />
+        <text name="fillType_semiDryHorseGrass"            text="Horsehay Semi-dry" />
+        <text name="fillType_semiDryHorseGrass_windrow"    text="Horsehay Semi-dry" />
+        <text name="fillType_dryHorseGrass"                text="Horse Hay" />
+        <text name="fillType_dryHorseGrass_windrow"        text="Horse Hay" />
+        <text name="fillType_horseGrass_fermented"         text="Horse Silage" />
+        <!-- Grass -->
+        <text name="fillType_pastureGrass"                 text="Pasturegrass" />
+        <text name="fillType_wetGrass"                     text="Grass Fresh" />
+        <text name="fillType_wetGrass_windrow"             text="Grass Fresh" />
+        <text name="fillType_semiDryGrass"                 text="Grass Semi-dry" />
+        <text name="fillType_semiDryGrass_windrow"         text="Grass Semi-dry" />
+        <text name="fillType_grass_fermented"              text="Grass Silage" />
+        <!-- Grains -->
+        <text name="fillType_rye"                          text="Rye" />
+        <text name="fillType_triticale"                    text="Triticale" />
+        <text name="fillType_spelt"                        text="Spelt" />
+        <text name="fillType_field_grass"                  text="Fieldgrass" />
+        <!-- Root crops -->
+        <text name="fillType_carrot"                       text="Carrots" />
+        <text name="fillType_onion"                        text="Onions" />
+        <!-- Forage -->
+        <text name="fillType_crop_windrow"                 text="Cropswath" />
+        <text name="fillType_miscanthus"                   text="Miscanthus" />
+		<text name="fillType_ccmraw"                       text="Raw CCM (corn flour)" />
+        <text name="fillType_ccm"                          text="CCM" />
+		<!-- Mods -->
+        <text name="function_multiPalletPacker"            text="With this machine, potatoes, sugar beets, onions or carrots are packed in pallets for sale or loaded onto conveyor belts." />
+        <text name="function_multiWrapper"                 text="The bale wrapper wraps the bales of all grasses in foil so that they can ferment into silage." />
+        <text name="function_multiBaler"                   text="This baler presses straw as well as all grasses and their hay into bales." />
+        <text name="function_multiStacker"                 text="This bale collector loads all types of round bales and facilitates their transportation." />
+        <text name="configuration_carrot"                  text="for carrots" />
+        <text name="configuration_onion"                   text="for onions" />
+        <text name="name_HR_12_Carrot"                     text="HR 12 for carrots" />
+        <text name="name_HR_12_Onion"                      text="HR 12 for onions" />
+        <text name="name_KS_75-4_Carrot"                   text="KS 75-4 for carrots" />
+        <text name="name_KS_75-4_Onion"                    text="KS 75-4 for onions" />
+        <text name="name_SE_260_Carrot"                    text="SE 260 for carrots" />
+        <text name="name_SE_260_Onion"                     text="SE 260 for onions" />
+        <text name="function_haulmTopperCarrot"            text="This haulm topper removes the haulm before carrots can be harvested." />
+        <text name="function_haulmTopperOnion"             text="This haulm topper removes the haulm before onions can be harvested." />
+        <text name="function_harvestingCarrotWithoutPreparer" text="This harvester digs the carrots out of the ground. This machine can only be used after the haulm has been cut." />
+        <text name="function_harvestingOnionWithoutPreparer"  text="This harvester digs the onions out of the ground. This machine can only be used after the haulm has been cut." />
+        <text name="function_mowerConditioner"             text="This mower has also installed a conditioner. This means that the mown is immediately dried." />
+
+    </texts>
+</l10n>

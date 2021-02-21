@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+    <texts>
+        <!-- Alfalfa -->
+        <text name="fillType_wetAlfalfa"                   text="feuchte Luzerne" />
+        <text name="fillType_wetAlfalfa_windrow"           text="feuchte Luzerne" />
+        <text name="fillType_alfalfa"                      text="Luzerne" />
+        <text name="fillType_alfalfa_windrow"              ext="Luzerne" />
+        <text name="fillType_semiDryAlfalfa"               text="Luzerne angewelkt" />
+        <text name="fillType_semiDryAlfalfa_windrow"       text="Luzerne angewelkt" />
+        <text name="fillType_dryAlfalfa"                   text="Luzerneheu" />
+        <text name="fillType_dryAlfalfa_windrow"           text="Luzerneheu" />
+        <text name="fillType_alfalfa_fermented"            text="Luzernesilage" />
+        <!-- Clover -->
+        <text name="fillType_wetClover"                    text="feuchter Klee" />
+        <text name="fillType_wetClover_windrow"            text="feuchter Klee" />
+        <text name="fillType_clover"                       text="Klee" />
+        <text name="fillType_clover_windrow"               text="Klee" />
+        <text name="fillType_semiDryClover"                text="Klee angewelkt" />
+        <text name="fillType_semiDryClover_windrow"        text="Klee angewelkt" />
+        <text name="fillType_dryClover"                    text="Kleeheu" />
+        <text name="fillType_dryClover_windrow"            text="Kleeheu" />
+        <text name="fillType_clover_fermented"             text="Kleesilage" />
+        <!-- HorseGrass -->
+        <text name="fillType_wetHorseGrass"                text="feuchtes Pferdegras" />
+        <text name="fillType_wetHorseGrass_windrow"        text="feuchtes Pferdegras" />
+        <text name="fillType_horseGrass"                   text="Pferdegras" />
+        <text name="fillType_horseGrass_windrow"           text="Pferdegras" />
+        <text name="fillType_semiDryHorseGrass"            text="Pferdefeuchtheu" />
+        <text name="fillType_semiDryHorseGrass_windrow"    text="Pferdefeuchtheu" />
+        <text name="fillType_dryHorseGrass"                text="Pferdeheu" />
+        <text name="fillType_dryHorseGrass_windrow"        text="Pferdeheu" />
+        <text name="fillType_horseGrass_fermented"         text="Pferdesilage" />
+        <!-- Grass -->
+        <text name="fillType_pastureGrass"                 text="Weidegras" />
+        <text name="fillType_wetGrass"                     text="feuchtes Gras" />
+        <text name="fillType_wetGrass_windrow"             text="feuchtes Gras" />
+        <text name="fillType_semiDryGrass"                 text="Gras angewelkt" />
+        <text name="fillType_semiDryGrass_windrow"         text="Gras angewelkt" />
+        <text name="fillType_grass_fermented"              text="Grassilage" />
+        <!-- Grains -->
+        <text name="fillType_rye"                          text="Roggen" />
+        <text name="fillType_triticale"                    text="Triticale" />
+        <text name="fillType_spelt"                        text="Dinkel" />
+        <text name="fillType_field_grass"                  text="Ackergras" />
+        <!-- Root crops -->
+        <text name="fillType_carrot"                       text="Karotten" />
+        <text name="fillType_onion"                        text="Zwiebeln" />
+        <!-- Forage -->
+        <text name="fillType_crop_windrow"                 text="Getreideschwad" />
+        <text name="fillType_miscanthus"                   text="Elefantengras" />
+		<text name="fillType_ccmraw"                       text="Maiskornschrot (frisch)" />
+        <text name="fillType_ccm"                          text="CCM" />
+        <!-- Mods -->
+        <text name="function_multiPalletPacker"            text="Mit dieser Maschine werden Kartoffeln, Zuckerrüben, Zwiebeln oder Karotten in Paletten für den Verkauf gepackt oder auf Förderbänder verladen." />
+        <text name="function_multiWrapper"                 text="Der Ballenwickler verpackt die Ballen sämtlicher Gräser in Folie, damit sie zu Silage fermentieren können." />
+        <text name="function_multiBaler"                   text="Diese Ballenpresse presst Stroh sowie sämtliche Gräser und deren Heu zu Ballen." />
+        <text name="function_multiStacker"                 text="Dieser Ballesammler lädt sämtliche Sorten von Rundballen und erleichtert deren Transport." />
+        <text name="configuration_carrot"                  text="für Karotten" />
+        <text name="configuration_onion"                   text="für Zwiebeln" />
+        <text name="name_HR_12_Carrot"                     text="HR 12 für Karotten" />
+        <text name="name_HR_12_Onion"                      text="HR 12 für Zwiebeln" />
+        <text name="name_KS_75-4_Carrot"                   text="KS 75-4 für Karotten" />
+        <text name="name_KS_75-4_Onion"                    text="KS 75-4 für Zwiebeln" />
+        <text name="name_SE_260_Carrot"                    text="SE 260 für Karotten" />
+        <text name="name_SE_260_Onion"                     text="SE 260 für Zwiebeln" />
+        <text name="function_haulmTopperCarrot"            text="Dieser Krautschläger entfernt das Kraut bevor Karotten geerntet werden können." />
+        <text name="function_haulmTopperOnion"             text="Dieser Krautschläger entfernt das Kraut bevor Zwiebeln geerntet werden können." />
+        <text name="function_harvestingCarrotWithoutPreparer" text="Dieser Roder gräbt die Karotten aus dem Boden. Diese Maschine kann erst nach dem Krautschlagen eingesetzt werden." />
+        <text name="function_harvestingOnionWithoutPreparer"  text="Dieser Roder gräbt die Zwiebeln aus dem Boden. Diese Maschine kann erst nach dem Krautschlagen eingesetzt werden." />
+        <text name="function_mowerConditioner"             text="Dieser Mäher hat zusätzlich einen Aufbereiter verbaut. Dadurch erhält das Gemähte sofort eine Trocknungsstufe." />
+
+    </texts>
+</l10n>

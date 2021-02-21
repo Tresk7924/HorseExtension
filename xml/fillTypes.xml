@@ -23,12 +23,12 @@
     </fillTypeConverters>
 
     <fillTypes>
-		<fillType name="COTTON" title="$l10n_fillType_cotton" showOnPriceTable="false" pricePerLiter="0.01" >
+		<fillType name="COTTON" title="$l10n_fillType_cotton" showOnPriceTable="true" pricePerLiter="1.252" >
             <image hud="$dataS2/menu/hud/fillTypes/hud_fill_cotton.png" hudSmall="$dataS2/menu/hud/fillTypes/hud_fill_cotton_sml.png" />
             <physics massPerLiter="0.23" maxPhysicalSurfaceAngle="15" />
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
         </fillType>
-        <fillType name="SUGARCANE" title="$l10n_fillType_sugarCane" showOnPriceTable="false" pricePerLiter="0.01" >
+        <fillType name="SUGARCANE" title="$l10n_fillType_sugarCane" showOnPriceTable="true" pricePerLiter="0.119" >
             <image hud="$dataS2/menu/hud/fillTypes/hud_fill_sugarCane.png" hudSmall="$dataS2/menu/hud/fillTypes/hud_fill_sugarCane_sml.png" />
             <physics massPerLiter="0.18" maxPhysicalSurfaceAngle="50" />
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
