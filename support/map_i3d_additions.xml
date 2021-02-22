@@ -121,10 +121,6 @@
 <File fileId="9054" filename="../HorseExtension/standard/distance/foliage_wheat_distance5_diffuse.dds"/>
 <File fileId="9055" filename="../HorseExtension/standard/distance/foliage_wheat_distance6_diffuse.dds"/>
 <File fileId="9056" filename="../HorseExtension/standard/distance/foliage_wheat_distance7_diffuse.dds"/>
-<File fileId="9057" filename="../HorseExtension/standard/grassDE.xml"/>
-<File fileId="9058" filename="../HorseExtension/standard/grassDense.i3d"/>
-<File fileId="9059" filename="../HorseExtension/standard/grassDense.i3d.shapes"/>
-<File fileId="9060" filename="../HorseExtension/standard/grassDense_diffuse.dds"/>
 <File fileId="9061" filename="../HorseExtension/standard/maize.i3d"/>
 <File fileId="9062" filename="../HorseExtension/standard/maize.i3d.shapes"/>
 <File fileId="9063" filename="../HorseExtension/standard/maize.xml"/>
@@ -141,13 +137,24 @@
 <File fileId="9074" filename="../HorseExtension/standard/wheat.i3d.shapes"/>
 <File fileId="9075" filename="../HorseExtension/standard/wheat.xml"/>
 <!-- End Standard crops changed files -->
+<!-- HorseExtension grasses -->
+<!-- For European style grasses add -->
+<File fileId="9101" filename="../HorseExtension/standard/grassDE.xml"/>
+<File fileId="9102" filename="../HorseExtension/standard/grassDense.i3d"/>
+<File fileId="9103" filename="../HorseExtension/standard/grassDense.i3d.shapes"/>
+<File fileId="9104" filename="../HorseExtension/standard/grassDense_diffuse.dds"/>
+<!-- For US style grasses add -->
+<File fileId="9101" filename="../HorseExtension/standard/grassUS.xml"/>
+<File fileId="9102" filename="../HorseExtension/standard/grassLong.i3d"/>
+<File fileId="9103" filename="../HorseExtension/standard/grassLong.i3d.shapes"/>
+
 <!-- End Files element additions -->
 
 
 <!-- Replace the existing entries for standard crops in the FoliageMultiLayer element -->
 <!-- If you want to be thorough, you can hunt down the original File entries for the standard crop XML files (fileID will be the same as original foliageXmlId numbers). This is optional, and it's not harmful to leave them in. -->
 <FoliageType name="wheat" foliageXmlId="9075"/>
-<FoliageType name="grass" foliageXmlId="9057"/>
+<FoliageType name="grass" foliageXmlId="9101"/>
 <FoliageType name="canola" foliageXmlId="9005"/>
 <FoliageType name="barley" foliageXmlId="9002"/>
 <FoliageType name="maize" foliageXmlId="9063"/>
