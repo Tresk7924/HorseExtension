@@ -9,7 +9,7 @@
         <functions>
             <function>$l10n_function_palletPacker</function>
         </functions>
-        <image>$data/vehicles/CuttersEtc/grimme/grimmeRH2460/store_grimmeRH2460.png</image>
+        <image>$data/vehicles/grimme/grimmeRH2460/store_grimmeRH2460.png</image>
         <price>42000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
