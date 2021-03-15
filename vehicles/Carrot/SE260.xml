@@ -3,7 +3,10 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>SE 260 Carrot</name>
+        <name>
+		<de>SE 260 Karotten</de>
+		<en>SE 260 Carrot</en>
+        </name>
         <specs>
             <neededPower>110</neededPower>
             <workingWidth>1.8</workingWidth>
@@ -11,7 +14,7 @@
         <functions>
             <function>$l10n_function_harvestingCarrotWithoutPreparer</function>
         </functions>
-        <image>$data/vehicles/grimme/SE260/store_SE260.png</image>
+        <image>HorseExtension/vehicles/Carrot/store_SE260_Carrot.png</image>
         <price>157875</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
