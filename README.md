@@ -120,48 +120,11 @@ The map should be usable now. Try loading it with several mods that add heightTy
 
 ## More map preparation
 
-By default FS19 maps don't support enough fruitTypes, so we have to fix that first.
+By default FS19 maps are limited to 32 fruitTypes. 
+There is no need to fix that unless the addition of the m+he fruits would result in more than 32 positions in FoliageMuliLayer.
+IF this is the circumstance, additional preparation and steps are required that are out of scope of this tutorial for now, 
+please visit https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/ for more information
 
-### GDM conversion
-
-Like the heightTypes and MTA support, find `fruit_density.gdm`, convert it to a PNG with the GRLE converter, make sure the new `fruit_density.png` file is in the same directory as the original GDM file, and DELETE the original `fruit_density.gdm`.
-
-### Editing map.i3d
-
-Open the map's main i3d file in a text editor.
-
-Change
-```
-<File fileId="219" filename="map/fruit_density.gdm"/>
-```
-to
-```
-<File fileId="219" filename="map/fruit_density.png"/>
-```
-just changing `gdm` to `png`. Don't change `fileId` entries or the path to the file.
-
-Find the FoliageMultiLayer element and change
-```
-<FoliageMultiLayer densityMapId="219" numChannels="10" numTypeIndexChannels="5" compressionChannels="5">
-```
-to
-```
-<FoliageMultiLayer densityMapId="219" numChannels="12" numTypeIndexChannels="6" compressionChannels="6">
-```
-adding 2 to numChannels, and 1 to each of numTypeIndexChannels and compressionChannels.
-
-### Generating new GDMs
-
-Open the map's main i3d in Giants Editor. Again, `DensityMap: failed to load image.` is fine, but other errors are a problem. Save the map, wait for confirmation, and close the Giants Editor.
-
-Make sure a new `fruit_density.gdm` file was generated, DELETE the converted `fruit_density.png`, and use a text editor to change
-```
-<File fileId="219" filename="map/fruit_density.png"/>
-```
-back to
-```
-<File fileId="219" filename="map/fruit_density.gdm"/>
-```
 ## Linking HorseExtension files
 
 This stage is a lot of copying. In the HorseExtension support folder you'll find all the things you need to set up ALMOST everything else.
