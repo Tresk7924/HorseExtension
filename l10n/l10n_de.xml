@@ -5,7 +5,7 @@
         <text name="fillType_wetAlfalfa"                   text="feuchte Luzerne" />
         <text name="fillType_wetAlfalfa_windrow"           text="feuchte Luzerne" />
         <text name="fillType_alfalfa"                      text="Luzerne" />
-        <text name="fillType_alfalfa_windrow"              ext="Luzerne" />
+        <text name="fillType_alfalfa_windrow"              text="Luzerne" />
         <text name="fillType_semiDryAlfalfa"               text="Luzerne angewelkt" />
         <text name="fillType_semiDryAlfalfa_windrow"       text="Luzerne angewelkt" />
         <text name="fillType_dryAlfalfa"                   text="Luzerneheu" />
