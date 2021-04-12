@@ -3,13 +3,13 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>RH 24-60 Edit</name>
+        <name>RH 24-60 Multi</name>
         <specs>
         </specs>
         <functions>
             <function>$l10n_function_palletPacker</function>
         </functions>
-        <image>$data/vehicles/grimme/grimmeRH2460/store_grimmeRH2460.png</image>
+        <image>HorseExtension/vehicles/CuttersEtc/grimmeRH2460/store_grimmeRH2460.png</image>
         <price>42000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>

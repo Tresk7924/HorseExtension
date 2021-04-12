@@ -3,7 +3,10 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>KS 75-4 Carrot</name>
+        <name>
+			<de>KS 75-4 Karotten</de>
+			<en>KS 75-4 Carrot</en>
+        </name>
         <specs>
             <neededPower>65</neededPower>
             <workingWidth>3.2</workingWidth>
