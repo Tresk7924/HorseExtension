@@ -50,7 +50,7 @@
             <destruction filterStart="1" filterEnd="7" state="8" />
             <mapColors default="0.6939 0.3663 0.2747 1" colorBlind="0.1329 0.2664 0.9911 1"/>
         </fruitType>
-		<fruitType name="rye" title="Roggen" shownOnMap="true" useForFieldJob="true" >
+		<fruitType name="rye" title="Roggen" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.05" />
             <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" minForageGrowthState="3" allowsPartialGrowthState="false" literPerSqm="0.89" />
@@ -70,7 +70,7 @@
             <destruction filterStart="4" filterEnd="8" state="9" />
             <mapColors default="0.3613 0.3185 0.2346 1" colorBlind="0.2918 0.3564 0.7011 1"/>
         </fruitType>
-		<fruitType name="spelt" shownOnMap="true" useForFieldJob="true" >
+		<fruitType name="spelt" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.05" />
             <harvest minHarvestingGrowthState="3" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" literPerSqm="0.98" />
@@ -156,7 +156,7 @@
             <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" />
             <mapColors default="0.0423 0.1221 0.0252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
         </fruitType>
-		<fruitType name="alfalfa" shownOnMap="true" useForFieldJob="true">
+		<fruitType name="alfalfa" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
             <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="4" allowsPartialGrowthState="true" literPerSqm="4.37" />
@@ -202,7 +202,7 @@
             <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" />
             <mapColors default="0.0648 0.2423 0.2122 1" colorBlind="1.0000 0.9473 0.0369 1"/>
         </fruitType>
-        <fruitType name="clover" shownOnMap="true" useForFieldJob="true">
+        <fruitType name="clover" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
             <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="4" allowsPartialGrowthState="true" literPerSqm="4.37" />
@@ -258,7 +258,7 @@
             <destruction filterStart="3" filterEnd="5" state="3" />
             <mapColors default="0.0006 0.1441 0.0844 1" colorBlind="0.5385 0.0430 0.0600 1"/>
         </fruitType>
-		<fruitType name="horseGrass" shownOnMap="true" useForFieldJob="true">
+		<fruitType name="horseGrass" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.04" plantsWeed="false"/>
             <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="4" allowsPartialGrowthState="false" literPerSqm="0.72" />
@@ -311,7 +311,7 @@
             <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" destroyedByRoller="false" />
             <mapColors default="0.0648 0.3712 0.0497 1" colorBlind="1.0000 0.9473 0.0369 1"/>
         </fruitType>
-		<fruitType name="pastureGrass" shownOnMap="true" useForFieldJob="true">
+		<fruitType name="pastureGrass" shownOnMap="true" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
             <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="4" allowsPartialGrowthState="true" literPerSqm="4.37" />
