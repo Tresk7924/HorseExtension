@@ -138,12 +138,12 @@
 <File fileId="9075" filename="../HorseExtension/standard/wheat.xml"/>
 <!-- End Standard crops changed files -->
 <!-- HorseExtension grasses -->
-<!-- For European style grasses add -->
+<!-- This is the FarmingAgency edited flowery grass!!! For European style grasses add -->
 <File fileId="9101" filename="../HorseExtension/standard/grassDE.xml"/>
 <File fileId="9102" filename="../HorseExtension/standard/grassDense.i3d"/>
 <File fileId="9103" filename="../HorseExtension/standard/grassDense.i3d.shapes"/>
 <File fileId="9104" filename="../HorseExtension/standard/grassDense_diffuse.dds"/>
-<!-- For US style grasses add -->
+<!-- For basegame US style grasses add -->
 <File fileId="9101" filename="../HorseExtension/standard/grassUS.xml"/>
 <File fileId="9102" filename="../HorseExtension/standard/grassLong.i3d"/>
 <File fileId="9103" filename="../HorseExtension/standard/grassLong.i3d.shapes"/>
