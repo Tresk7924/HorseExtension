@@ -186,18 +186,18 @@
 
             <type name="POTATO">
                 <factors>
-                    <factor period="11">1,22</factor>
-                    <factor period="12">1,21</factor>
-                    <factor period="1" >1,12</factor>
-                    <factor period="2" >1,04</factor>
-                    <factor period="3" >0,93</factor>
-                    <factor period="4" >0,85</factor>
-                    <factor period="5" >0,79</factor>
-                    <factor period="6" >0,79</factor>
-                    <factor period="7" >0,86</factor>
-                    <factor period="8" >0,96</factor>
-                    <factor period="9" >1,08</factor>
-                    <factor period="10">1,16</factor>
+                    <factor period="11">1.22</factor>
+                    <factor period="12">1.21</factor>
+                    <factor period="1" >1.12</factor>
+                    <factor period="2" >1.04</factor>
+                    <factor period="3" >0.93</factor>
+                    <factor period="4" >0.85</factor>
+                    <factor period="5" >0.79</factor>
+                    <factor period="6" >0.79</factor>
+                    <factor period="7" >0.86</factor>
+                    <factor period="8" >0.96</factor>
+                    <factor period="9" >1.08</factor>
+                    <factor period="10">1.16</factor>
                 </factors>
             </type>
 
@@ -337,6 +337,22 @@
                 </factors>
             </type>
 
+            <type name="COMPOST">
+                <factors>
+                    <factor period="11">1.11</factor>
+                    <factor period="12">1.11</factor>
+                    <factor period="1" >1.06</factor>
+                    <factor period="2" >1.03</factor>
+                    <factor period="3" >0.97</factor>
+                    <factor period="4" >0.92</factor>
+                    <factor period="5" >0.89</factor>
+                    <factor period="6" >0.89</factor>
+                    <factor period="7" >0.93</factor>
+                    <factor period="8" >0.98</factor>
+                    <factor period="9" >1.05</factor>
+                    <factor period="10">1.08</factor>
+                </factors>
+            </type>
             <type name="MILK">
                 <factors>
                     <factor period="11">1.08</factor>
