@@ -19,7 +19,7 @@ Unzip this to a folder called HorseExtension in the main folder of your mod map.
 
 ## HeightTypes and add multi-terrain angle
 
-Before adding new fruits to the map, the maximum heightTypes needs to be increased to 128, and maximum fruitTypes needs to increased as well.
+Before adding new fruits to the map, the maximum heightTypes needs to be increased to 128 (maximum fruitTypes only needs to be increased for more than 32 positions in FoliageMultiLayer, read below at § New Fruits).
 
 ### Converting GDMs to PNGs
 
