@@ -27,8 +27,8 @@
   <Scene>
     <Shape name="Bale180Grass" shapeId="1" dynamic="true" compound="true" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="250" nodeId="1">
       <Shape name="attacherTrigger" shapeId="2" kinematic="true" trigger="true" linearDamping="0.5" angularDamping="0.5" collisionMask="134217728" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="250" nodeId="2"/>
-      <Shape name="roudbale_vis" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="3">
-        <Shape name="roudbale_visAlpha" shapeId="4" castsShadows="false" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="4"/>
+      <Shape name="roundbale_vis" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="3">
+        <Shape name="roundbale_visAlpha" shapeId="4" castsShadows="false" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="4"/>
       </Shape>
     </Shape>
   </Scene>

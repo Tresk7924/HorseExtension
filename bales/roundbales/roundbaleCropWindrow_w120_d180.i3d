@@ -32,8 +32,8 @@
   <Scene>
     <Shape shapeId="1" name="Bale180CropWindrow" dynamic="true" compound="true" collisionMask="16781314" staticFriction="1.3" dynamicFriction="1.3" angularDamping="0.95" density="0.3" clipDistance="250" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
       <Shape shapeId="2" name="attacherTrigger" kinematic="true" trigger="true" collisionMask="134217728" linearDamping="0.5" angularDamping="0.5" clipDistance="250" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
-      <Shape shapeId="3" name="roudbale_vis" clipDistance="300" nodeId="13" materialIds="5" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="4" name="roudbale_visAlpha" clipDistance="300" nodeId="14" materialIds="5" receiveShadows="true"/>
+      <Shape shapeId="3" name="roundbale_vis" clipDistance="300" nodeId="13" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="4" name="roundbale_visAlpha" clipDistance="300" nodeId="14" materialIds="5" receiveShadows="true"/>
       </Shape>
     </Shape>
   </Scene>
