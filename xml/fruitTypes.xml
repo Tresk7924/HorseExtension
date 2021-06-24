@@ -419,6 +419,7 @@
             <converter from="POPLAR"        			to="WOODCHIPS"        			factor="3.0" />
 			<converter from="miscanthus"    			to="miscanthus"     			factor="3.0" />
 			<converter from="RYE"       				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
+			<converter from="SPELT"       				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
             <converter from="TRITICALE" 				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
             <converter from="SPELT" 				    to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
         </fruitTypeConverter>
@@ -434,6 +435,7 @@
             <converter from="OAT"       		to="CROP_WINDROW"         				factor="1" windrowFactor="1" />
             <converter from="PASTUREGRASS"     	to="WETGRASS_WINDROW"     				factor="1" windrowFactor="1" />
 			<converter from="RYE"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
+			<converter from="SPELT"				to="CROP_WINDROW"         				factor="1" windrowFactor="1" />
             <converter from="TRITICALE" 		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="SPELT"     		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
         </fruitTypeConverter>
@@ -449,6 +451,7 @@
             <converter from="OAT"       		to="CROP_WINDROW"         				factor="1" windrowFactor="1" />
             <converter from="PASTUREGRASS"     	to="GRASS_WINDROW"     					factor="1" windrowFactor="1" />
 			<converter from="RYE"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
+			<converter from="SPELT"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="TRITICALE" 		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="SPELT"     		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
         </fruitTypeConverter>

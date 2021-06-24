@@ -25,7 +25,7 @@
 	<storeItem xmlFilename="HorseExtension/vehicles/Carrot/SE260.xml"/>
 	<storeItem xmlFilename="HorseExtension/vehicles/Carrot/grimmeKS75.xml"/>
 	<!--Cutters Etc-->
-	<storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/GrimmeRH24_60/grimmeRH2460.xml"/>
+	<storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/grimmeRH2460/grimmeRH2460.xml"/>
 	<storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/bigM450/bigM450.xml"/>
 	<storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/poettingerNovaCatX8/poettingerNovaCatX8.xml"/>
 	<storeItem xmlFilename="HorseExtension/vehicles/CuttersEtc/poettingerNovaCat301/poettingerNovaCat301.xml"/>
