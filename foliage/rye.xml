@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <foliageType distanceTexturePath="distance">
-    <!-- rogen 
-    
-    5 6 7 8 
-    
+    <!-- rogen
+
+    5 6 7 8
+
     1 0 0 0 - invisible
     0 1 0 0 - green small
     1 1 0 0 - green middle
@@ -13,7 +13,8 @@
     1 1 1 0 - harvest ready
     0 0 0 1 - dead
     1 0 0 1 - harvested (cut)
-    
+    1 1 1 1 - tire tracks (harvested)
+
     -->
     <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.8" shapeSource="rye.i3d">
         <foliageStateDefaults distanceMapLayer="1" widthVariance="0.1" heightVariance="0.2" horizontalPositionVariance="0.5" />
@@ -79,8 +80,8 @@
             </foliageShape>
         </foliageState>
         <!--  -->
-		 <!-- 1 0 0 1 - harvested (cut) -->
-        <foliageState name="harvested" distanceMap="foliage_TriRye_distance7_diffuse.png" width="1" height="0.4" numBlocksPerUnit="4.5">
+        <!-- 1 1 1 1 - tire tracks (harvested) -->
+        <foliageState name="tire tracks" distanceMap="foliage_TriRye_distance7_diffuse.png" width="1" height="0.4" numBlocksPerUnit="4.5">
             <foliageShape>
                 <foliageLod blockShape="0>5" />
                 <foliageLod blockShape="1>5" />

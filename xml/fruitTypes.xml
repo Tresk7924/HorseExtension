@@ -380,11 +380,11 @@
     <fruitTypeCategories>
         <fruitTypeCategory name="GRAINHEADER" 		>TRITICALE SPELT RYE FIELD_GRASS WHEAT BARLEY OAT CANOLA SOYBEAN</fruitTypeCategory>
         <fruitTypeCategory name="MAIZEHEADER" 		>MAIZE SUNFLOWER</fruitTypeCategory>
-        <fruitTypeCategory name="MAIZECUTTER" 		>HORSEGRASS CLOVER ALFALFA PASTUREGRASS FIELD_GRASS MAIZE WHEAT BARLEY OAT TRITICALE RYE MISCANTHUS GRASS</fruitTypeCategory>
-        <fruitTypeCategory name="DIRECTCUTTER" 		>TRITICALE RYE PASTUREGRASS HORSEGRASS FIELD_GRASS GRASS ALFALFA CLOVER WHEAT BARLEY OAT CANOLA SOYBEAN</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER" 		>HORSEGRASS CLOVER ALFALFA PASTUREGRASS FIELD_GRASS MAIZE WHEAT BARLEY OAT TRITICALE RYE SPELT MISCANTHUS GRASS</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER" 		>TRITICALE RYE SPELT PASTUREGRASS HORSEGRASS FIELD_GRASS GRASS ALFALFA CLOVER WHEAT BARLEY OAT CANOLA SOYBEAN</fruitTypeCategory>
         <fruitTypeCategory name="PICKUP" 			>CROP_WINDROW WETHORSEGRASS_WINDROW HORSEGRASS_WINDROW SEMIDRYHORSEGRASS_WINDROW DRYHORSEGRASS_WINDROW HORSEGRASS_FERMENTED GRASS ALFALFA WETALFALFA_WINDROW ALFALFA_WINDROW SEMIDRYALFALFA CLOVER WETCLOVER_WINDROW CLOVER_WINDROW SEMIDRYCLOVER WETGRASS_WINDROW GRASS_WINDROW SEMIDRY_GRASS_WINDROW DRYGRASS</fruitTypeCategory>
-        <fruitTypeCategory name="SOWINGMACHINE" 	>RYE TRITICALE SPELT PASTUREGRASS HORSEGRASS FIELD_GRASS ALFALFA CLOVER ONION CARROT WHEAT BARLEY OAT CANOLA SOYBEAN OILSEEDRADISH GRASS</fruitTypeCategory>
-        <fruitTypeCategory name="PLANTER" 			>MISCANTHUS MAIZE SUNFLOWER SOYBEAN SUGARBEET CARROT</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE" 	>RYE TRITICALE SPELT PASTUREGRASS HORSEGRASS FIELD_GRASS ALFALFA CLOVER WHEAT BARLEY OAT CANOLA SOYBEAN OILSEEDRADISH GRASS</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER" 			>MISCANTHUS MAIZE SUNFLOWER SOYBEAN SUGARBEET ONION CARROT</fruitTypeCategory>
         <fruitTypeCategory name="WEEDER" 			>HORSEGRASS PASTUREGRASS OILSEEDRADISH GRASS ALFALFA CLOVER FIELD_GRASS</fruitTypeCategory>
     </fruitTypeCategories>
 
@@ -420,6 +420,7 @@
 			<converter from="miscanthus"    			to="miscanthus"     			factor="3.0" />
 			<converter from="RYE"       				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
             <converter from="TRITICALE" 				to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
+            <converter from="SPELT" 				    to="CHAFF"         				factor="4.0" windrowFactor="1.0" />
         </fruitTypeConverter>
 
         <fruitTypeConverter name="MOWER">
@@ -434,6 +435,7 @@
             <converter from="PASTUREGRASS"     	to="WETGRASS_WINDROW"     				factor="1" windrowFactor="1" />
 			<converter from="RYE"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="TRITICALE" 		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
+            <converter from="SPELT"     		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
         </fruitTypeConverter>
 
 		<fruitTypeConverter name="MOWERCONDITIONER">
@@ -448,7 +450,7 @@
             <converter from="PASTUREGRASS"     	to="GRASS_WINDROW"     					factor="1" windrowFactor="1" />
 			<converter from="RYE"       		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
             <converter from="TRITICALE" 		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
-
+            <converter from="SPELT"     		to="CROP_WINDROW" 						factor="1" windrowFactor="1" />
         </fruitTypeConverter>
     </fruitTypeConverters>
 </map>
