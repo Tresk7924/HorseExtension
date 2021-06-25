@@ -126,6 +126,10 @@ By default FS19 maps don't support enough fruitTypes, so we have to fix that fir
 
 Like the heightTypes and MTA support, find `fruit_density.gdm`, convert it to a PNG with the GRLE converter, make sure the new `fruit_density.png` file is in the same directory as the original GDM file, and DELETE the original `fruit_density.gdm`.
 
+Some maps have bugs resulting from what we do next, because we're changing what bits in the fruit density image mean. I've had grass patches become withered potatoes, and soybeans instead of flowers in people's gardens. I've included an image converter to deal with this at support/fruit_density_converter.exe (adapted from work on the [LS-ModCompany forums](https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/?postID=93808)). It works the same as the GRLE converter, so drag the new `fruit_density.png` file onto the executable and you'll get `fruit_density_new.png`. Delete the original `fruit_density.png` and rename `fruit_density_new.png` to `fruit_density.png` to replace it.
+
+
+
 ### Editing map.i3d
 
 Open the map's main i3d file in a text editor.
