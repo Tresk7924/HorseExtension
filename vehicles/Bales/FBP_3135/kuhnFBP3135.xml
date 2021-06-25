@@ -360,11 +360,11 @@
                 <resetAfterDrop animName="resetWrapperAfterBaleDrop" animSpeed="1.5"/>
             </animations>
             <baleTypes>
-                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCloverFermented_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverFermented_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
             </baleTypes>
             <wrappingState>
                 <key time="0" wrappingState="0"/>

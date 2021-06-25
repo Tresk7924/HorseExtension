@@ -6,13 +6,20 @@ The modders at F/A would rather spend time making mods better than dealing with 
 
 # Preparing the map
 
+**THE BIG WARNING/HINT:**
+
+**DO NOT**
+**DO NOT leave zip and extracted folder of the map you are going to work on in the same folder ! ** 
+**zip contents will be preferred by GiantsEditor as well as the game itself and as such the conversion of most files will FAIL ! **
+**DO NOT**
+
 ## Adding HorseExtension files
 
 Unzip this to a folder called HorseExtension in the main folder of your mod map. A lot of later steps depend on having these files there.
 
 ## HeightTypes and add multi-terrain angle
 
-Before adding new fruits to the map, the maximum heightTypes needs to be increased to 128, and maximum fruitTypes needs to increased as well.
+Before adding new fruits to the map, the maximum heightTypes needs to be increased to 128 (maximum fruitTypes only needs to be increased for more than 32 positions in FoliageMultiLayer, read below at § New Fruits).
 
 ### Converting GDMs to PNGs
 
@@ -120,6 +127,7 @@ The map should be usable now. Try loading it with several mods that add heightTy
 
 ## More map preparation
 
+<<<<<<< HEAD
 By default FS19 maps don't support enough fruitTypes, so we have to fix that first.
 
 ### GDM conversion
@@ -133,39 +141,13 @@ Some maps have bugs resulting from what we do next, because we're changing what 
 ### Editing map.i3d
 
 Open the map's main i3d file in a text editor.
+=======
+By default FS19 maps are limited to 32 fruitTypes. 
+There is no need to fix that unless the addition of the m+he fruits would result in more than 32 positions in FoliageMuliLayer.
+IF this is the circumstance, additional preparation and steps are required that are out of scope of this tutorial for now, 
+please visit https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/ for more information
+>>>>>>> 414593e5131597f0a61469f17c7f7b68d7ac9616
 
-Change
-```
-<File fileId="219" filename="map/fruit_density.gdm"/>
-```
-to
-```
-<File fileId="219" filename="map/fruit_density.png"/>
-```
-just changing `gdm` to `png`. Don't change `fileId` entries or the path to the file.
-
-Find the FoliageMultiLayer element and change
-```
-<FoliageMultiLayer densityMapId="219" numChannels="10" numTypeIndexChannels="5" compressionChannels="5">
-```
-to
-```
-<FoliageMultiLayer densityMapId="219" numChannels="12" numTypeIndexChannels="6" compressionChannels="6">
-```
-adding 2 to numChannels, and 1 to each of numTypeIndexChannels and compressionChannels.
-
-### Generating new GDMs
-
-Open the map's main i3d in Giants Editor. Again, `DensityMap: failed to load image.` is fine, but other errors are a problem. Save the map, wait for confirmation, and close the Giants Editor.
-
-Make sure a new `fruit_density.gdm` file was generated, DELETE the converted `fruit_density.png`, and use a text editor to change
-```
-<File fileId="219" filename="map/fruit_density.png"/>
-```
-back to
-```
-<File fileId="219" filename="map/fruit_density.gdm"/>
-```
 ## Linking HorseExtension files
 
 This stage is a lot of copying. In the HorseExtension support folder you'll find all the things you need to set up ALMOST everything else.

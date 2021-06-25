@@ -69,6 +69,9 @@
         <text name="function_harvestingCarrotWithoutPreparer" text="This harvester digs the carrots out of the ground. This machine can only be used after the haulm has been cut." />
         <text name="function_harvestingOnionWithoutPreparer"  text="This harvester digs the onions out of the ground. This machine can only be used after the haulm has been cut." />
         <text name="function_mowerConditioner"             text="This mower has also installed a conditioner. This means that the mown is immediately dried." />
-
+		<!-- Compost additions -->
+        <text name="fillType_compost"                           text="Compost" />
+        <text name="shopItem_buyingStation_compost"             text="Compost Loading Point" />
+        <text name="function_buyingStation_compost"             text="Compost can be bought here." />
     </texts>
 </l10n>

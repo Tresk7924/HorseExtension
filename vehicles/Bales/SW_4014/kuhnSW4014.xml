@@ -175,11 +175,11 @@
                 <dropFromWrapper animName="dropRoundBaleFromWrapper" animSpeed="1"/>
             </animations>
             <baleTypes>
-                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
-                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleAlfalfaSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleCloverSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleCropWindrowSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/roundbales/roundbaleHorseSilage_w112_d130.i3d" minBaleDiameter="1.1" maxBaleDiameter="1.3" minBaleWidth="1.1" maxBaleWidth="1.3"/>
             </baleTypes>
             <wrappingState>
                 <key time="0" wrappingState="0"/>
@@ -219,15 +219,15 @@
                 <dropFromWrapper animName="dropSquareBaleFromWrapper" animSpeed="1"/>
             </animations>
             <baleTypes>
-                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleAlfalfaSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleCloverSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleCloverFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleCropWindrowSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleHorseSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleCropWindrowSilage_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleHorseSilage_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/baleSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/baleAlfalfaSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/baleCloverSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/squareBaleCloverFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/baleCropWindrowSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/baleHorseSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CROP_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/squareBaleCropWindrowSilage_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="SEMIDRYHORSEGRASS_WINDROW" wrapperBaleFilename="HorseExtension/bales/squarebales/squareBaleHorseSilage_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
             </baleTypes>
             <wrappingState>
                 <key time="0" wrappingState="0"/>

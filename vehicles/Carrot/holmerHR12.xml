@@ -3,7 +3,10 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>HR 12 Carrot</name>
+        <name>
+			<de>HR 12 Karotten</de>
+			<en>HR 12 Carrot</en>
+		</name>
         <specs>
             <workingWidth>5.4</workingWidth>
             <combination>Terra Dos T4-40</combination>
