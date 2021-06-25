@@ -9,7 +9,7 @@ The modders at F/A would rather spend time making mods better than dealing with 
 **THE BIG WARNING/HINT:**
 
 **DO NOT**
-**DO NOT leave zip and extracted folder of the map you are going to work on in the same folder ! ** 
+**DO NOT leave zip and extracted folder of the map you are going to work on in the same folder ! **
 **zip contents will be preferred by GiantsEditor as well as the game itself and as such the conversion of most files will FAIL ! **
 **DO NOT**
 
@@ -127,7 +127,6 @@ The map should be usable now. Try loading it with several mods that add heightTy
 
 ## More map preparation
 
-<<<<<<< HEAD
 By default FS19 maps don't support enough fruitTypes, so we have to fix that first.
 
 ### GDM conversion
@@ -135,18 +134,6 @@ By default FS19 maps don't support enough fruitTypes, so we have to fix that fir
 Like the heightTypes and MTA support, find `fruit_density.gdm`, convert it to a PNG with the GRLE converter, make sure the new `fruit_density.png` file is in the same directory as the original GDM file, and DELETE the original `fruit_density.gdm`.
 
 Some maps have bugs resulting from what we do next, because we're changing what bits in the fruit density image mean. I've had grass patches become withered potatoes, and soybeans instead of flowers in people's gardens. I've included an image converter to deal with this at support/fruit_density_converter.exe (adapted from work on the [LS-ModCompany forums](https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/?postID=93808)). It works the same as the GRLE converter, so drag the new `fruit_density.png` file onto the executable and you'll get `fruit_density_new.png`. Delete the original `fruit_density.png` and rename `fruit_density_new.png` to `fruit_density.png` to replace it.
-
-
-
-### Editing map.i3d
-
-Open the map's main i3d file in a text editor.
-=======
-By default FS19 maps are limited to 32 fruitTypes. 
-There is no need to fix that unless the addition of the m+he fruits would result in more than 32 positions in FoliageMuliLayer.
-IF this is the circumstance, additional preparation and steps are required that are out of scope of this tutorial for now, 
-please visit https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/ for more information
->>>>>>> 414593e5131597f0a61469f17c7f7b68d7ac9616
 
 ## Linking HorseExtension files
 
