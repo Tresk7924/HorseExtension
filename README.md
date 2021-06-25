@@ -6,12 +6,10 @@ The modders at F/A would rather spend time making mods better than dealing with 
 
 # Preparing the map
 
-**THE BIG WARNING/HINT:**
+## THE BIG WARNING/HINT:
 
-**DO NOT**
-**DO NOT leave zip and extracted folder of the map you are going to work on in the same folder ! **
-**zip contents will be preferred by GiantsEditor as well as the game itself and as such the conversion of most files will FAIL ! **
-**DO NOT**
+**DO NOT** leave zip and extracted folder of the map you are going to work on in the same folder!
+The zip contents will be preferred by GiantsEditor as well as the game itself and as such the conversion of most files will **FAIL**!
 
 ## Adding HorseExtension files
 
