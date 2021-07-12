@@ -165,7 +165,7 @@
                 <!-- <crop name="WEED" /> -->
             </gt>
             <gt index="7"> <!--late summer to early autumn-->
-                <crop name="BARLEY" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="BARLEY" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
                 <crop name="SPELT" incrementByOneRange="6" setRange="1" setTo="CUT"/>
                 <crop name="RYE" incrementByOneRange="6" setRange="1" setTo="CUT"/>
                 <crop name="TRITICALE" incrementByOneRange="6" setRange="1" setTo="CUT"/>
@@ -191,13 +191,13 @@
                 <!-- <crop name="WEED" /> -->
             </gt>
             <gt index="8"> <!--early autumn to mid autumn-->
-                <crop name="BARLEY" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
-                <crop name="SPELT" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
-                <crop name="RYE" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
-                <crop name="TRITICALE" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
-                <crop name="OAT" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
-                <crop name="WHEAT" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
-                <crop name="CANOLA" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="BARLEY" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="SPELT" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="RYE" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="TRITICALE" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="OAT" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="WHEAT" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="CANOLA" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
                 <crop name="MAIZE" incrementByOneRange="1-6" />
                 <crop name="SOYBEAN" incrementByOneRange="5-6" />
                 <crop name="SUNFLOWER" incrementByOneRange="6" />
