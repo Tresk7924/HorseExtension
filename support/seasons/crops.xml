@@ -5,32 +5,33 @@
 
     <growth overwrite="true"> <!--Leave as false, if you are only appending new fruits. If set to true, you must make sure to define the growth for all fruits -->
         <defaultCrops>
+            <defaultCrop name="ALFALFA"/>
             <defaultCrop name="BARLEY"/>
-            <defaultCrop name="OAT"/>
-            <defaultCrop name="WHEAT"/>
             <defaultCrop name="CANOLA"/>
-            <defaultCrop name="MAIZE"/>
-            <defaultCrop name="SOYBEAN"/>
-            <defaultCrop name="SUNFLOWER"/>
-            <defaultCrop name="POTATO"/>
-            <defaultCrop name="SUGARBEET"/>
-            <defaultCrop name="POPLAR"/>
-            <defaultCrop name="PASTUREGRASS"/>
-            <defaultCrop name="OILSEEDRADISH" />
-            <defaultCrop name="WEED" />
+            <defaultCrop name="CARROT"/>
+            <defaultCrop name="CLOVER"/>
             <defaultCrop name="DRYGRASS" />
-			<defaultCrop name="ALFALFA"/>
-			<defaultCrop name="CLOVER"/>
-			<defaultCrop name="ONION"/>
-			<defaultCrop name="CARROT"/>
-			<defaultCrop name="FIELD_GRASS"/>
-			<defaultCrop name="GRASS"/>
-			<defaultCrop name="HORSEGRASS"/>
-			<defaultCrop name="SPELT"/>
-			<defaultCrop name="RYE"/>
-			<defaultCrop name="TRITICALE"/>
-			<defaultCrop name="MISCANTHUS"/>
-
+            <defaultCrop name="FIELD_GRASS"/>
+            <defaultCrop name="GRASS"/>
+            <defaultCrop name="HORSEGRASS"/>
+            <defaultCrop name="MAIZE"/>
+            <defaultCrop name="MISCANTHUS"/>
+            <defaultCrop name="OAT"/>
+            <defaultCrop name="OILSEEDRADISH" />
+            <defaultCrop name="ONION"/>
+            <defaultCrop name="PASTUREGRASS"/>
+            <defaultCrop name="POPLAR"/>
+            <defaultCrop name="POTATO"/>
+            <defaultCrop name="RYE"/>
+            <defaultCrop name="SOYBEAN"/>
+            <defaultCrop name="SPELT"/>
+            <defaultCrop name="SUGARBEET"/>
+            <defaultCrop name="SUNFLOWER"/>
+            <defaultCrop name="TRITICALE"/>
+            <defaultCrop name="WEED" />
+            <defaultCrop name="WHEAT"/>
+            <defaultCrop name="COTTON"/>
+            <defaultCrop name="SUGARCANE"/>
         </defaultCrops>
 
         <growthTransitions>
@@ -164,7 +165,7 @@
                 <!-- <crop name="WEED" /> -->
             </gt>
             <gt index="7"> <!--late summer to early autumn-->
-                <crop name="BARLEY" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="BARLEY" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
                 <crop name="SPELT" incrementByOneRange="6" setRange="1" setTo="CUT"/>
                 <crop name="RYE" incrementByOneRange="6" setRange="1" setTo="CUT"/>
                 <crop name="TRITICALE" incrementByOneRange="6" setRange="1" setTo="CUT"/>
@@ -190,13 +191,13 @@
                 <!-- <crop name="WEED" /> -->
             </gt>
             <gt index="8"> <!--early autumn to mid autumn-->
-                <crop name="BARLEY" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
-                <crop name="SPELT" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
-                <crop name="RYE" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
-                <crop name="TRITICALE" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
-                <crop name="OAT" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
-                <crop name="WHEAT" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
-                <crop name="CANOLA" incrementByOneRange="1" setRange="3-MAX" setTo="WITHERED"/>
+                <crop name="BARLEY" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="SPELT" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="RYE" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="TRITICALE" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="OAT" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="WHEAT" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
+                <crop name="CANOLA" incrementByOneRange="1" setRange="2-MAX" setTo="WITHERED"/>
                 <crop name="MAIZE" incrementByOneRange="1-6" />
                 <crop name="SOYBEAN" incrementByOneRange="5-6" />
                 <crop name="SUNFLOWER" incrementByOneRange="6" />
@@ -229,7 +230,6 @@
             </gt>
             <gt index="10"> <!--late autumn to early winter-->
                 <crop name="BARLEY"  incrementByOneRange="1" />
-                <crop name="POPPY" incrementByOneRange="1"/>
                 <crop name="RYE" incrementByOneRange="1"/>
                 <crop name="SPELT" incrementByOneRange="1"/>
                 <crop name="OAT" incrementByOneRange="1"/>
@@ -251,6 +251,7 @@
             </gt>
             <gt index="11"> <!--early winter to mid winter-->
                 <crop name="BARLEY" setRange="1" setTo="CUT"/>
+				<crop name="MISCANTHUS"  incrementByOneRange="2-3"/>
                 <crop name="SUGARBEET" setRange="1-5" setTo="CUT" incrementByOneRange="7"/>
                 <crop name="SUNFLOWER" setRange="1-MAX" setTo="CUT"/>
                 <crop name="POTATO" setRange="1-MAX" setTo="CUT"/>

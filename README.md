@@ -6,12 +6,10 @@ The modders at F/A would rather spend time making mods better than dealing with 
 
 # Preparing the map
 
-**THE BIG WARNING/HINT:**
+## THE BIG WARNING/HINT:
 
-**DO NOT**
-**DO NOT leave zip and extracted folder of the map you are going to work on in the same folder ! ** 
-**zip contents will be preferred by GiantsEditor as well as the game itself and as such the conversion of most files will FAIL ! **
-**DO NOT**
+**DO NOT** leave zip and extracted folder of the map you are going to work on in the same folder!
+The zip contents will be preferred by GiantsEditor as well as the game itself and as such the conversion of most files will **FAIL**!
 
 ## Adding HorseExtension files
 
@@ -127,10 +125,45 @@ The map should be usable now. Try loading it with several mods that add heightTy
 
 ## More map preparation
 
-By default FS19 maps are limited to 32 fruitTypes. 
-There is no need to fix that unless the addition of the m+he fruits would result in more than 32 positions in FoliageMuliLayer.
-IF this is the circumstance, additional preparation and steps are required that are out of scope of this tutorial for now, 
-please visit https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/ for more information
+By default FS19 maps don't support enough fruitTypes, so we have to fix that first.
+
+### GDM conversion
+
+Like the heightTypes and MTA support, find `fruit_density.gdm`, convert it to a PNG with the GRLE converter, make sure the new `fruit_density.png` file is in the same directory as the original GDM file, and DELETE the original `fruit_density.gdm`.
+
+Some maps have bugs resulting from what we do next, because we're changing what bits in the fruit density image mean. I've had grass patches become withered potatoes, and soybeans instead of flowers in people's gardens. I've included an image converter to deal with this at `support/fruit_density_converter.exe` (adapted from work on the [LS-ModCompany forums](https://ls-modcompany.com/forum/thread/8049-limit-f%C3%BCr-fruchtsorten-in-beliebiger-map-erh%C3%B6hen/?postID=93808)). There are also some problems with maps that have errors in their fruit_density.gdm files (e.g. No Man's Land has entries for foliage that doesn't exist). It works a little differently because it needs to examine the map. Drag your map's modDesc.xml onto `support/fruit_density_converter.exe` and it will do the work for you, creating `fruit_density_new.png`. Delete `fruit_density.png`, rename `fruit_density_new.png` to `fruit_density.png`. There's also a Python script version of the converter if you're comfortable with that.
+
+Open your map's i3d in Giants Editor, and change:
+
+```
+<File fileId="219" filename="mapDE/fruit_density.gdm"/>
+```
+to
+```
+<File fileId="219" filename="mapDE/fruit_density.png"/>
+```
+Find the `FoliageMultiLayer` line, e.g.:
+```
+<FoliageMultiLayer densityMapId="219" numChannels="10" numTypeIndexChannels="5" compressionChannels="5">
+```
+change:
+- `numChannels` to `12`
+- `numTypeIndexChannels` to `6`
+- `compressionChannels` to `6`
+
+Save the i3d and open it with Giants Editor, checking for errors.
+
+Go back in and change:
+```
+<File fileId="219" filename="mapDE/fruit_density.png"/>
+```
+to
+```
+<File fileId="219" filename="mapDE/fruit_density.gdm"/>
+```
+Then save and exit.
+
+Your map now supports 64 foliage types.
 
 ## Linking HorseExtension files
 
