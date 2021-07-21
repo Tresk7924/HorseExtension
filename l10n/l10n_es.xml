@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+    <texts>
+        <!-- Alfalfa -->
+        <text name="fillType_wetAlfalfa"                   text="Alfalfa Fresca" />
+        <text name="fillType_wetAlfalfa_windrow"           text="Alfalfa Fresca" />
+        <text name="fillType_alfalfa"                      text="Alfalfa" />
+        <text name="fillType_alfalfa_windrow"              text="Alfalfa" />
+        <text name="fillType_semiDryAlfalfa"               text="Alfalfa Semi-seca" />
+        <text name="fillType_semiDryAlfalfa_windrow"       text="Alfalfa Semi-seca" />
+        <text name="fillType_dryAlfalfa"                   text="Heno de Alfalfa" />
+        <text name="fillType_dryAlfalfa_windrow"           text="Heno de Alfalfa" />
+        <text name="fillType_alfalfa_fermented"            text="Ensilaje de Alfalfa" />
+        <!-- Clover -->
+        <text name="fillType_wetClover"                    text="Trebol Fresco" />
+        <text name="fillType_wetClover_windrow"            text="Trebol Fresco" />
+        <text name="fillType_clover"                       text="Trebol" />
+        <text name="fillType_clover_windrow"               text="Trebol" />
+        <text name="fillType_semiDryClover"                text="Trebol Semi-seco" />
+        <text name="fillType_semiDryClover_windrow"        text="Trebol Semi-seco" />
+        <text name="fillType_dryClover"                    text="Heno de Trebol" />
+        <text name="fillType_dryClover_windrow"            text="Heno de Trebol" />
+        <text name="fillType_clover_fermented"             text="Ensilaje de Trebol" />
+        <!-- HorseGrass -->
+        <text name="fillType_wetHorseGrass"                text="Hierba de Caballo Fresca" />
+        <text name="fillType_wetHorseGrass_windrow"        text="Hierba de Caballo Fresca" />
+        <text name="fillType_horseGrass"                   text="Hierba de Caballo" />
+        <text name="fillType_horseGrass_windrow"           text="Hierba de Caballo" />
+        <text name="fillType_semiDryHorseGrass"            text="Hierba de Caballo Semi-seca" />
+        <text name="fillType_semiDryHorseGrass_windrow"    text="Hierba de Caballo Semi-seca" />
+        <text name="fillType_dryHorseGrass"                text="Heno de Hierba de Caballo" />
+        <text name="fillType_dryHorseGrass_windrow"        text="Heno de Hierba de Caballo" />
+        <text name="fillType_horseGrass_fermented"         text="Ensilaje de H. Caballo" />
+        <!-- Grass -->
+        <text name="fillType_pastureGrass"                 text="Hierba de Pasto" />
+        <text name="fillType_wetGrass"                     text="Hierba Fresca" />
+        <text name="fillType_wetGrass_windrow"             text="Hierba Fresca" />
+        <text name="fillType_semiDryGrass"                 text="Hierba Semi-seca" />
+        <text name="fillType_semiDryGrass_windrow"         text="Hierba Semi-seca" />
+        <text name="fillType_grass_fermented"              text="Ensilaje de Hierba" />
+        <!-- Grains -->
+        <text name="fillType_rye"                          text="Centeno" />
+        <text name="fillType_triticale"                    text="Triticale" />
+        <text name="fillType_spelt"                        text="Espelta" />
+        <text name="fillType_field_grass"                  text="Hierba de Campo" />
+        <!-- Root crops -->
+        <text name="fillType_carrot"                       text="Zanahoria" />
+        <text name="fillType_onion"                        text="Cebolla" />
+        <!-- Forage -->
+        <text name="fillType_crop_windrow"                 text="Hilera de Grano" />
+        <text name="fillType_miscanthus"                   text="Miscanthus" />
+		<text name="fillType_ccmraw"                       text="Maíz Molido (Harina Maíz)" />
+        <text name="fillType_ccm"                          text="CCM" />
+		<!-- Mods -->
+        <text name="function_multiPalletPacker"            text="Con esta máquina las patatas, la remolacha, las cebollas o las zanahorias se pueden envasar en palets para la venta, o se cargan en cintas transportadoras." />
+        <text name="function_multiWrapper"                 text="La embaladora de pacas encinta pacas de todas las hierbas en papel de aluminio para que puedan fermentar y convertirse en ensilaje." />
+        <text name="function_multiBaler"                   text="Esta empacadora prensa la paja, así como todas las hierbas y su heno en pacas." />
+        <text name="function_multiStacker"                 text="Este recogedor de pacas carga todo tipo de pacas redondas y facilita su transporte." />
+        <text name="configuration_carrot"                  text="para zanahorias" />
+        <text name="configuration_onion"                   text="para cebollas" />
+        <text name="name_HR_12_Carrot"                     text="HR 12 para zanahorias" />
+        <text name="name_HR_12_Onion"                      text="HR 12 para cebollas" />
+        <text name="name_KS_75-4_Carrot"                   text="KS 75-4 para zanahorias" />
+        <text name="name_KS_75-4_Onion"                    text="KS 75-4 para cebollas" />
+        <text name="name_SE_260_Carrot"                    text="SE 260 para zanahorias" />
+        <text name="name_SE_260_Onion"                     text="SE 260 para cebollas" />
+        <text name="function_haulmTopperCarrot"            text="Esta máquina quita las puntas antes de que se puedan cosechar las zanahorias." />
+        <text name="function_haulmTopperOnion"             text="Esta máquina quita las puntas antes de que se puedan cosechar las cebollas." />
+        <text name="function_harvestingCarrotWithoutPreparer" text="Esta cosechadora extrae las zanahorias del suelo. Esta máquina solo se puede utilizar después de que se hayan cortado las puntas." />
+        <text name="function_harvestingOnionWithoutPreparer"  text="Esta cosechadora extrae las cebollas del suelo. Esta máquina solo se puede utilizar después de que se hayan cortado las puntas" />
+        <text name="function_mowerConditioner"             text="Esta segadora tiene instalado un acondicionador. Esto significa que lo segado se seca inmediatamente." />
+		<!-- Compost additions -->
+        <text name="fillType_compost"                           text="Compost" />
+        <text name="shopItem_buyingStation_compost"             text="Venta de Compost" />
+        <text name="function_buyingStation_compost"             text="El compost puede ser comprado aquí." />
+    </texts>
+</l10n>
